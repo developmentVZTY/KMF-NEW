@@ -13,13 +13,14 @@ import Link from 'next/link';
  import { FreeMode, Pagination, Autoplay } from 'swiper/modules';
 import { Fade, Zoom } from 'react-reveal';
 import { IoHomeOutline } from 'react-icons/io5';
-import image1 from "@/images/animal-breeding/one.jpg"
-import image2 from "@/images/animal-breeding/two.jpg"
-import image3 from "@/images/animal-breeding/three.jpg"
-import image4 from "@/images/animal-breeding/four.jpg"
-import image5 from "@/images/animal-breeding/five.jpg"
-import image6 from "@/images/animal-breeding/six.jpg"
-import image7 from "@/images/animal-breeding/seven.jpg"
+// import image1 from "@/images/animal-breeding/one.jpg"
+import image1 from "../../../../images/animal-breeding/one.jpg"
+import image2 from "../../../../images/animal-breeding/two.jpg"
+import image3 from "../../../../images/animal-breeding/three.jpg"
+import image4 from "../../../../images/animal-breeding/four.jpg"
+import image5 from "../../../../images/animal-breeding/five.jpg"
+import image6 from "../../../../images/animal-breeding/six.jpg"
+import image7 from "../../../../images/animal-breeding/seven.jpg"
  
 
 
