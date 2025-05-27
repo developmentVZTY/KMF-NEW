@@ -7,6 +7,8 @@ import locationIco from '@/images/homeImages/quikLink/location.tif.svg';
 import commercialIco from '@/images/homeImages/quikLink/commercial.svg';
 import milkglassImg from '@/images/homeImages/milkglass.png';
 import milkglassKnImg from '@/images/homeImages/milk-glass-kn.png';
+import paneerImg from '@/images/homeImages/paneer/paneer-com.jpg';
+// import paneerVideo from '@/images/homeImages/paneer/paneer.mp4';
 import Fade from 'react-reveal/Fade';
 import { Zoom } from 'react-reveal';
 
@@ -439,13 +441,13 @@ const Home = () => {
             </div>
 
             <div className="relative w-full overflow-auto flex flex-col justify-center items-start space-y-5 ">
-              <div className="w-full flex flex-col shadow-md overflow-hidden space-y-4 justify-center items-center h-[430px]  rounded-lg">
+              <div className="w-full flex flex-col shadow-md overflow-hidden space-y-4 justify-center items-center   rounded-lg">
                 <h1 className="p-5 bg-primary-gradient text-white uppercase text-center">
-                  NEW ARRIVALS & BEST SELLING
+                  PANEER COMPITATION
                 </h1>
-                <marquee className=" w-full h-full flex  space-x-3">
-                  <div className='flex space-x-5 items-center'>
-                  {product?.map((item, id) => {
+                {/* <marquee className=" w-full h-full flex  space-x-3"> */}
+                  <div className='w-full flex space-x-5 justify-between items-center'>
+                {/*   {product?.map((item, id) => {
                     return (
                       <ArrivalCard
                         key={id}
@@ -454,10 +456,17 @@ const Home = () => {
                         link={`/en/our-product/${item?.attributes?.subcategory?.data?.id}`}
                       />
                     );
-                  })}
+                  })}     */}
+
+                  <div className='w-full md:w-[50%] md:h-[450px]' >
+                         <img className='w-full h-full object-contain' src={paneerImg.src} alt="" />
+                  </div>
+                  <div className='w-full md:w-[50%] md:h-[450px]' >
+                    <video className='w-full h-full object-contain' src="/video/paneer.mp4" autoPlay muted controls></video>
+                  </div>
                   </div>
                 
-                </marquee>
+                {/* </marquee> */}
               </div>
             </div>
           </div>
@@ -466,7 +475,7 @@ const Home = () => {
 
       {/* QUICK LINK  */}
 
-      <section className=" relative w-full h-auto pt-5 pb-6  z-[10]      ">
+      <section className=" relative w-full h-auto pt-10 pb-6  z-[10]      ">
         <video
           src="/video/vid.webm"
           autoPlay
