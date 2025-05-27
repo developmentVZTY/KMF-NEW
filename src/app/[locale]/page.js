@@ -7,6 +7,7 @@ import locationIco from '@/images/homeImages/quikLink/location.tif.svg';
 import commercialIco from '@/images/homeImages/quikLink/commercial.svg';
 import milkglassImg from '@/images/homeImages/milkglass.png';
 import milkglassKnImg from '@/images/homeImages/milk-glass-kn.png';
+import paneerImg from '@/images/homeImages/paneer/paneer-com.jpg';
 import Fade from 'react-reveal/Fade';
 import { Zoom } from 'react-reveal';
 
@@ -438,12 +439,12 @@ const Home = () => {
             </div>
 
             <div className="relative w-full overflow-auto flex flex-col justify-center items-start space-y-5 ">
-              <div className="w-full flex flex-col shadow-md overflow-hidden space-y-4 justify-center items-center h-[430px]  rounded-lg">
+              <div className="w-full flex flex-col shadow-md overflow-hidden space-y-4 justify-center items-center  rounded-lg">
                 <h1 className="p-5 bg-primary-gradient text-white uppercase text-center">
-                ಹೊಸ ನಂದಿನಿ ಉತ್ಪನ್ನಗಳು
+                ಪನೀರ್ ಸ್ಪರ್ಧೆ
 
                 </h1>
-                <div className="marquee-notification h-full flex justify-evenly space-x-3">
+                {/* <div className="marquee-notification h-full flex justify-evenly space-x-3">
                   {product?.map((item, id) => {
                     return (
                       <ArrivalCard
@@ -454,7 +455,26 @@ const Home = () => {
                       />
                     );
                   })}
-                </div>
+                </div> */}
+                  <div className='w-full flex space-x-5 justify-between items-center'>
+                                {/*   {product?.map((item, id) => {
+                                    return (
+                                      <ArrivalCard
+                                        key={id}
+                                        title={item?.attributes?.name}
+                                        imgUrl={item?.attributes?.image?.data?.[0]?.attributes?.url}
+                                        link={`/en/our-product/${item?.attributes?.subcategory?.data?.id}`}
+                                      />
+                                    );
+                                  })}     */}
+                
+                                  <div className='w-full md:w-[50%] md:h-[450px]' >
+                                         <img className='w-full h-full object-contain' src={paneerImg.src} alt="" />
+                                  </div>
+                                  <div className='w-full md:w-[50%] md:h-[450px]' >
+                                    <video className='w-full h-full object-contain' src="/video/paneer.mp4" autoPlay muted controls></video>
+                                  </div>
+                                  </div>
               </div>
             </div>
           </div>
@@ -463,7 +483,7 @@ const Home = () => {
 
       {/* QUICK LINK  */}
 
-      <section className=" relative w-full h-auto pt-5 pb-5  z-[10]      ">
+      <section className=" relative w-full h-auto pt-10 pb-5  z-[10]      ">
         <video
           src="/video/vid.webm"
           autoPlay
