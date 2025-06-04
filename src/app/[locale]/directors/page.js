@@ -64,16 +64,21 @@ function Directors() {
     
 
       <section className="w-full   pt-20  shadow-lg   ">
-      <div className="    relative w-full  flex justify-center items-center ">
+      <div className="    relative w-full  flex flex-col justify-center items-center ">
             
               <h1 className=" text-primary-main relative z-10 font-heading text-4xl font-extrabold uppercase">
               
           {locale === 'en' ? 'Board of Directors' : 'ಆಡಳಿತ ಮಂಡಳಿ ನಿರ್ದೇಶಕರು'}
-              </h1>
+              </h1> 
+              <br />
+              <p className=" text-primary-main relative z-10 font-heading text-xl font-extrabold uppercase">
+              
+          {locale === 'en' ? 'Will be updated soon' : 'Will be updated soon'}
+              </p>
             </div>
          
         <div className="  h-full  ">
-        <div className='  h-full flex justify-center items-center   '>
+        {/* <div className='  h-full flex justify-center items-center   '>
           <Fade bottom>
         <div className='w-full max-w-7xl mt-auto min-h-44  md:h-2/4   justify-center items-center  rounded-tl-3xl rounded-br-3xl flex flex-col   p-3'>
             <div className='md:w-1/2 flex   justify-center  items-center mt-6 lg:pt-3 lg:pb-3 md:mt-0 rounded-full transition-all duration-300 hover:scale-[1.1]  '  >
@@ -92,8 +97,8 @@ function Directors() {
 
         </Fade>
     
-      </div>
-          <div className="grid grid-cols-2 p-2 md:grid-cols-4  sm:grid-cols-3  place-items-center gap-5 md:flex-row mt-10 justify-center">
+      </div> */}
+          {/* <div className="grid grid-cols-2 p-2 md:grid-cols-4  sm:grid-cols-3  place-items-center gap-5 md:flex-row mt-10 justify-center">
 
     
             {directors?.map((item, id) => {
@@ -106,7 +111,7 @@ function Directors() {
                 /> 
               );
             })}
-          </div>
+          </div> */}
         </div>
       </section>
 
