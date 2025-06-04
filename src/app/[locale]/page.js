@@ -188,7 +188,7 @@ const Home = () => {
           loop
           playsInline></video>
          
-
+{/* 
        <p
   className="absolute bottom-[50px] ml-[-50px] font-semibold left-[50%] hidden md:block"
   style={{
@@ -196,11 +196,11 @@ const Home = () => {
   }}
 >
   SCROLL DOWN ↓
-</p>
-        {/* <iframe
+</p> */}
+        <iframe
           className="absolute bottom-0 left-[40%] sm:left-[45%] hidden md:block "
           width={100}
-          src="https://lottie.host/embed/8fc4672b-a346-4510-aef7-c3533c584e98/cTEVCEEGbE.json"></iframe> */}
+          src="https://lottie.host/embed/8fc4672b-a346-4510-aef7-c3533c584e98/cTEVCEEGbE.json"></iframe>
       </div>
 
       {/* important */}
