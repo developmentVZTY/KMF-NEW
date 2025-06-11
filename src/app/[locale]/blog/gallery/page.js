@@ -57,8 +57,8 @@ function Gallery() {
                     key={idx}
                     className={`${
                       currentIndex === idx
-                        ? 'text-primary-main cursor-pointer text-xl font-bold relative before:absolute before:-bottom-3 before:w-full before:h-0.5 before:bg-primary-main'
-                        : 'text-sm'
+                        ? 'text-primary-main cursor-pointer text-[11px] md:text-xl font-bold relative before:absolute before:-bottom-3 before:w-full before:h-0.5 before:bg-primary-main'
+                        : 'text-[11] md:text-sm'
                     } uppercase`}
                     onClick={() => handleClickItem(idx)}>
                     {item?.tabs}
@@ -69,7 +69,7 @@ function Gallery() {
                 <li
                   className={` 
                       
-                     text-sm   relative before:absolute  
+                     text-[11px] md:text-sm   relative before:absolute  
                          
                   uppercase`}>
                   {locale === 'kn' ? 'ಮಾದ್ಯಮ ಪ್ರಕಟಣೆ' : 'Press Release'}
@@ -80,7 +80,7 @@ function Gallery() {
                 <li
                   className={` 
                       
-                     text-sm   relative before:absolute  
+                     text-[11px] md:text-sm   relative before:absolute  
                          
                   uppercase`}>
                   {locale === 'kn' ? 'ಟಿ.ವಿ. ಜಾಹೀರಾತುಗಳು' : 'Tv commercial'}

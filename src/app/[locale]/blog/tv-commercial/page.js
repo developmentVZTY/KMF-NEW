@@ -104,7 +104,7 @@ function Tvcommercial() {
               <Link href={`/${locale}/blog/gallery`}>
                 <li
                   className={` 
-                   text-sm relative  
+                   text-[11px] md:text-sm relative  
                        
                   uppercase`}>
                   NEWS AND EVENTS
@@ -114,7 +114,7 @@ function Tvcommercial() {
               <Link href={`/${locale}/blog/press-release`}>
                 <li
                   className={` 
-                 text-sm relative  
+                 text-[11px] md:text-sm relative  
                        
                   uppercase`}>
                   {locale==='kn'?'ಮಾದ್ಯಮ ಪ್ರಕಟಣೆ':'Press Release'}
@@ -122,7 +122,7 @@ function Tvcommercial() {
               </Link>
               <li
                 className={` 
-                   text-primary-main text-xl font-bold relative before:absolute before:-bottom-3 before:w-full before:h-0.5 before:bg-primary-main
+                   text-primary-main text-[11px] md:text-xl font-bold relative before:absolute before:-bottom-3 before:w-full before:h-0.5 before:bg-primary-main
                          
                     uppercase`}>
                 {locale==='kn'?'ಟಿ.ವಿ. ಜಾಹೀರಾತುಗಳು':'Tv commercial'}s
@@ -131,7 +131,7 @@ function Tvcommercial() {
           </div>
         </div>
 
-        <div className="w-full h-auto   mt-10 flex  justify-center items-center   ">
+        <div className="w-full h-auto   mt-10 flex flex-col-reverse md:flex-row justify-center items-center   ">
           <section className="max-w-[1100px] p-3   m-auto w-full h-full bg-white    ">
             <div className="w-full h-full flex flex-col space-x-5 justify-center items-start lg:flex-row  ">
               <div className="w-full h-full flex flex-col space-y-28   ">
@@ -227,7 +227,7 @@ function Tvcommercial() {
           
           </section>
 
-          <div className=" w-full max-w-60 mr-32 md:mr-10 h-full transition-all duration-300  ">
+          <div className=" w-full md:max-w-60 mr-0 md:mr-10 h-full transition-all duration-300  ">
                
           <Link       href={`/${locale}/blog/tv-commercial/brandambassador`|| ''}>
                       <Fade right>

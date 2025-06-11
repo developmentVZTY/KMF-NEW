@@ -105,7 +105,7 @@ function BrandAmbassodor() {
               <Link href={`/${locale}/blog/gallery`}>
                 <li
                   className={` 
-                   text-sm relative  
+                   text-[11px] md:text-sm relative  
                        
                   uppercase`}>
                   NEWS AND EVENTS
@@ -115,7 +115,7 @@ function BrandAmbassodor() {
               <Link href={`/${locale}/blog/press-release`}>
                 <li
                   className={` 
-                 text-sm relative  
+                 text-[11px] md:text-sm relative  
                        
                   uppercase`}>
                   {locale==='kn'?'ಮಾದ್ಯಮ ಪ್ರಕಟಣೆ':'Press Release'}
@@ -126,7 +126,7 @@ function BrandAmbassodor() {
              
               <li
                 className={` 
-                   text-primary-main text-xl font-bold relative before:absolute before:-bottom-3 before:w-full before:h-0.5 before:bg-primary-main
+                   text-primary-main text-[11px] md:text-xl font-bold relative before:absolute before:-bottom-3 before:w-full before:h-0.5 before:bg-primary-main
                          
                     uppercase`}>
                 {locale==='kn'?'ಟಿ.ವಿ. ಜಾಹೀರಾತುಗಳು':'Tv commercial'}
@@ -137,7 +137,7 @@ function BrandAmbassodor() {
           </div>
         </div>
 
-        <div className="w-full h-auto   mt-10 flex gap-10   justify-center items-start     ">
+        <div className="w-full h-auto   mt-10 flex gap-10 flex-col-reverse md:flex-row  justify-center items-start     ">
           <section className="max-w-[1282px] m-auto w-full h-full bg-white   ">
             <div className="w-full h-full flex flex-col space-x-5 justify-between items-start lg:flex-row lg:justify-start">
               <div className="w-full h-full flex flex-col space-y-28   ">
@@ -302,7 +302,7 @@ function BrandAmbassodor() {
             </div>
 
           </section>
-          <div className=" w-full max-w-60 mr-10 h-full transition-all duration-300  ">
+          <div className=" w-full md:max-w-60 md:mr-10 h-full transition-all duration-300  ">
           <Link      href={`/${locale}/blog/tv-commercial/brandambassador`|| ''}>
                       <Fade right>
                     
@@ -332,7 +332,7 @@ function BrandAmbassodor() {
                        className="w-full list-none transition-all duration-300 bg-primary-main ">
                        <button className="flex items-center justify-between relative  text-light-light4 border-b-2 border-b-light4 p-1 md:p-4 w-full ">
                          <div className="w-full flex space-x-2 ">
-                           <span className="text-[8px]text-[8px] md:text-[10px] text-start text-white">{item?.attributes?.title}</span>
+                           <span className="text-[8px] md:text-[10px] text-start text-white">{item?.attributes?.title}</span>
                          </div>
                        </button>
                      </li>
