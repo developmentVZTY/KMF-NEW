@@ -8,6 +8,10 @@ import commercialIco from '@/images/homeImages/quikLink/commercial.svg';
 import milkglassImg from '@/images/homeImages/milkglass.png';
 import milkglassKnImg from '@/images/homeImages/milk-glass-kn.png';
 import paneerImg from '@/images/homeImages/paneer/paneer-com.jpg';
+import bannerImg from '@/images/homeImages/goodlife-banner.jpg';
+import noti1 from '@/images/homeImages/notification/Pista-Kulfi-02.jpg';
+import noti2 from '@/images/homeImages/notification/Ice ENG_page-0001.jpg';
+import noti3 from '@/images/homeImages/notification/Naturals-kannada.jpg';
 // import paneerVideo from '@/images/homeImages/paneer/paneer.mp4';
 import Fade from 'react-reveal/Fade';
 import { Zoom } from 'react-reveal';
@@ -182,15 +186,57 @@ const Home = () => {
 
         {/* <Preloader/> */}
       {/* HOME CARAOUSAL IMAGE */}
+
+
+       
+
+
+
+
       <div className={`w-full relative   ${isScroll ? 'h-[240px] md:h-[812px]' : 'h-[240px]  md:h-screen'}`}  >
-        <video
-          className={`w-full object-fill  ${isScroll ? 'h-[240px] md:h-[812px]' : 'h-[240px]  md:h-screen'}`}
-          src="/video/1StJune.mp4"
-          controls
-          muted
-          autoPlay
-          loop
-          playsInline></video>
+       <div
+               id="imageDiv"
+               className={`transition-all duration-700 scroll-smooth  ${isScroll ? 'h-[240px] md:h-[812px]' : 'h-[240px]  md:h-screen'}${
+                 
+                  // 'absolute w-full z-[-1] p-0 md:p-3 left-0 md:left-[-38%] h-[100%] md:h-[80%] top-0 md:top-[10%] overflow-hidden'
+                  'absolute w-full h-full z-[-1]'
+               }`}>
+               <div className=" relative w-full h-full">
+                 <section className={`w-full h-full relative`}>
+                   <Swiper
+                     autoplay={{
+                       delay: 10000,
+                       disableOnInteraction: false
+                     }}
+                     direction={'horizontal'}
+                     pagination={{
+                       clickable: true
+                     }}
+                     modules={[Pagination, Autoplay, FreeMode]}
+                     className="h-full">
+                      <SwiperSlide>
+                        <img
+                        src={bannerImg.src}
+                        alt=""
+                        className={`w-full object-fill  ${isScroll ? 'h-[240px] md:h-[812px]' : 'h-[240px]  md:h-screen'}`}
+                      />
+                         </SwiperSlide>
+                         <SwiperSlide>
+                            <video
+                            className={`w-full object-fill  ${isScroll ? 'h-[240px] md:h-[812px]' : 'h-[240px]  md:h-screen'}`}
+                            src="/video/banner.mov"
+                            controls
+                            muted
+                            autoPlay
+                            loop
+                            playsInline></video>
+                         </SwiperSlide>
+                       
+                     
+                   </Swiper>
+                 </section>
+               </div>
+             </div>
      
          {/* <p
   className="absolute bottom-[50px] ml-[-50px] font-semibold left-[50%] hidden md:block"
@@ -202,7 +248,7 @@ const Home = () => {
 </p> */}
 
         <iframe
-          className="absolute bottom-0 left-[40%] sm:left-[45%] hidden md:block "
+          className="absolute bottom-0 left-[40%] sm:left-[50%] ml-[-50px] hidden md:block z-10"
           width={100}
           src="https://lottie.host/embed/8fc4672b-a346-4510-aef7-c3533c584e98/cTEVCEEGbE.json"></iframe>
       </div>
@@ -441,13 +487,31 @@ const Home = () => {
             </div>
 
             <div className="relative w-full overflow-auto flex flex-col justify-center items-start space-y-5 ">
-              <div className="w-full flex flex-col shadow-md overflow-hidden space-y-4 justify-center items-center   rounded-lg">
-                <h1 className="p-5 bg-primary-gradient text-white uppercase text-center">
+              <div className="w-full flex flex-col md:flex-row gap-5 shadow-md overflow-hidden space-y-4 justify-center items-center   rounded-lg">
+                {/* <h1 className="p-5 bg-primary-gradient text-white uppercase text-center">
                   PANEER COMPITATION
-                </h1>
-                {/* <marquee className=" w-full h-full flex  space-x-3"> */}
-                  <div className='w-full flex space-x-5 justify-between items-center'>
-                {/*   {product?.map((item, id) => {
+                </h1> */}
+                 <div className='w-full md:w-[270px] h-[450px]' >
+                    <video className='w-full h-full object-contain' src="/video/paneer.mp4" autoPlay muted controls></video>
+                  </div>
+                 <div className='w-full md:w-[270px] h-[450px]' >
+                    <video className='w-full h-full object-contain' src="/video/video2.mp4" autoPlay muted controls></video>
+                  </div>
+                <marquee className="w-full md:w-[55%] h-full flex  space-x-3">
+                  <div className='w-full flex space-x-5 '>
+                  
+                   <div className='w-52  h-64   md:w-[360px] md:h-[450px] mr-5'>
+                    <img src={noti1.src} alt="" />
+                   </div>
+                    <div className='w-52  h-64   md:w-[360px] md:h-[450px] mr-5'>
+                    <img src={noti3.src} alt="" />
+                   </div>
+                   <div className='w-72  h-64   md:w-[520px] md:h-[450px] mr-5'>
+                    <img src={noti2.src} alt="" />
+                   </div>
+                  
+
+                  {/* {product?.map((item, id) => {
                     return (
                       <ArrivalCard
                         key={id}
@@ -458,15 +522,15 @@ const Home = () => {
                     );
                   })}     */}
 
-                  <div className='w-full md:w-[50%] md:h-[450px]' >
+                  {/* <div className='w-full md:w-[50%] md:h-[450px]' >
                          <img className='w-full h-full object-contain' src={paneerImg.src} alt="" />
                   </div>
                   <div className='w-full md:w-[50%] md:h-[450px]' >
                     <video className='w-full h-full object-contain' src="/video/paneer.mp4" autoPlay muted controls></video>
-                  </div>
+                  </div> */}
                   </div>
                 
-                {/* </marquee> */}
+                </marquee>
               </div>
             </div>
           </div>

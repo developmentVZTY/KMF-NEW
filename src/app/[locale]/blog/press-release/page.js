@@ -63,7 +63,7 @@ function PressRelease() {
               <Link href={`/${locale}/blog/gallery`}>
                 <li
                   className={` 
-                   text-sm relative  
+                   text-[11px] md:text-sm relative  
                        
                   uppercase`}>
                   NEWS AND EVENTS
@@ -73,7 +73,7 @@ function PressRelease() {
               <Link href={`/${locale}/blog/press-release`}>
                 <li
                   className={` 
-                  text-primary-main text-xl font-bold relative before:absolute before:-bottom-3 before:w-full before:h-0.5 before:bg-primary-main
+                  text-primary-main text-[11px] md:text-xl font-bold relative before:absolute before:-bottom-3 before:w-full before:h-0.5 before:bg-primary-main
                         
                    uppercase`}>
                   {locale==='kn'?'ಮಾದ್ಯಮ ಪ್ರಕಟಣೆ':'Press Release'}
@@ -85,7 +85,7 @@ function PressRelease() {
 
               <li
                 className={` 
-                text-sm relative  
+                text-[11px] md:text-sm relative  
                     
                uppercase`}>
                 {locale==='kn'?'ಟಿ.ವಿ. ಜಾಹೀರಾತುಗಳು':'Tv commercial'}s

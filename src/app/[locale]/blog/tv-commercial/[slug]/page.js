@@ -130,7 +130,7 @@ function TvcommercialDetails() {
               <Link href={`/${locale}/blog/gallery`}>
                 <li
                   className={` 
-                   text-sm relative  
+                   text-[11px] md:text-sm relative  
                        
                   uppercase`}>
                   NEWS AND EVENTS
@@ -140,7 +140,7 @@ function TvcommercialDetails() {
               <Link href={`/${locale}/blog/press-release`}>
                 <li
                   className={` 
-                 text-sm relative  
+                 text-[11px] md:text-sm relative  
                        
                   uppercase`}>
                   {locale==='kn'?'ಮಾದ್ಯಮ ಪ್ರಕಟಣೆ':'Press Release'}
@@ -151,7 +151,7 @@ function TvcommercialDetails() {
              
               <li
                 className={` 
-                   text-primary-main text-xl font-bold relative before:absolute before:-bottom-3 before:w-full before:h-0.5 before:bg-primary-main
+                   text-primary-main text-[11px] md:text-xl font-bold relative before:absolute before:-bottom-3 before:w-full before:h-0.5 before:bg-primary-main
                          
                     uppercase`}>
                 {locale==='kn'?'ಟಿ.ವಿ. ಜಾಹೀರಾತುಗಳು':'Tv commercial'}
@@ -162,7 +162,7 @@ function TvcommercialDetails() {
           </div>
         </div>
 
-        <div className="w-full h-auto    mt-10 flex   justify-center items-start   ">
+        <div className="w-full h-auto  flex-col-reverse md:flex-row  mt-10 flex   justify-center items-start   ">
           <section className="max-w-[1282px] p-2 m-auto w-full h-full bg-white   ">
             <div className="w-full h-full flex flex-col space-x-5 justify-between items-start lg:flex-row lg:justify-start">
               <div className="w-full h-full flex flex-col space-y-28   ">
@@ -385,7 +385,7 @@ function TvcommercialDetails() {
             </div>
 
           </section>
-          <div className=" p-2 w-full max-w-60 mr-10 h-full transition-all duration-300  ">
+          <div className=" p-2 w-full md:max-w-60 md:mr-10 h-full transition-all duration-300  ">
           <Link       href={`/${locale}/blog/tv-commercial/brandambassador`|| ''}>
                       <Fade right>
                     
