@@ -2,6 +2,7 @@
 
 import {  useEffect, useState } from 'react';
 import logo from '@/images/logo/logo.png';
+import corpoLogo from '@/images/logo/corpo-logo.jpg';
 import logokn from '@/images/logo/logo-kn.png';
 import rotatedLogo from '@/images/logo/logo-letter.png';
 
@@ -178,7 +179,7 @@ export const Header = () => {
 
         <Link href={`/${locale}/offers/`} className='w-20 h-15 fixed z-[10] right-5 top-2'>
 
-            <img src='/poster/offer.gif' className='w-full h-full'/>
+            <img  src='/poster/offer.gif' className='w-full h-full'/>
         </Link>
         {/* UPPER HEADER  */}
 
@@ -186,7 +187,7 @@ export const Header = () => {
           <div
             className={`w-full h-[120px] md:h-[150px] relative   bg-white p-2 md:p-10 flex justify-between items-center ${headerPathname?'hidden':''}  `}
             onMouseEnter={() => setOpen(null)}>
-            <div className=" max-w-xl flex justify-center items-center space-x-3">
+            <div className=" max-w-xl flex justify-center items-center space-x-1  md:space-x-3">
             <img
           src={locale === 'kn' ? logokn.src : logo.src} // Use rotated logo when rotateLogo is true
           alt="logo-home"
@@ -195,7 +196,11 @@ export const Header = () => {
               <p className={`font-extrabold font-heading   ${locale==='kn'?'text-[12px] sm:text-[18px]':'text-[9px] sm:text-[14px]'}`}>
                 {headerItem?.attributes?.title}
               </p>
+
+              <img className='w-14 h-14 md:w-28 md:h-28' src={corpoLogo.src} alt="" />
             </div>
+            
+
 
             <div className="flex md:flex-col h-full md:h-fit flex-col-reverse   ">
               <div className="flex justify-center items-end space-x-5">
