@@ -12,6 +12,8 @@ import bannerImg from '@/images/homeImages/goodlife-banner.jpg';
 import noti1 from '@/images/homeImages/notification/Pista-Kulfi-02.jpg';
 import noti2 from '@/images/homeImages/notification/Ice ENG_page-0001.jpg';
 import noti3 from '@/images/homeImages/notification/Naturals-kannada.jpg';
+import noti4 from '@/images/homeImages/notification/new-banner-1.jpeg';
+import noti5 from '@/images/homeImages/notification/new-banner.jpeg';
 // import paneerVideo from '@/images/homeImages/paneer/paneer.mp4';
 import Fade from 'react-reveal/Fade';
 import { Zoom } from 'react-reveal';
@@ -214,13 +216,13 @@ const Home = () => {
                      }}
                      modules={[Pagination, Autoplay, FreeMode]}
                      className="h-full">
-                      <SwiperSlide>
+                      {/* <SwiperSlide>
                         <img
                         src={bannerImg.src}
                         alt=""
                         className={`w-full object-fill  ${isScroll ? 'h-[240px] md:h-[812px]' : 'h-[240px]  md:h-screen'}`}
                       />
-                         </SwiperSlide>
+                         </SwiperSlide> */}
                          <SwiperSlide>
                             <video
                             className={`w-full object-fill  ${isScroll ? 'h-[240px] md:h-[812px]' : 'h-[240px]  md:h-screen'}`}
@@ -508,6 +510,12 @@ const Home = () => {
                    </div>
                    <div className='w-72  h-64   md:w-[520px] md:h-[450px] mr-5'>
                     <img src={noti2.src} alt="" />
+                   </div>
+                   <div className='w-72  h-64   md:w-[520px] md:h-[450px] mr-5'>
+                    <img className='w-full object-fill h-full' src={noti4.src} alt="" />
+                   </div>
+                   <div className='w-72  h-64   md:w-[520px] md:h-[450px] mr-5'>
+                    <img className='w-full object-fill h-full' src={noti5.src} alt="" />
                    </div>
                   
 
