@@ -9,6 +9,8 @@ import milkglassImg from '@/images/homeImages/milkglass.png';
 import milkglassKnImg from '@/images/homeImages/milk-glass-kn.png';
 import paneerImg from '@/images/homeImages/paneer/paneer-com.jpg';
 import bannerImg from '@/images/homeImages/goodlife-banner.jpg';
+import prideImg from '@/images/homeImages/pride-en.png';
+import gheeImg from '@/images/homeImages/ghee-en.png';
 import noti1 from '@/images/homeImages/notification/Pista-Kulfi-02.jpg';
 import noti2 from '@/images/homeImages/notification/Ice ENG_page-0001.jpg';
 import noti3 from '@/images/homeImages/notification/Naturals-kannada.jpg';
@@ -216,13 +218,20 @@ const Home = () => {
                      }}
                      modules={[Pagination, Autoplay, FreeMode]}
                      className="h-full">
-                      {/* <SwiperSlide>
+                      <SwiperSlide>
                         <img
-                        src={bannerImg.src}
+                        src={prideImg.src}
                         alt=""
                         className={`w-full object-fill  ${isScroll ? 'h-[240px] md:h-[812px]' : 'h-[240px]  md:h-screen'}`}
                       />
-                         </SwiperSlide> */}
+                         </SwiperSlide>
+                      <SwiperSlide>
+                        <img
+                        src={gheeImg.src}
+                        alt=""
+                        className={`w-full object-fill  ${isScroll ? 'h-[240px] md:h-[812px]' : 'h-[240px]  md:h-screen'}`}
+                      />
+                         </SwiperSlide>
                          <SwiperSlide>
                             <video
                             className={`w-full object-fill  ${isScroll ? 'h-[240px] md:h-[812px]' : 'h-[240px]  md:h-screen'}`}
