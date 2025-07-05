@@ -9,6 +9,8 @@ import milkglassImg from '@/images/homeImages/milkglass.png';
 import milkglassKnImg from '@/images/homeImages/milk-glass-kn.png';
 import paneerImg from '@/images/homeImages/paneer/paneer-com.jpg';
 import bannerImg from '@/images/homeImages/goodlife-banner.jpg';
+import prideImg from '@/images/homeImages/pride-kn.png';
+import gheeImg from '@/images/homeImages/ghee-kn.png';
 import noti1 from '@/images/homeImages/notification/Pista-Kulfi-kannada.jpg';
 import noti2 from '@/images/homeImages/notification/Ice KAN_page-0001.jpg';
 import noti3 from '@/images/homeImages/notification/Naturals-kannada.jpg';
@@ -196,7 +198,7 @@ const Home = () => {
                       <section className={`w-full h-full relative`}>
                         <Swiper
                           autoplay={{
-                            delay: 10000,
+                            delay: 5000,
                             disableOnInteraction: false
                           }}
                           direction={'horizontal'}
@@ -205,13 +207,20 @@ const Home = () => {
                           }}
                           modules={[Pagination, Autoplay, FreeMode]}
                           className="h-full">
-                           {/* <SwiperSlide>
-                             <img
-                             src={bannerImg.src}
-                             alt=""
-                             className={`w-full object-fill  ${isScroll ? 'h-[240px] md:h-[812px]' : 'h-[240px]  md:h-screen'}`}
-                           />
-                              </SwiperSlide> */}
+                          <SwiperSlide>
+                                                 <img
+                                                 src={prideImg.src}
+                                                 alt=""
+                                                 className={`w-full object-fill  ${isScroll ? 'h-[240px] md:h-[812px]' : 'h-[240px]  md:h-screen'}`}
+                                               />
+                                                  </SwiperSlide>
+                                               <SwiperSlide>
+                                                 <img
+                                                 src={gheeImg.src}
+                                                 alt=""
+                                                 className={`w-full object-fill  ${isScroll ? 'h-[240px] md:h-[812px]' : 'h-[240px]  md:h-screen'}`}
+                                               />
+                                                  </SwiperSlide>
                               <SwiperSlide>
                                  <video
                                  className={`w-full object-fill  ${isScroll ? 'h-[240px] md:h-[812px]' : 'h-[240px]  md:h-screen'}`}
