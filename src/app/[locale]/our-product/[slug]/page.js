@@ -10,10 +10,19 @@ import Link from 'next/link';
 import useLocale from '@/hooks/useLocale';
 import ProductAccordion from '@/components/ProductAccordion';
 import downarrowIco from '@/images/icons/downarrow.svg';
+import gheeImg from '@/images/product/ghee.jpg';
+import gheeImg2 from '@/images/product/ghee2.jpg';
 import uparrowIco from '@/images/icons/uparrow.svg';
 import { Fade } from 'react-reveal';
 import { useQuery } from '@tanstack/react-query';
-
+import { Swiper, SwiperSlide } from 'swiper/react';
+import {
+  Pagination,
+  Autoplay,
+  FreeMode,EffectFade
+} from 'swiper/modules';
+import { useSwiper } from 'swiper/react';
+import 'swiper/css/effect-fade';
 const fetchProducts = async (axios) => {
   const { data } = await axios.get('/api/product-sub-items?sort[0]=createdAt:asc');
   return data;
@@ -80,9 +89,73 @@ function Milk() {
   const handleAccordionClick = (accordionId) => {
     SetOpenAccordion(openAccordion === accordionId ? null : accordionId);
   };
+   const NextSlider = () => {
+      const swiper = useSwiper();
+  
+      useEffect(() => {
+        if (swiper.activeIndex === 0) {
+          setTimeout(() => {
+            swiper.slideTo(1, 1000);
+          }, 3000);
+        }
+      }, [swiper]);
+  
+      return <></>;
+    };
 
   return (
     <div className={`w-full h-full relative ${isScroll ? 'top-0' : ''}  `}>
+
+      {title?.attributes?.title ==='Ghee' ?  
+      
+      <div className={`w-full relative   ${isScroll ? 'h-[240px] md:h-[812px]' : 'h-[240px]  md:h-screen'}`}  >
+                  <div
+                          id="imageDiv"
+                          className={`transition-all duration-700 scroll-smooth  ${isScroll ? 'h-[240px] md:h-[812px]' : 'h-[240px]  md:h-screen'}${
+                            
+                          
+                             'absolute w-full h-full z-[-1]'
+                          }`}>
+                          <div className=" relative w-full h-full">
+                            <section className={`w-full h-full relative`}>
+                              <Swiper
+                              effect="fade"
+                                autoplay={{
+                                  delay: 3000,
+                                  disableOnInteraction: false
+                                }}
+                                direction={'horizontal'}
+                                pagination={{
+                                  clickable: true
+                                }}
+                                modules={[Pagination, Autoplay, FreeMode ,EffectFade]}
+                                className="h-full">
+                                <SwiperSlide>
+                                                       <img
+                                                       src={gheeImg.src}
+                                                       alt=""
+                                                       className={`w-full object-fill  ${isScroll ? 'h-[240px] md:h-[812px]' : 'h-[240px]  md:h-screen'}`}
+                                                     />
+                                                        </SwiperSlide>
+                                                     <SwiperSlide>
+                                                       <img
+                                                       src={gheeImg2.src}
+                                                       alt=""
+                                                       className={`w-full object-fill  ${isScroll ? 'h-[240px] md:h-[812px]' : 'h-[240px]  md:h-screen'}`}
+                                                     />
+                                                        </SwiperSlide>
+                                             
+                              </Swiper>
+                            </section>
+                          </div>
+                        </div>
+                
+            
+           
+                  
+                 </div>
+      
+      :  
       <section
         className={`w-full h-[300px]    relative  grid place-items-center ${
           isScroll ? 'md:h-[600px]' : 'h-[85vh]'
@@ -96,7 +169,11 @@ function Milk() {
           src={title?.attributes?.video?.data?.attributes?.url || '/video/our-product.mp4'}
           className={`w-full h-full  object-fill absolute top-0    `}
         />
-      </section>
+      </section>}
+    
+
+       
+     
 
       <section className="w-full h-full     bg-[#FFFFFF] ">
         <div className="w-full     pb-10">
@@ -122,6 +199,8 @@ function Milk() {
             {/* <p className="text-2xl ">{title?.attributes?.description}</p> */}
           </div>
 
+
+          
           <div
             className={`w-full h-full mt-10 max-w-[1600px] m-auto  flex flex-col space-y-5 ${
               title?.attributes?.Heading ? 'mt-' : ''
