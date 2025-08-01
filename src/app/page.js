@@ -352,9 +352,9 @@ const Home = () => {
         className="w-full  object-contain">
         <section className="w-full h-auto md:h-[600px] p-2 md:p-5 md:pt-12">
           <div className="md:mt-10 w-full space-y-5 flex flex-col justify-center items-center m-auto max-w-7xl">
-            <div className="w-full h-full flex md:flex-row justify-center items-center">
+            <div className="w-full h-full flex md:flex-row justify-center md:items-center">
               <Fade left>
-                <div className="flex relative w-full justify-center items-center flex-col space-y-7  lg:items-center lg:max-w-5xl lg:pr-10 bg-img">
+                <div className="flex relative h-full w-full justify-center items-center flex-col space-y-7 mt-4 p-2 md:p-6 z-10 lg:items-center lg:max-w-5xl lg:pr-10 bg-img-2">
                   <h1 className=" uppercase text-xs md:text-2xl font-heading text-center w-full shadow-md p-3 shadow-black bg-primary-gradient text-white">
                     About KMF
                   </h1>
@@ -512,13 +512,13 @@ const Home = () => {
                   <div className='w-full flex space-x-5 '>
                   
                    <div className='w-52  h-64   md:w-[360px] md:h-[450px] mr-5'>
-                    <img src={noti1.src} alt="" />
+                    <img className='w-full object-fill h-full'  src={noti1.src} alt="" />
                    </div>
                     <div className='w-52  h-64   md:w-[360px] md:h-[450px] mr-5'>
-                    <img src={noti3.src} alt="" />
+                    <img className='w-full object-fill h-full' src={noti3.src} alt="" />
                    </div>
                    <div className='w-72  h-64   md:w-[520px] md:h-[450px] mr-5'>
-                    <img src={noti2.src} alt="" />
+                    <img className='w-full object-fill h-full' src={noti2.src} alt="" />
                    </div>
                    <div className='w-72  h-64   md:w-[520px] md:h-[430px] mr-5'>
                     <img className='w-full object-fill h-full' src={noti4.src} alt="" />
@@ -575,7 +575,7 @@ const Home = () => {
 
           <div className="  w-full  m-auto h-auto mt-10  relative   ">
             <Fade bottom>
-              <div className="max-w-3xl m-auto grid grid-cols-2 md:grid-cols-3 gap-5">
+              <div className="max-w-3xl m-auto grid grid-cols-3 md:grid-cols-3 gap-5">
                 <Link href="/en/comingsoon">
                   <LinkCard title="Place Your Order" imgUrl={cartIco.src} />
                 </Link>
