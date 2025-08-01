@@ -79,6 +79,7 @@ function Milk() {
 
   const product = allproducts?.data?.filter(
     (item) => item?.attributes?.subcategory?.data?.id === parseInt(param?.slug)
+   
   );
 
   const title = subcategories?.data?.filter((item) => item?.id === parseInt(param?.slug))[0];
@@ -88,25 +89,13 @@ function Milk() {
   };
   const handleAccordionClick = (accordionId) => {
     SetOpenAccordion(openAccordion === accordionId ? null : accordionId);
+    
   };
-   const NextSlider = () => {
-      const swiper = useSwiper();
-  
-      useEffect(() => {
-        if (swiper.activeIndex === 0) {
-          setTimeout(() => {
-            swiper.slideTo(1, 1000);
-          }, 3000);
-        }
-      }, [swiper]);
-  
-      return <></>;
-    };
-
+ 
   return (
     <div className={`w-full h-full relative ${isScroll ? 'top-0' : ''}  `}>
 
-      {title?.attributes?.title ==='Ghee' ?  
+      {/* { title?.attributes?.title ==='Ghee' ?  
       
       <div className={`w-full relative   ${isScroll ? 'h-[240px] md:h-[812px]' : 'h-[240px]  md:h-screen'}`}  >
                   <div
@@ -131,18 +120,26 @@ function Milk() {
                                 modules={[Pagination, Autoplay, FreeMode ,EffectFade]}
                                 className="h-full">
                                 <SwiperSlide>
-                                                       <img
-                                                       src={gheeImg.src}
-                                                       alt=""
-                                                       className={`w-full object-fill  ${isScroll ? 'h-[240px] md:h-[812px]' : 'h-[240px]  md:h-screen'}`}
-                                                     />
+                                                       <video
+          muted
+          playsInline
+          autoPlay
+          loop
+          controls
+          src={title?.attributes?.video?.data?.attributes?.url || '/video/our-product.mp4'}
+          className={`w-full h-full  object-fill absolute top-0    `}
+        />
                                                         </SwiperSlide>
                                                      <SwiperSlide>
-                                                       <img
-                                                       src={gheeImg2.src}
-                                                       alt=""
-                                                       className={`w-full object-fill  ${isScroll ? 'h-[240px] md:h-[812px]' : 'h-[240px]  md:h-screen'}`}
-                                                     />
+                                                      <video
+          muted
+          playsInline
+          autoPlay
+          loop
+          controls
+          src={title?.attributes?.video?.data?.attributes?.url || '/video/our-product.mp4'}
+          className={`w-full h-full  object-fill absolute top-0    `}
+        />
                                                         </SwiperSlide>
                                              
                               </Swiper>
@@ -155,7 +152,7 @@ function Milk() {
                   
                  </div>
       
-      :  
+      :   */}
       <section
         className={`w-full h-[300px]    relative  grid place-items-center ${
           isScroll ? 'md:h-[600px]' : 'h-[85vh]'
@@ -169,7 +166,8 @@ function Milk() {
           src={title?.attributes?.video?.data?.attributes?.url || '/video/our-product.mp4'}
           className={`w-full h-full  object-fill absolute top-0    `}
         />
-      </section>}
+      </section>
+      {/* } */}
     
 
        

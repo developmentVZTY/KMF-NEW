@@ -186,7 +186,7 @@ const Home = () => {
   return (
     <div
      
-      className={`w-full h-full absolute    z-[-1] ${isScroll ? 'top-[170px] md:top-48 ' : ''}  `}>
+      className={`w-full h-full absolute  z-[-1] `}>
 
         {/* <Preloader/> */}
       {/* HOME CARAOUSAL IMAGE */}
@@ -197,10 +197,10 @@ const Home = () => {
 
 
 
-      <div className={`w-full relative   ${isScroll ? 'h-[240px] md:h-[812px]' : 'h-[240px]  md:h-screen'}`}  >
+      <div className={`w-full relative  h-[240px] md:h-[812px]`}  >
        <div
                id="imageDiv"
-               className={`transition-all duration-700 scroll-smooth  ${isScroll ? 'h-[240px] md:h-[812px]' : 'h-[240px]  md:h-screen'}${
+               className={`transition-all duration-700 scroll-smooth  h-[240px] md:h-[812px]'${
                  
                   // 'absolute w-full z-[-1] p-0 md:p-3 left-0 md:left-[-38%] h-[100%] md:h-[80%] top-0 md:top-[10%] overflow-hidden'
                   'absolute w-full h-full z-[-1]'
@@ -234,7 +234,7 @@ const Home = () => {
                          </SwiperSlide> */}
                          <SwiperSlide>
                             <video
-                            className={`w-full object-fill  ${isScroll ? 'h-[240px] md:h-[812px]' : 'h-[240px]  md:h-screen'}`}
+                            className={`w-full object-fill  h-[240px] md:h-[812px]`}
                             src="/video/banner.mov"
                             controls
                             muted
