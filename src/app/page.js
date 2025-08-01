@@ -218,7 +218,7 @@ const Home = () => {
                      }}
                      modules={[Pagination, Autoplay, FreeMode]}
                      className="h-full">
-                      <SwiperSlide>
+                      {/* <SwiperSlide>
                         <img
                         src={prideImg.src}
                         alt=""
@@ -231,7 +231,7 @@ const Home = () => {
                         alt=""
                         className={`w-full object-fill  ${isScroll ? 'h-[240px] md:h-[812px]' : 'h-[240px]  md:h-screen'}`}
                       />
-                         </SwiperSlide>
+                         </SwiperSlide> */}
                          <SwiperSlide>
                             <video
                             className={`w-full object-fill  ${isScroll ? 'h-[240px] md:h-[812px]' : 'h-[240px]  md:h-screen'}`}
@@ -502,13 +502,13 @@ const Home = () => {
                 {/* <h1 className="p-5 bg-primary-gradient text-white uppercase text-center">
                   PANEER COMPITATION
                 </h1> */}
-                 <div className='w-full md:w-[270px] h-[450px]' >
+                 {/* <div className='w-full md:w-[270px] h-[450px]' >
                     <video className='w-full h-full object-contain' src="/video/paneer.mp4" autoPlay muted controls></video>
                   </div>
                  <div className='w-full md:w-[270px] h-[450px]' >
                     <video className='w-full h-full object-contain' src="/video/video2.mp4" autoPlay muted controls></video>
-                  </div>
-                <marquee className="w-full md:w-[55%] h-full flex  space-x-3">
+                  </div> */}
+                <marquee className="w-full h-full flex  space-x-3">
                   <div className='w-full flex space-x-5 '>
                   
                    <div className='w-52  h-64   md:w-[360px] md:h-[450px] mr-5'>
@@ -520,10 +520,10 @@ const Home = () => {
                    <div className='w-72  h-64   md:w-[520px] md:h-[450px] mr-5'>
                     <img src={noti2.src} alt="" />
                    </div>
-                   <div className='w-72  h-64   md:w-[520px] md:h-[450px] mr-5'>
+                   <div className='w-72  h-64   md:w-[520px] md:h-[430px] mr-5'>
                     <img className='w-full object-fill h-full' src={noti4.src} alt="" />
                    </div>
-                   <div className='w-72  h-64   md:w-[520px] md:h-[450px] mr-5'>
+                   <div className='w-72  h-64   md:w-[520px] md:h-[430px] mr-5'>
                     <img className='w-full object-fill h-full' src={noti5.src} alt="" />
                    </div>
                   
