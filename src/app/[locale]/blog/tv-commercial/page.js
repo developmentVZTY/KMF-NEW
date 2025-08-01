@@ -132,6 +132,7 @@ function Tvcommercial() {
         </div>
 
         <div className="w-full h-auto   mt-10 flex flex-col-reverse md:flex-row justify-center items-center   ">
+          
           <section className="max-w-[1100px] p-3   m-auto w-full h-full bg-white    ">
             <div className="w-full h-full flex flex-col space-x-5 justify-center items-start lg:flex-row  ">
               <div className="w-full h-full flex flex-col space-y-28   ">
@@ -227,6 +228,8 @@ function Tvcommercial() {
           
           </section>
 
+        
+
           <div className=" w-full md:max-w-60 mr-0 md:mr-10 h-full transition-all duration-300  ">
                
           <Link       href={`/${locale}/blog/tv-commercial/brandambassador`|| ''}>
@@ -268,6 +271,27 @@ function Tvcommercial() {
                 })}
               </div>
         </div>
+
+          <div className="relative w-full overflow-auto flex flex-col justify-center items-start space-y-5 mt-10 ">
+                        <div className="w-full flex flex-col md:flex-row gap-5 shadow-md overflow-hidden space-y-4 justify-center items-center   rounded-lg">
+                          {/* <h1 className="p-5 bg-primary-gradient text-white uppercase text-center">
+                            PANEER COMPITATION
+                          </h1> */}
+                           <div className='w-full md:w-[320px] h-[550px]' >
+                              <video className='w-full h-full object-contain' src="/video/paneer.mp4" autoPlay muted controls></video>
+                            </div>
+                           <div className='w-full md:w-[320px] h-[550px]' >
+                              <video className='w-full h-full object-contain' src="/video/video2.mp4" autoPlay muted controls></video>
+                            </div>
+                           <div className='w-full md:w-[320px] h-[550px]' >
+                              <video className='w-full h-full object-contain' src="/video/reel-1.mp4" autoPlay muted controls></video>
+                            </div>
+                           <div className='w-full md:w-[320px] h-[550px]' >
+                              <video className='w-full h-full object-contain' src="/video/reel-2.mp4" autoPlay muted controls></video>
+                            </div>
+                       
+                        </div>
+                      </div>
       </section>
 
       {selectedVideo && (

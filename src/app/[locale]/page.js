@@ -207,20 +207,20 @@ const Home = () => {
                           }}
                           modules={[Pagination, Autoplay, FreeMode]}
                           className="h-full">
-                          <SwiperSlide>
+                          {/* <SwiperSlide>
                                                  <img
                                                  src={prideImg.src}
                                                  alt=""
                                                  className={`w-full object-fill  ${isScroll ? 'h-[240px] md:h-[812px]' : 'h-[240px]  md:h-screen'}`}
                                                />
-                                                  </SwiperSlide>
-                                               <SwiperSlide>
+                                                  </SwiperSlide> */}
+                                               {/* <SwiperSlide>
                                                  <img
                                                  src={gheeImg.src}
                                                  alt=""
                                                  className={`w-full object-fill  ${isScroll ? 'h-[240px] md:h-[812px]' : 'h-[240px]  md:h-screen'}`}
                                                />
-                                                  </SwiperSlide>
+                                                  </SwiperSlide> */}
                               <SwiperSlide>
                                  <video
                                  className={`w-full object-fill  ${isScroll ? 'h-[240px] md:h-[812px]' : 'h-[240px]  md:h-screen'}`}
@@ -528,13 +528,13 @@ const Home = () => {
               </div> */}
                <div className="w-full flex flex-col md:flex-row gap-5 shadow-md overflow-hidden space-y-4 justify-center items-center   rounded-lg">
                             
-                               <div className='w-full md:w-[270px] h-[450px]' >
+                               {/* <div className='w-full md:w-[270px] h-[450px]' >
                                   <video className='w-full h-full object-contain' src="/video/paneer.mp4" autoPlay muted controls></video>
                                 </div>
                                <div className='w-full md:w-[270px] h-[450px]' >
                                   <video className='w-full h-full object-contain' src="/video/video2.mp4" autoPlay muted controls></video>
-                                </div>
-                              <marquee className="w-full md:w-[55%] h-full flex  space-x-3">
+                                </div> */}
+                              <marquee className="w-full  h-full flex  space-x-3">
                                 <div className='w-full flex space-x-5 '>
                                 
                                  <div className='w-52  h-64   md:w-[360px] md:h-[450px] mr-5'>
