@@ -538,13 +538,13 @@ const Home = () => {
                                 <div className='w-full flex space-x-5 '>
                                 
                                  <div className='w-52  h-64   md:w-[360px] md:h-[450px] mr-5'>
-                                  <img src={noti1.src} alt="" />
+                                  <img className='w-full object-fill h-full' src={noti1.src} alt="" />
                                  </div>
                                   <div className='w-52  h-64   md:w-[360px] md:h-[450px] mr-5'>
-                                  <img src={noti3.src} alt="" />
+                                  <img className='w-full object-fill h-full' src={noti3.src} alt="" />
                                  </div>
                                  <div className='w-72  h-64   md:w-[520px] md:h-[450px] mr-5'>
-                                  <img src={noti2.src} alt="" />
+                                  <img className='w-full object-fill h-full' src={noti2.src} alt="" />
                                  </div>
                                  <div className='w-72  h-64   md:w-[520px] md:h-[450px] mr-5'>
                                   <img className='w-full object-fill h-full' src={noti4.src} alt="" />
@@ -580,9 +580,9 @@ const Home = () => {
             </div>
           </Fade>
 
-          <div className="  w-full h-auto  relative   ">
+          <div className="  w-full  m-auto h-auto mt-10  relative   ">
             <Fade bottom>
-              <div className="max-w-max m-auto p-3 flex flex-col justify-center items-center gap-10 md:gap-40  sm:flex-row sm:justify-around sm:items-center sm:flex-wrap">
+              <div className="max-w-3xl m-auto grid grid-cols-3 md:grid-cols-3 gap-5">
                 <Link href="/kn/comingsoon">
                   <LinkCard title="Place Your Order" imgUrl={cartIco.src} />
                 </Link>
