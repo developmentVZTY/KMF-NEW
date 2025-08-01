@@ -175,7 +175,7 @@ export const Header = () => {
 
   return (
     <>
-      <div className={` w-full h-full relative z-20  ${isScroll?'block':'hidden'}  `}>
+      <div className={` w-full h-full relative z-20  block  `}>
 
         <Link href={`/${locale}/offers/`} className='w-20 h-15 fixed z-[10] right-5 top-2'>
 
