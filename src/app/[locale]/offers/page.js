@@ -27,7 +27,8 @@ function Offers() {
 
       <div className='w-full relative'>
 
-  <iframe allowfullscreen="allowfullscreen" scrolling="no" className="fp-iframe object-contain" src="https://heyzine.com/flip-book/169ef9721a.html" style={{border: '1px solid lightgray' ,width: '100%' ,height: '688px'}} ></iframe>
+  {/* <iframe allowfullscreen="allowfullscreen" scrolling="no" className="fp-iframe object-contain" src="https://heyzine.com/flip-book/169ef9721a.html" style={{border: '1px solid lightgray' ,width: '100%' ,height: '688px'}} ></iframe> */}
+  <iframe allowfullscreen="allowfullscreen" scrolling="no" className="fp-iframe object-contain" src="https://heyzine.com/flip-book/3feafe4f5f.html#page/1" style={{border: '1px solid lightgray' ,width: '100%' ,height: '688px'}} ></iframe>
 
   
     <div className='w-full rounded-full absolute right-[10px] bottom-[50px] sm:hidden  flex  justify-end items-end space-x-2'>

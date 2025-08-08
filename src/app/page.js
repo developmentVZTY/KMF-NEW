@@ -511,10 +511,10 @@ const Home = () => {
                 <marquee className="w-full h-full flex  space-x-3">
                   <div className='w-full flex space-x-5 '>
                   
-                   <div className='w-52  h-64   md:w-[360px] md:h-[450px] mr-5'>
+                   <div className='w-72  h-64   md:w-[360px] md:h-[450px] mr-5'>
                     <img className='w-full object-fill h-full'  src={noti1.src} alt="" />
                    </div>
-                    <div className='w-52  h-64   md:w-[360px] md:h-[450px] mr-5'>
+                    <div className='w-72  h-64   md:w-[360px] md:h-[450px] mr-5'>
                     <img className='w-full object-fill h-full' src={noti3.src} alt="" />
                    </div>
                    <div className='w-72  h-64   md:w-[520px] md:h-[450px] mr-5'>
