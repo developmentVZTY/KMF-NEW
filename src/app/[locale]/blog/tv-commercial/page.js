@@ -292,6 +292,12 @@ function Tvcommercial() {
                            <div className='w-[40%] h-[200px]  md:w-[320px] md:h-[550px]' >
                               <video className='w-full h-full object-contain' src="/video/new-reel.mp4" autoPlay muted controls></video>
                             </div>
+                           <div className='w-[40%] h-[200px]  md:w-[320px] md:h-[550px]' >
+                              <video className='w-full h-full object-contain' src="/video/reel-5.mp4" autoPlay muted controls></video>
+                            </div>
+                           <div className='w-[40%] h-[200px]  md:w-[320px] md:h-[550px]' >
+                              <video className='w-full h-full object-contain' src="/video/reel-6.mp4" autoPlay muted controls></video>
+                            </div>
                        
                         </div>
                       </div>
