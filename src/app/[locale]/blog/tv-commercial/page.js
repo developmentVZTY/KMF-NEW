@@ -278,26 +278,38 @@ function Tvcommercial() {
                             PANEER COMPITATION
                           </h1> */}
                            <div className='w-[40%] h-[200px] md:w-[320px] md:h-[550px]' >
-                              <video className='w-full h-full object-contain' src="/video/paneer.mp4" autoPlay muted controls></video>
+                              <video className='w-full h-full object-contain' src="/video/reel-7.mp4" autoPlay muted controls></video>
                             </div>
-                           <div className='w-[40%] h-[200px]  md:w-[320px] md:h-[550px]' >
-                              <video className='w-full h-full object-contain' src="/video/video2.mp4" autoPlay muted controls></video>
-                            </div>
-                           <div className='w-[40%] h-[200px]  md:w-[320px] md:h-[550px]' >
-                              <video className='w-full h-full object-contain' src="/video/reel-1.mp4" autoPlay muted controls></video>
-                            </div>
-                           <div className='w-[40%] h-[200px]  md:w-[320px] md:h-[550px]' >
-                              <video className='w-full h-full object-contain' src="/video/reel-2.mp4" autoPlay muted controls></video>
-                            </div>
-                           <div className='w-[40%] h-[200px]  md:w-[320px] md:h-[550px]' >
-                              <video className='w-full h-full object-contain' src="/video/new-reel.mp4" autoPlay muted controls></video>
-                            </div>
-                           <div className='w-[40%] h-[200px]  md:w-[320px] md:h-[550px]' >
+                            {/* <div className='w-[40%] h-[200px]  md:w-[320px] md:h-[550px]' >
+                              <video className='w-full h-full object-contain' src="/video/reel-6.mp4" autoPlay muted controls></video>
+                            </div> */}
+                             <div className='w-[40%] h-[200px]  md:w-[320px] md:h-[550px]' >
                               <video className='w-full h-full object-contain' src="/video/reel-5.mp4" autoPlay muted controls></video>
                             </div>
-                           <div className='w-[40%] h-[200px]  md:w-[320px] md:h-[550px]' >
-                              <video className='w-full h-full object-contain' src="/video/reel-6.mp4" autoPlay muted controls></video>
+                             <div className='w-[40%] h-[200px]  md:w-[320px] md:h-[550px]' >
+                              <video className='w-full h-full object-contain' src="/video/new-reel.mp4" autoPlay muted controls></video>
                             </div>
+                             <div className='w-[40%] h-[200px]  md:w-[320px] md:h-[550px]' >
+                              <video className='w-full h-full object-contain' src="/video/reel-2.mp4" autoPlay muted controls></video>
+                            </div>
+                             <div className='w-[40%] h-[200px]  md:w-[320px] md:h-[550px]' >
+                              <video className='w-full h-full object-contain' src="/video/reel-1.mp4" autoPlay muted controls></video>
+                            </div>
+                              <div className='w-[40%] h-[200px]  md:w-[320px] md:h-[550px]' >
+                              <video className='w-full h-full object-contain' src="/video/video2.mp4" autoPlay muted controls></video>
+                            </div>
+                             <div className='w-[40%] h-[200px] md:w-[320px] md:h-[550px]' >
+                              <video className='w-full h-full object-contain' src="/video/paneer.mp4" autoPlay muted controls></video>
+                            </div>
+
+
+                          
+                         
+                          
+                          
+                          
+                          
+                           
                        
                         </div>
                       </div>
