@@ -242,6 +242,16 @@ const Home = () => {
                             loop
                             playsInline></video>
                          </SwiperSlide>
+                         <SwiperSlide>
+                            <video
+                            className={`w-full object-fill  h-[240px] md:h-[812px]`}
+                            src="/video/teachers-day.mp4"
+                            controls
+                            muted
+                            autoPlay
+                            loop
+                            playsInline></video>
+                         </SwiperSlide>
                        
                      
                    </Swiper>
