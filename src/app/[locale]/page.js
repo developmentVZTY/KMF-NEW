@@ -16,6 +16,8 @@ import noti2 from '@/images/homeImages/notification/Ice KAN_page-0001.jpg';
 import noti3 from '@/images/homeImages/notification/Naturals-kannada.jpg';
 import noti4 from '@/images/homeImages/notification/new-banner-1.jpeg';
 import noti5 from '@/images/homeImages/notification/new-banner.jpeg';
+import noti6 from '@/images/homeImages/quality-ghee.jpg';
+import noti7 from '@/images/homeImages/image-milk.jpg';
 import Fade from 'react-reveal/Fade';
 import { Zoom } from 'react-reveal';
 
@@ -231,16 +233,7 @@ const Home = () => {
                                  loop
                                  playsInline></video>
                               </SwiperSlide>
-                              <SwiperSlide>
-                                 <video
-                                 className={`w-full object-fill  ${isScroll ? 'h-[240px] md:h-[812px]' : 'h-[240px]  md:h-screen'}`}
-                                 src="/video/teachers-day.mp4"
-                                 controls
-                                 muted
-                                 autoPlay
-                                 loop
-                                 playsInline></video>
-                              </SwiperSlide>
+                             
                             
                           
                         </Swiper>
@@ -546,7 +539,12 @@ const Home = () => {
                                 </div> */}
                               <marquee className="w-full  h-full flex  space-x-3">
                                 <div className='w-full flex space-x-5 '>
-                                
+                                <div className='w-72  h-64   md:w-[360px] md:h-[450px] mr-5'>
+                                                    <img className='w-full object-fill h-full'  src={noti7.src} alt="" />
+                                                   </div>
+                                                   <div className='w-72  h-64   md:w-[360px] md:h-[450px] mr-5'>
+                                                    <img className='w-full object-fill h-full'  src={noti6.src} alt="" />
+                                                   </div>
                                  <div className='w-72  h-64   md:w-[360px] md:h-[450px] mr-5'>
                                   <img className='w-full object-fill h-full' src={noti1.src} alt="" />
                                  </div>
