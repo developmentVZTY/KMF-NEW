@@ -226,7 +226,7 @@ const Home = () => {
                               <SwiperSlide>
                                  <video
                                  className={`w-full object-fill  ${isScroll ? 'h-[240px] md:h-[812px]' : 'h-[240px]  md:h-screen'}`}
-                                 src="/video/new-ghee-video.mp4"
+                                 src="/video/navratri.mp4"
                                  controls
                                  muted
                                  autoPlay
