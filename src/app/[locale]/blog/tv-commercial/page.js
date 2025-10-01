@@ -277,6 +277,9 @@ function Tvcommercial() {
                           {/* <h1 className="p-5 bg-primary-gradient text-white uppercase text-center">
                             PANEER COMPITATION
                           </h1> */}
+                           {/* <div className='w-[40%] h-[200px] md:w-[320px] md:h-[550px]' >
+                              <video className='w-full h-full object-contain' src="/video/Reel-10.mp4" autoPlay muted controls></video>
+                            </div> */}
                            <div className='w-[40%] h-[200px] md:w-[320px] md:h-[550px]' >
                               <video className='w-full h-full object-contain' src="/video/reel-9.MP4" autoPlay muted controls></video>
                             </div>
