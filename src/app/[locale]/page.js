@@ -223,6 +223,17 @@ const Home = () => {
                                                  className={`w-full object-fill  ${isScroll ? 'h-[240px] md:h-[812px]' : 'h-[240px]  md:h-screen'}`}
                                                />
                                                   </SwiperSlide> */}
+                                                  
+                                                                           <SwiperSlide>
+                                                                              <video
+                                                                              className={`w-full object-fill  h-[240px] md:h-[812px]`}
+                                                                              src="/video/Reel-10.mp4"
+                                                                              controls
+                                                                              muted
+                                                                              autoPlay
+                                                                              loop
+                                                                              playsInline></video>
+                                                                           </SwiperSlide>
                               <SwiperSlide>
                                  <video
                                  className={`w-full object-fill  ${isScroll ? 'h-[240px] md:h-[812px]' : 'h-[240px]  md:h-screen'}`}
@@ -234,7 +245,7 @@ const Home = () => {
                                  playsInline></video>
                               </SwiperSlide>
                              
-                          
+                        
                           
                         </Swiper>
                       </section>
