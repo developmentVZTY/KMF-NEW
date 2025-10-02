@@ -211,7 +211,7 @@ const Home = () => {
                  <section className={`w-full h-full relative`}>
                    <Swiper
                      autoplay={{
-                       delay: 10000,
+                       delay: 58000,
                        disableOnInteraction: false
                      }}
                      direction={'horizontal'}
