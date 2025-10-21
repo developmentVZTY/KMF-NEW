@@ -224,20 +224,11 @@ const Home = () => {
                                                />
                                                   </SwiperSlide> */}
                                                   
-                                                                           <SwiperSlide>
-                                                                              <video
-                                                                              className={`w-full object-fill  h-[240px] md:h-[812px]`}
-                                                                              src="/video/Reel-10.mp4"
-                                                                              controls
-                                                                              muted
-                                                                              autoPlay
-                                                                              loop
-                                                                              playsInline></video>
-                                                                           </SwiperSlide>
+                                                                           
                               <SwiperSlide>
                                  <video
                                  className={`w-full object-fill  ${isScroll ? 'h-[240px] md:h-[812px]' : 'h-[240px]  md:h-screen'}`}
-                                 src="/video/NDay10kan.mp4"
+                                 src="/video/Diwali-kn.mp4"
                                  controls
                                  muted
                                  autoPlay
