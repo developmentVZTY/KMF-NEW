@@ -238,23 +238,14 @@ const Home = () => {
                          <SwiperSlide>
                             <video
                             className={`w-full object-fill  h-[240px] md:h-[812px]`}
-                            src="/video/Reel-10.mp4"
+                            src="/video/Diwali.mp4"
                             controls
                             muted
                             autoPlay
                             loop
                             playsInline></video>
                          </SwiperSlide>
-                         <SwiperSlide>
-                            <video
-                            className={`w-full object-fill  h-[240px] md:h-[812px]`}
-                            src="/video/NDay10.mp4"
-                            controls
-                            muted
-                            autoPlay
-                            loop
-                            playsInline></video>
-                         </SwiperSlide>
+                       
                        
                      
                    </Swiper>
