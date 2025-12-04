@@ -212,13 +212,18 @@ export const Header = () => {
                       </div>
 
                       <p className={` font-heading flex flex-col font-black/10 ${locale==='kn'?'text-[15px]':'text-[12px]'}  `}>
-                        {headerItem?.attributes?.address?.map((item, id) => {
+                        {/* {headerItem?.attributes?.address?.map((item, id) => {
                           return (
                             <span key={id} className="block">
                               {item?.children[0]?.text}
                             </span>
                           );
-                        })}
+                        })} */}
+                        <span  className="block">
+                          12915, KMF Complex,</span>
+                          <span>
+Bengaluru - 560 029
+                        </span>
                       </p>
                     </div>
 
@@ -263,13 +268,25 @@ export const Header = () => {
                      <MdCall size={30} color='#30ABDC' className='transition-all duration-150 hover:scale-[1.1] cursor-pointer'/>
                     </div>
                     <p className="text-[12px] w-[350px] font-heading  font-black/10 ">
-                      {headerItem?.attributes?.time?.map((item, id) => {
+                      {/* {headerItem?.attributes?.time?.map((item, id) => {
                         return (
                           <span key={id} className="block ">
                             {item?.children[0]?.text}
                           </span>
                         );
-                      })}
+                      })} */}
+                      <span  className="block ">
+                            1800 425 8030 toll free 
+                          </span>
+                          <span  className="block ">
+                            10:00 AM - 5:45 PM
+                          </span>
+                          <span  className="block ">
+                            Except on Second Saturday and Fourth
+                          </span>
+                          <span  className="block ">
+                            Saturday, Sunday & State Govt. Holidays
+                          </span>
                     </p>
                   </div>
                 </div>
