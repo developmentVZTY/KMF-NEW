@@ -11,6 +11,24 @@ import paneerImg from '@/images/homeImages/paneer/paneer-com.jpg';
 import bannerImg from '@/images/homeImages/goodlife-banner.jpg';
 import prideImg from '@/images/homeImages/pride-en.png';
 import gheeImg from '@/images/homeImages/ghee-en.png';
+import cert1 from '@/images/homeImages/certi/NABL_24b98112d5.jpg';
+import cert2 from '@/images/homeImages/certi/FSSAI_5e558596c3.png';
+import cert3 from '@/images/homeImages/certi/download_1_c196cc66d7.png';
+import cert4 from '@/images/homeImages/certi/FSSC_bb32b0de10.png';
+
+import know1 from '@/images/homeImages/certi/nutrition.svg';
+import know2 from '@/images/homeImages/certi/importance.svg';
+import know3 from '@/images/homeImages/certi/type.svg';
+import know4 from '@/images/homeImages/certi/age.svg';
+
+import feat1 from '@/images/homeImages/feat/Ksheera_Sagara_white.png';
+import feat2 from '@/images/homeImages/feat/starpi.jpg';
+import feat3 from '@/images/homeImages/feat/strpi2.jpg';
+import feat4 from '@/images/homeImages/feat/stapi3.jpg';
+import feat5 from '@/images/homeImages/feat/far.jpg';
+import feat6 from '@/images/homeImages/feat/featured1.jpg';
+
+
 import noti1 from '@/images/homeImages/notification/Pista-Kulfi-02.jpg';
 import noti2 from '@/images/homeImages/notification/Ice ENG_page-0001.jpg';
 import noti3 from '@/images/homeImages/notification/Naturals-kannada.jpg';
@@ -46,6 +64,7 @@ import useLocale from '@/hooks/useLocale.js';
 import { useSwiper } from 'swiper/react';
 import { useQuery } from '@tanstack/react-query';
 import Preloader from '@/components/Preloader.js';
+import { notices } from './tenter-home.js';
 
 const fetchCertificates = async (axios) => {
   const { data } = await axios.get('/api/certificates');
@@ -185,6 +204,40 @@ const Home = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+
+  const swiperItems = [
+    {
+        img: feat1.src,
+        button: "Ksheerasagara Magazine",
+        link: "https://www.kmfnandini.coop/en/portfolio#ksheerasagara"
+    },
+    {
+        img: feat2.src,
+        button: "Featured On",
+        link: "https://www.kmfnandini.coop/en/our-product"
+    },
+    {
+        img: feat3.src,
+        button: "Gallery",
+        link: "https://www.kmfnandini.coop/en/blog/gallery"
+    },
+    {
+        img: feat4.src,
+        button: "Portfolio KMF",
+        link: "https://www.kmfnandini.coop/en/portfolio"
+    },
+    {
+        img: feat5.src,
+        button: "SOCIAL RESPONSIBILITIES",
+        link: "https://www.kmfnandini.coop/en/social-responsibility/nandini-hostels"
+    },
+    {
+        img: feat6.src,
+        button: "Ksheera Bhagya",
+        link: "https://www.kmfnandini.coop/en/portfolio/ksheerabhagaya"
+    }
+];
   return (
     <div
      
@@ -323,7 +376,8 @@ const Home = () => {
               scrollbar={{ draggable: true }}
               loop={true}
               className="max-w-7xl">
-              {homeCards?.data?.map((card, id) => {
+
+              {/* {homeCards?.data?.map((card, id) => {
                 const {
                   attributes: {
                     image: {
@@ -341,7 +395,18 @@ const Home = () => {
                     <Card imgUrl={imgUrl} title={title} link={link} />
                   </SwiperSlide>
                 );
+              })} */}
+
+                {swiperItems?.map((item, id) => {
+               
+
+                return (
+                  <SwiperSlide className="swiper-sldier-card lg:p-10" key={id}>
+                    <Card imgUrl={item.img} title={item.button} link={item.link} />
+                  </SwiperSlide>
+                );
               })}
+              
               <NextSlider />
             </Swiper>
           </div>
@@ -362,8 +427,9 @@ const Home = () => {
                   <h1 className=" uppercase text-xs md:text-2xl font-heading text-center w-full shadow-md p-3 shadow-black bg-primary-gradient text-white">
                     About KMF
                   </h1>
-                  <div className="space-y-6">
-                    <TypeWriter text={homedetails?.[0]?.about1 || ''} delay={70} />
+                  <div className="space-y-6 text-white">
+                    KMF stands for KARNATAKA MILK FEDERATION’S LTD. KMF is a 5 Decade Organization covering around 24,000 Villages procuring about 85Lakh kg of milk per day. Emphasizing on “Quality Excellence from Cow to Consumer”. KMF heralding economic, social and cultural prosperity in the lives of our milk producer members by promoting vibrant, self-sustaining and holistic cooperative dairy development in Karnataka State.
+                    {/* <TypeWriter text={homedetails?.[0]?.about1 || ''} delay={70} /> */}
                   </div>
                 </div>
               </Fade>
@@ -372,8 +438,9 @@ const Home = () => {
                   <h1 className="text-xs md:text-2xl font-heading text-center w-full shadow-md p-3 shadow-black bg-primary-gradient text-white">
                     OUR BRAND NANDINI
                   </h1>
-                  <div className="space-y-6">
-                    <TypeWriter text={homedetails?.[0]?.about2 || ''} delay={70} />
+                  <div className="space-y-6 text-white">
+                    NANDINI MILK is a brand owned by KMF. Nandini was founded in 1974 by the government of Karnataka as Karnataka Dairy Development Corporation (KDDC). NANDINI brand became household name in state of Karnataka. In 1955 First Dairy was established in the State of Karnataka, belonging to KODAGU district at KUDIGE Village. Later in the year 1965, the biggest dairy was built in Bengaluru. Nandini Brand includes varieties of Milk & Milk Products.
+                    {/* <TypeWriter text={homedetails?.[0]?.about2 || ''} delay={70} /> */}
                   </div>
                 </div>
               </Fade>
@@ -439,7 +506,7 @@ const Home = () => {
               <KnmModel closeModal={isModalOpen} kymMilk={knowMilkItem} close={setIsModalOpen} />
 
               <div className="w-full grid grid-cols-2 justify-center p-6  items-center ">
-                {knowYourMilk?.data?.map((item, idx) => (
+                {/* {knowYourMilk?.data?.map((item, idx) => (
                   <div
                     key={idx}
                     onClick={() => handleKnowMilk(item)}
@@ -453,7 +520,57 @@ const Home = () => {
                       {item?.attributes?.title}
                     </p>
                   </div>
-                ))}
+                ))} */}
+                 <div
+                   
+                    className="flex w-32 flex-col justify-center items-center space-y-4 cursor-pointer">
+                    <img
+                      src={know1.src}
+                      alt="Know Your Milk"
+                      className="transition-all duration-200 hover:scale-110"
+                    />
+                    <p className="text-white text-xs md:text-lg text-center font-heading">
+                      Essential nutrition in milk
+                    </p>
+                  </div>
+                  <div
+                   
+                    className="flex w-32 flex-col justify-center items-center space-y-4 cursor-pointer">
+                    <img
+                      src={know2.src}
+                      alt="Know Your Milk"
+                      className="transition-all duration-200 hover:scale-110"
+                    />
+                    <p className="text-white text-xs md:text-lg text-center font-heading">
+                      Importance of milk
+                    </p>
+                  </div>
+                    <div
+                   
+                    className="flex w-32 flex-col justify-center items-center space-y-4 cursor-pointer">
+                    <img
+                      src={know4.src}
+                      alt="Know Your Milk"
+                      className="transition-all duration-200 hover:scale-110"
+                    />
+                    <p className="text-white text-xs md:text-lg text-center font-heading">
+                      Class & type of milk
+                    </p>
+                  </div>
+                  <div
+                   
+                    className="flex w-32 flex-col justify-center items-center space-y-4 cursor-pointer">
+                    <img
+                      src={know3.src}
+                      alt="Know Your Milk"
+                      className="transition-all duration-200 hover:scale-110"
+                    />
+                    <p className="text-white text-xs md:text-lg text-center font-heading">
+                      Milk for every Age group
+                    </p>
+                  </div>
+                
+                  
               </div>
             </div>
           </div>
@@ -480,7 +597,7 @@ const Home = () => {
                 <div
                   className="w-full h-[375px] p-4 marquee flex flex-col"
                   style={{ transform: `translateY(${scrollY * 0.5}px)` }}>
-                  {currentYearData
+                  {/* {currentYearData
                     ?.sort((a, b) => b.attributes.createdAt - a.attributes.createdAt)
                     ?.map((item, id) => {
                       return (
@@ -489,6 +606,18 @@ const Home = () => {
                           className="bg-white border m-2 p-2 text-xs flex justify-center items-center space-x-2 rounded w-full ">
                           <FaRegHandPointRight size={20} color="red" />
                           <p className="w-full "> {item?.attributes?.title}</p>
+                        </div>
+                      );
+                    })} */}
+                 
+
+                     {notices.map((text, id) => {
+                      return (
+                        <div
+                          key={id}
+                          className="bg-white border m-2 p-2 text-xs flex justify-center items-center space-x-2 rounded w-full ">
+                          <FaRegHandPointRight size={20} color="red" />
+                          <p className="w-full ">{text}</p>
                         </div>
                       );
                     })}
@@ -664,19 +793,48 @@ const Home = () => {
               }}
               modules={[FreeMode, Autoplay]}
               className="w-full">
-              {certificates?.data?.[0]?.attributes?.image?.data?.map((item, idx) => {
-                return (
-                  <SwiperSlide key={idx} className="w-72 md:m-auto">
+              {/* {certificates?.data?.[0]?.attributes?.image?.data?.map((item, idx) => {
+                return ( */}
+                  <SwiperSlide className="w-72 md:m-auto">
                     <div className="max-w-96 h-40   m-auto   bg-white border-orange-500-500 p-2 border-orange-400 border-8 rounded-lg">
                       <img
-                        src={item?.attributes?.url}
-                        alt={`Certificate ${idx + 1}`}
+                        src={cert1.src}
+                        alt={`Certificate 1`}
                         className="w-96 h-32 object-contain rounded-md inline-block"
                       />
                     </div>
                   </SwiperSlide>
-                );
-              })}
+                  <SwiperSlide className="w-72 md:m-auto">
+                    <div className="max-w-96 h-40   m-auto   bg-white border-orange-500-500 p-2 border-orange-400 border-8 rounded-lg">
+                      <img
+                        src={cert2.src}
+                        alt={`Certificate 2`}
+                        className="w-96 h-32 object-contain rounded-md inline-block"
+                      />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide className="w-72 md:m-auto">
+                    <div className="max-w-96 h-40   m-auto   bg-white border-orange-500-500 p-2 border-orange-400 border-8 rounded-lg">
+                      <img
+                        src={cert3.src}
+                        alt={`Certificate 3`}
+                        className="w-96 h-32 object-contain rounded-md inline-block"
+                      />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide className="w-72 md:m-auto">
+                    <div className="max-w-96 h-40   m-auto   bg-white border-orange-500-500 p-2 border-orange-400 border-8 rounded-lg">
+                      <img
+                        src={cert4.src}
+                        alt={`Certificate 4`}
+                        className="w-96 h-32 object-contain rounded-md inline-block"
+                      />
+                    </div>
+                  </SwiperSlide>
+
+                
+                {/* );
+              })} */}
             </Swiper>
           </div>
         </div>

@@ -23,6 +23,34 @@ import band1 from '@/images/portfolio/brand-1.jpeg';
 import band2 from '@/images/portfolio/brand-2.jpeg';
 import band3 from '@/images/portfolio/brand-3.jpeg';
 import band4 from '@/images/portfolio/brand-4.jpg';
+
+import home1 from '@/images/portfolio/home/1.jpg';
+import home2 from '@/images/portfolio/home/2.png';
+import home3 from '@/images/portfolio/home/3.png';
+import home4 from '@/images/portfolio/home/4.png';
+import home5 from '@/images/portfolio/home/5.png';
+import home6 from '@/images/portfolio/home/6.png';
+import home7 from '@/images/portfolio/home/7.png';
+
+// import pdf1 from '@/images/portfolio/pdf/Ksheera_March_2024_4438048407.pdf';
+// import home8 from '@/images/portfolio/home/8.png';
+
+import spon1 from '@/images/portfolio/spon/1.jpg';
+import spon2 from '@/images/portfolio/spon/2.jpg';
+import spon3 from '@/images/portfolio/spon/3.jpg';
+import spon4 from '@/images/portfolio/spon/4.jpg';
+import spon5 from '@/images/portfolio/spon/5.png';
+import spon6 from '@/images/portfolio/spon/6.png';
+import spon7 from '@/images/portfolio/spon/7.jpg';
+import spon8 from '@/images/portfolio/spon/8.jpg';
+import spon9 from '@/images/portfolio/spon/9.jpg';
+import spon10 from '@/images/portfolio/spon/10.png';
+
+
+import home9 from '@/images/portfolio/home/9.png';
+import home10 from '@/images/portfolio/home/10.png';
+import home11 from '@/images/portfolio/home/11.png';
+
 // import  from "'@/images/portfolio/flag.jpg"
 import { Carousel as Carousels } from 'react-responsive-carousel';
 
@@ -338,17 +366,81 @@ window.addEventListener('resize',handleResize);
                 }}
                 modules={[Pagination, Autoplay, FreeMode]}
                 className="h-full">
-                {banners?.map((item, id) => {
-                  return (
-                    <SwiperSlide key={id}>
+                {/* {banners?.map((item, id) => {
+                  return ( */}
+                    <SwiperSlide >
                       <img
-                        src={item?.attributes?.banner?.data?.attributes?.url}
+                        src={home1.src}
                         alt=""
                         className="w-full h-full"
                       />
                     </SwiperSlide>
-                  );
-                })}
+                     <SwiperSlide >
+                      <img
+                        src={home2.src}
+                        alt=""
+                        className="w-full h-full"
+                      />
+                    </SwiperSlide>
+                     <SwiperSlide >
+                      <img
+                        src={home3.src}
+                        alt=""
+                        className="w-full h-full"
+                      />
+                    </SwiperSlide>
+                     <SwiperSlide >
+                      <img
+                        src={home4.src}
+                        alt=""
+                        className="w-full h-full"
+                      />
+                    </SwiperSlide>
+                     <SwiperSlide >
+                      <img
+                        src={home5.src}
+                        alt=""
+                        className="w-full h-full"
+                      />
+                    </SwiperSlide>
+                     <SwiperSlide >
+                      <img
+                        src={home6.src}
+                        alt=""
+                        className="w-full h-full"
+                      />
+                    </SwiperSlide>
+                     <SwiperSlide >
+                      <img
+                        src={home7.src}
+                        alt=""
+                        className="w-full h-full"
+                      />
+                    </SwiperSlide>
+                     <SwiperSlide >
+                      <img
+                        src={home9.src}
+                        alt=""
+                        className="w-full h-full"
+                      />
+                    </SwiperSlide>
+                     <SwiperSlide >
+                      <img
+                        src={home10.src}
+                        alt=""
+                        className="w-full h-full"
+                      />
+                    </SwiperSlide>
+                     <SwiperSlide >
+                      <img
+                        src={home11.src}
+                        alt=""
+                        className="w-full h-full"
+                      />
+                    </SwiperSlide>
+                   
+                  {/* );
+                })} */}
               </Swiper>
             </section>
           </div>
@@ -1033,7 +1125,10 @@ window.addEventListener('resize',handleResize);
 
                     <Fade right>
                     <div className="mt-6">
-                      {achievments?.filter(
+                      <p className="text-lg md:text-xl ">State entirely covered by Cooperative Dairy Development.</p>
+                       <p className="text-lg md:text-xl ">Elected boards are in position in all the District Milk Unions and Federation.</p>
+                        <p className="text-lg md:text-xl ">Lowest price spread between procurement price and sale price. Due to efficiency of operations in the Federation and Unions, more than 79% of the consumer rupee is passed on to producers.</p>
+                      {/* {achievments?.filter(
                         (item) =>
                           item?.attributes?.title === 'KMF Achievements' ||
                           item?.attributes?.title === 'ಕಹಾಮ ಸಾಧನೆಗಳು'
@@ -1055,7 +1150,7 @@ window.addEventListener('resize',handleResize);
                             }
                           }}
                         />
-                      )}
+                      )} */}
                     </div>
                     </Fade>
                   </div>
@@ -1064,7 +1159,7 @@ window.addEventListener('resize',handleResize);
             </div>
 
             <div className="w-full h-auto flex flex-wrap justify-center">
-              {achievments?.map((item, id) => {
+              {/* {achievments?.map((item, id) => {
              
                 if (
                   item?.attributes?.title !== 'KMF Achievements' &&
@@ -1123,13 +1218,165 @@ window.addEventListener('resize',handleResize);
                     </div>
                   );
                 }
-              })}
+              })} */}
+
+                
+                    <div
+                   
+                      className=" max-w-xl w-full m-3 md:m-10 rounded-3xl  shadow-2xl h-auto bg-slate-50 p-6 md:p-16">
+                      <div className="m-auto">
+                        <div className="w-[300px] md:w-[450px] relative">
+                          <img
+                            src="/images/heading/heading-color/group.png"
+                            className="absolute z-[1] w-fit top-[-25px] md:top-[-48px]   object-contain"
+                          />
+
+                          <h1 className="w-full relative max-w-[250px] md:max-w-[300px] m-auto  text-primary-main text-sm md:text-xl  font-bold z-[100] ">
+                            {' '}
+                          Empowering Producers for Rural Prosperity
+                          </h1>
+                        </div>
+                        <div className=" mt-20">
+                          <ul className="list-disc text-left">
+                             <li>Overwhelming majority of the beneficiaries of Cooperative Dairy Development programs in the State belong to vulnerable section in villages: Total membership of 24.36 lakh covers around 4.34 lakh (20%) landless laborers, 9.01 lakhs(40%) small farmers, 7.11 lakhs(32%) marginal farmers and 3.90 lakhs(18%) others. Of the total membership, 8.66 Lakh (39%) are women members and 3.94 Lakh (18%) belong to SC/ST groups.
+</li>
+                            {/* <button
+                             
+                              className="w-full flex justify-end text-primary-main">
+                              {readMore
+                                ? locale === 'en'
+                                  ? 'Read Less'
+                                  : 'ಕಡಿಮೆ ಓದಿ....'
+                                : locale === 'en'
+                                  ? 'Read More'
+                                  : 'ಮತ್ತಷ್ಟು ಓದಿ....'}
+                            </button> */}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+               
+
+
+
+                <div
+                   
+                      className=" max-w-xl w-full m-3 md:m-10 rounded-3xl  shadow-2xl h-auto bg-slate-50 p-6 md:p-16">
+                      <div className="m-auto">
+                        <div className="w-[300px] md:w-[450px] relative">
+                          <img
+                            src="/images/heading/heading-color/group.png"
+                            className="absolute z-[1] w-fit top-[-25px] md:top-[-48px]   object-contain"
+                          />
+
+                          <h1 className="w-full relative max-w-[250px] md:max-w-[300px] m-auto  text-primary-main text-sm md:text-xl  font-bold z-[100] ">
+                            {' '}
+                          Input Support to Producers
+                          </h1>
+                        </div>
+                        <div className=" mt-20">
+                          <ul className="list-disc text-left">
+                             <li>Cattle Feed Production and Sales - Supply of balanced cattle feed in sufficient quantity at reasonable price is very essential for boosting milk production in the State. During 2015-16, KMF has supplied 5,07,851 MTs of Cattle feed, which is 16% higher than the 4,37,008 MTs sold during 2014-15.
+</li>
+                            {/* <button
+                             
+                              className="w-full flex justify-end text-primary-main">
+                              {readMore
+                                ? locale === 'en'
+                                  ? 'Read Less'
+                                  : 'ಕಡಿಮೆ ಓದಿ....'
+                                : locale === 'en'
+                                  ? 'Read More'
+                                  : 'ಮತ್ತಷ್ಟು ಓದಿ....'}
+                            </button> */}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                     <div
+                   
+                      className=" max-w-xl w-full m-3 md:m-10 rounded-3xl  shadow-2xl h-auto bg-slate-50 p-6 md:p-16">
+                      <div className="m-auto">
+                        <div className="w-[300px] md:w-[450px] relative">
+                          <img
+                            src="/images/heading/heading-color/group.png"
+                            className="absolute z-[1] w-fit top-[-25px] md:top-[-48px]   object-contain"
+                          />
+
+                          <h1 className="w-full relative max-w-[250px] md:max-w-[300px] m-auto  text-primary-main text-sm md:text-xl  font-bold z-[100] ">
+                            {' '}
+                          Profitable Disposal of Farmers’ Produce – Milk
+
+                          </h1>
+                        </div>
+                        <div className=" mt-20">
+                          <ul className="list-disc text-left">
+                             <li>KMF is making all out efforts in market development and is successful in garnering a significant market share of over 65% in liquid milk, which is considered to be highest by a cooperative brand in any city. KMF is marketing over 34.66 LLPD of milk at present.
+
+</li>
+                            {/* <button
+                             
+                              className="w-full flex justify-end text-primary-main">
+                              {readMore
+                                ? locale === 'en'
+                                  ? 'Read Less'
+                                  : 'ಕಡಿಮೆ ಓದಿ....'
+                                : locale === 'en'
+                                  ? 'Read More'
+                                  : 'ಮತ್ತಷ್ಟು ಓದಿ....'}
+                            </button> */}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                     <div
+                   
+                      className=" max-w-xl w-full m-3 md:m-10 rounded-3xl  shadow-2xl h-auto bg-slate-50 p-6 md:p-16">
+                      <div className="m-auto">
+                        <div className="w-[300px] md:w-[450px] relative">
+                          <img
+                            src="/images/heading/heading-color/group.png"
+                            className="absolute z-[1] w-fit top-[-25px] md:top-[-48px]   object-contain"
+                          />
+
+                          <h1 className="w-full relative max-w-[250px] md:max-w-[300px] m-auto  text-primary-main text-sm md:text-xl  font-bold z-[100] ">
+                            {' '}
+                          Processing Excellence for Quality and Cost Competitiveness
+
+                          </h1>
+                        </div>
+                        <div className=" mt-20">
+                          <ul className="list-disc text-left">
+                             <li>Bengaluru Milk Union, Mother Dairy, DK Milk Union and Tumakuru Milk Unions have been certified for ISO 22000 (Food Safety Management Systems). Kolar and Mysuru Milk Unions have been certified for ISO 9001 (Quality Management Systems). Other Unions are in the process of implementing ISO 22000.
+
+</li>
+                            {/* <button
+                             
+                              className="w-full flex justify-end text-primary-main">
+                              {readMore
+                                ? locale === 'en'
+                                  ? 'Read Less'
+                                  : 'ಕಡಿಮೆ ಓದಿ....'
+                                : locale === 'en'
+                                  ? 'Read More'
+                                  : 'ಮತ್ತಷ್ಟು ಓದಿ....'}
+                            </button> */}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="ksheerasagaramagazine" className="w-full h-auto mt-10 mb-10  ">
+      {/* <section id="ksheerasagaramagazine" className="w-full h-auto mt-10 mb-10  ">
         <div className=" m-auto  ">
           <div  className=" mt-20 mb-5 w-full  flex  justify-center items-center">
             <Fade top>
@@ -1153,16 +1400,11 @@ window.addEventListener('resize',handleResize);
                 }}
                 modules={[FreeMode, Autoplay]}
                 className="w-[350px] lg:w-full h-[530px]">
-               {pdf?.map((item,id)=>{
-             
-                return(
-                  <>
-                  <SwiperSlide key={id}>
-                  <PdfPreview id='ksheerasagara' className="" pdfUrl={item?.attributes?.pdf?.data?.attributes?.url}  count={id+1}/>
+              
+                  <SwiperSlide >
+                  <PdfPreview id='ksheerasagara' className="" pdfUrl="https://gleeful-moonbeam-95e429.netlify.app/Ksheera_March_2024_4438048407.pdf"/>
                 </SwiperSlide>
-                </>
-                )
-               })}   
+                
                 
               </Swiper>
             </div>
@@ -1182,7 +1424,7 @@ window.addEventListener('resize',handleResize);
                 return(
                   <>
                   <SwiperSlide key={id}>
-                  <PdfPreview id='ksheerasagara' className="" pdfUrl={item?.attributes?.pdf?.data?.attributes?.url}  count={id+1}/>
+                  <PdfPreview id='ksheerasagara' className="" pdfUrl={pdf1}  count={id+1}/>
                 </SwiperSlide>
                 </>
                 )
@@ -1192,7 +1434,7 @@ window.addEventListener('resize',handleResize);
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section id="SPONSORED" className="w-full h-auto  md:pt-10  md:pb-20  ">
         <div className="w-full text-center">
@@ -1220,15 +1462,60 @@ window.addEventListener('resize',handleResize);
              
               modules={[FreeMode, Autoplay]}
               className="max-w-7xl m-auto hidden">
-              {sponsore[0]?.attributes?.image?.data?.map((item, idx) => {
-                return (
-                  <SwiperSlide key={idx} className="hidden">
+              {/* {sponsore[0]?.attributes?.image?.data?.map((item, idx) => {
+                return ( */}
+                  <SwiperSlide  className="hidden">
                     <div className="flex justify-center items-center hidden  w-52 h-52 ">
-                      <img className="m-auto w-44 h-44" src={item?.attributes?.url} alt="" />
+                      <img className="m-auto w-44 h-44" src={spon1.src} alt="" />
                     </div>
                   </SwiperSlide>
-                );
-              })}
+                    <SwiperSlide  className="hidden">
+                    <div className="flex justify-center items-center hidden  w-52 h-52 ">
+                      <img className="m-auto w-44 h-44" src={spon2.src} alt="" />
+                    </div>
+                  </SwiperSlide>
+                    <SwiperSlide  className="hidden">
+                    <div className="flex justify-center items-center hidden  w-52 h-52 ">
+                      <img className="m-auto w-44 h-44" src={spon3.src} alt="" />
+                    </div>
+                  </SwiperSlide>
+                    <SwiperSlide  className="hidden">
+                    <div className="flex justify-center items-center hidden  w-52 h-52 ">
+                      <img className="m-auto w-44 h-44" src={spon4.src} alt="" />
+                    </div>
+                  </SwiperSlide>
+                    <SwiperSlide  className="hidden">
+                    <div className="flex justify-center items-center hidden  w-52 h-52 ">
+                      <img className="m-auto w-44 h-44" src={spon5.src} alt="" />
+                    </div>
+                  </SwiperSlide>
+                    <SwiperSlide  className="hidden">
+                    <div className="flex justify-center items-center hidden  w-52 h-52 ">
+                      <img className="m-auto w-44 h-44" src={spon6.src} alt="" />
+                    </div>
+                  </SwiperSlide>
+                    <SwiperSlide  className="hidden">
+                    <div className="flex justify-center items-center hidden  w-52 h-52 ">
+                      <img className="m-auto w-44 h-44" src={spon7.src} alt="" />
+                    </div>
+                  </SwiperSlide>
+                    <SwiperSlide  className="hidden">
+                    <div className="flex justify-center items-center hidden  w-52 h-52 ">
+                      <img className="m-auto w-44 h-44" src={spon8.src} alt="" />
+                    </div>
+                  </SwiperSlide>
+                    <SwiperSlide  className="hidden">
+                    <div className="flex justify-center items-center hidden  w-52 h-52 ">
+                      <img className="m-auto w-44 h-44" src={spon9.src} alt="" />
+                    </div>
+                  </SwiperSlide>
+                   <SwiperSlide  className="hidden">
+                    <div className="flex justify-center items-center hidden  w-52 h-52 ">
+                      <img className="m-auto w-44 h-44" src={spon10.src} alt="" />
+                    </div>
+                  </SwiperSlide>
+                {/* );
+              })} */}
             </Swiper>
             <Swiper
               watchSlidesProgress={true}

@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import locationVectorIco from '../images/footer/locationVector.svg';
 import callVectorIco from '../images/footer/callVector.svg';
 import msgVectorIco from '../images/footer/msgVector.svg';
+import footerbg from '@/images/homeImages/footer-bg.png';
 
 import { MdLocationOn, MdEmail } from 'react-icons/md';
 import { FcCustomerSupport, FcCallback } from 'react-icons/fc';
@@ -35,8 +36,8 @@ function Footer() {
     <section className="w-full mt-10   md:h-[462px]    relative       ">
 
       <Follow/>
-    
-      {/* <img src='https://www.dodladairy.com/static/images/footer-bg.png' className='absolute inset-0 w-full h-full object-fill'/> */}
+
+      <img src={footerbg.src} className='absolute inset-0 w-full h-full object-fill'/>
       <div className=" z-1 relative h-fit  max-w-[1282px]  pt-5  m-auto flex flex-col justify-between items-center md:items-start">
         <div className="   md:mt-[167px] w-full h-full flex  justify-center items-start   md:flex-row md:justify-between md:items-start">
           <div className="flex flex-col justify-center items-center md:items-start p-1 max-w-96 space-y-5">
@@ -49,7 +50,8 @@ function Footer() {
 
               <div className="flex flex-col justify-center items-center md:items-start space-y-5">
                 <p className="text-neutral-dark1 text-left text-[7px] md:text-sm ">
-                  {footerItem?.[0]?.address}
+                  {/* {footerItem?.[0]?.address} */}
+                  Karnataka Co-operative Milk Producers Federation Ltd No 2915, D. R. College Post, Dr M H Marigowda Road, Bangalore-560029, Karnataka.
                 </p>
               </div>
             </div>
@@ -67,7 +69,8 @@ function Footer() {
 
               <div className="flex flex-col justify-center items-start space-y-5">
                 <p className="text-neutral-dark1 text-left text-[7px] md:text-sm">
-                  {footerItem?.[0]?.telephone}
+                  {/* {footerItem?.[0]?.telephone} */}
+                  080-260 96800 Helpline : 1800 425 8030 toll free 10:00AM - 5:45PM (Except Second Saturday, Fourth Saturday, Sunday and other State Government Holidays)
                 </p>
               </div>
             </div>
@@ -83,7 +86,11 @@ function Footer() {
             <div className="flex justify-center items-start space-x-3">
             <MdEmail size={20} height={30} color='red'/>
               <div className="flex flex-col justify-center items-start space-y-5">
-                <p className="text-neutral-dark1 text-left text-[7px] md:text-sm"> {footerItem?.[0]?.email}</p>
+                <p className="text-neutral-dark1 text-left text-[7px] md:text-sm"> 
+                  {/* {footerItem?.[0]?.email} */}
+                  customercare.nandini@kmf.coop
+
+                </p>
               </div>
             </div>
           </div>
@@ -91,7 +98,7 @@ function Footer() {
 
         <div className="flex flex-col w-full h-full justify-center items-center md:pt-10  space-y-6  flex-wrap md:flex-row">
           <div className="flex flex-col justify-start items-start">
-            <p className="text-xs md:text-sm text-center">© {footerItem?.[0]?.copyright}</p>
+            <p className="text-xs md:text-sm text-center">© Copyright ©2024 - 2025 Karnataka Milk Federation</p>
             <p className="text-xs md:text-sm text-center flex justify-center items-center w-full">
               {' '}
               All rights reserved to{' '}
