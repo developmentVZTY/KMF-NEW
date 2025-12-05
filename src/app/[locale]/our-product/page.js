@@ -2,6 +2,15 @@
 import React, { useEffect, useState } from 'react';
 import useApi from '@/hooks/useApi';
 import HeroImg from '@/images/milk-union/milk-union-home.png';
+import pro1 from '@/images/product/all/1.png';
+import pro2 from '@/images/product/all/2.png';
+import pro3 from '@/images/product/all/3.jpg';
+import pro4 from '@/images/product/all/4.jpg';
+import pro5 from '@/images/product/all/5.jpg';
+import pro6 from '@/images/product/all/6.jpg';
+import pro7 from '@/images/product/all/7.png';
+import pro8 from '@/images/product/all/8.png';
+import pro9 from '@/images/product/all/9.png';
 import Follow from '@/components/Follow.js';
 import Footer from '@/components/Footer';
 import ProductCard from './[slug]/ProductCard';
@@ -55,6 +64,83 @@ function Products() {
     }
   };
 
+
+const products = [
+    {
+      title: "MILK",
+      image:
+        pro1.src,
+      link: "",
+    },
+    {
+      title: "CURD",
+      image:
+        pro2.src,
+        
+      link: "",
+    },
+    {
+      title: "GHEE",
+      image:
+        pro3.src,
+      link: "",
+    },
+    {
+      title: "BUTTER",
+      image:
+        pro4.src,
+      link: "",
+    },
+    {
+      title: "PANEER",
+      image:
+        pro5.src,
+      link: "",
+    },
+    {
+      title: "CHEESE",
+      image:
+        pro6.src,
+      link: "",
+    },
+    {
+      title: "FLAVORED MILK IN BOTTLES",
+      image:
+        pro7.src,
+      link: "",
+    },
+    {
+      title: "FLAVORED MILK IN TETRA",
+      image:
+        pro8.src,
+      link: "",
+    },
+    {
+      title: "PET BOTTLES",
+      image:
+        pro9.src,
+      link: "",
+    },
+  ]
+
+  const productCategories = [
+  { id: 1, name: "All", slug: "all" },
+  { id: 2, name: "Milk & Curd", slug: "milk-curd" },
+  { id: 3, name: "Ghee & Butter", slug: "ghee-butter" },
+  { id: 4, name: "Paneer & Cheese", slug: "paneer-cheese" },
+  { id: 5, name: "Flavored Milks", slug: "flavored-milks" },
+  { id: 6, name: "Chocolates", slug: "chocolates" },
+  { id: 7, name: "Baked Items", slug: "baked-items" },
+  { id: 8, name: "Instant Mixes", slug: "instant-mixes" },
+  { id: 9, name: "Ice – Creams", slug: "ice-creams" },
+  { id: 10, name: "Milk Powder", slug: "milk-powder" },
+  { id: 11, name: "Namkeens", slug: "namkeens" },
+  { id: 12, name: "Sweets", slug: "sweets" },
+];
+
+
+
+
   return (
     <div className={`w-full h-full absolute  z-[-1] ${isScroll ? ' md:top-48' : ''}  `}>
       <section className={`w-full    h-full md:h-[700px] md:pt-28 relative  grid place-items-center `}>
@@ -85,9 +171,9 @@ function Products() {
           <p
             className="font-subheading transition-all w-full  text-center text-sm cursor-pointer  hover:scale-[1.1]"
             onClick={() => handleProduct('all')}>
-          {locale==='kn'?'ಎಲ್ಲವೂ':'  All   '}
+          {locale==='kn'?'ಎಲ್ಲವೂ':'  All  '}
           </p>
-          {categories?.map((item, id) => {
+          {productCategories?.map((item, id) => {
              
             return (
 
@@ -105,7 +191,7 @@ function Products() {
                 href='#product-cards'
                 onClick={() => handleIdx(item?.id)}
                 className={`font-subheading w-full text-center transition-all duration-300 text-sm cursor-pointer  hover:scale-[1.3] ${item?.id===currentIdx?'text-primary-main underline pb-1':''} ${locale==='kn'?'text-sm':''} `}>
-                {item?.attributes?.title}
+                {item.name} 
                 </Link>
                 </Fade>
                 </div>
@@ -115,13 +201,13 @@ function Products() {
         </div>
 
         <div className="w-full h-full grid grid-cols-3 p-2 place-items-center    gap-5 pt-10" id='product-cards'>
-          {subcategory?.map((item, idx) => {
+          {products?.map((item, idx) => {
             return (
               <ProductCard
-                key={item?.idx}
-                title={item?.attributes?.title}
-                image={item?.attributes?.image?.data?.[0]?.attributes?.url}
-                link={`/${locale}/our-product/${item?.id}`}
+                key={idx}
+                title={item.title}
+                image={item.image}
+                link={item.link}
               />
             );
           })}
