@@ -291,7 +291,7 @@ const Home = () => {
                          <SwiperSlide>
                             <video
                             className={`w-full object-fill  h-[240px] md:h-[812px]`}
-                            src="/video/dec-25-home.mp4"
+                            src="/video/banner.mov"
                             controls
                             muted
                             autoPlay

@@ -167,11 +167,10 @@ const axios = useApi();
 
 
            
-          {bhagaya && bhagaya.attributes && bhagaya.attributes.content && (
+          {/* {bhagaya && bhagaya.attributes && bhagaya.attributes.content && (
                     <BlocksRenderer
                       content={ bhagaya.attributes.content}
                       blocks={{
-                        // You can use the default components to set class names...
                    
                         code: ({ children }) => {
                           const columns =
@@ -179,65 +178,191 @@ const axios = useApi();
                               ? children?.[0]?.props?.text.split(',').slice(1)
                               : [];
 
-                          return (
+                          return ( */}
                             <table className="table-fixed  border-spacing-y-2	 border-collapse border-black border      w-full ">
                               <thead className=" text-left bg-orange-400 text-primary-main">
-                                {columns?.map((item, id) => {
+                                {/* {columns?.map((item, id) => {
                               
                                   if(id===0){
-                                    return(
-                                      <th className="p-2 w-10  border-r border-black " key={id}>
-                                      {item}
+                                    return( */}
+                                      <th className="p-2 w-10  border-r border-black " >
+                                      	#	
                                     </th>
-                                    )
+                                    {/* )
                                  
                                   }
-                                  return (
-                                    <th className="p-2   border-r border-black " key={id}>
-                                      {item}
+                                  return ( */}
+                                    <th className="p-2   border-r border-black " >
+                                      GIST
                                     </th>
-                                  );
-                                })}
+                                     <th className="p-2   border-r border-black " >
+                                      Schools
+                                    </th>
+                                     <th className="p-2   border-r border-black " >
+                                      Anganwadi
+                                    </th>
+                                  {/* );
+                                })} */}
                               </thead>
                               <tbody className="text-left  text-md ">
                                 <tr className="w-full ">
-                                  {children?.[0]?.props?.text.split(',')[0].trim() !== 'columns' &&
+                                  {/* {children?.[0]?.props?.text.split(',')[0].trim() !== 'columns' &&
                                     children?.[0]?.props?.text?.split(',')?.map((item, id) => {
                                       if(id===0){
-                                        return(
-                                          <td className="w-10 p-2  text-md font-content border-r border-black " key={id}>
+                                        return( */}
+                                          <td className="w-10 p-2  text-md font-content border-r border-black ">
                                           {' '}
-                                          {item}
+                                         1
                                         </td>
-                                        )
+                                        {/* )
                                      
                                       }
-                                      return (
-                                        <td className=" p-1 md:p-2 text-[12px] md:text-[16px] text-md font-content border-r border-black " key={id}>
+                                      return ( */}
+                                        <td className=" p-1 md:p-2 text-[12px] md:text-[16px] text-md font-content border-r border-black ">
                                           {' '}
-                                          {item}
+                                          SCHOOLS / ANGANWADI COVERED
                                         </td>
-                                      );
-                                    })}
+                                        <td className=" p-1 md:p-2 text-[12px] md:text-[16px] text-md font-content border-r border-black ">
+                                          {' '}
+                                          55683 nos
+                                        </td>
+                                        <td className=" p-1 md:p-2 text-[12px] md:text-[16px] text-md font-content border-r border-black ">
+                                          {' '}
+                                          64000 nos
+                                        </td>
+                                      {/* );
+                                    })} */}
                                 </tr>
+                                 <tr className="w-full ">
+                                          <td className="w-10 p-2  text-md font-content border-r border-black ">
+                                          {' '}
+                                         1
+                                        </td>
+                                    
+                                        <td className=" p-1 md:p-2 text-[12px] md:text-[16px] text-md font-content border-r border-black ">
+                                          {' '}
+                                          SCHOOLS / ANGANWADI COVERED
+                                        </td>
+                                        <td className=" p-1 md:p-2 text-[12px] md:text-[16px] text-md font-content border-r border-black ">
+                                          {' '}
+                                          55683 nos
+                                        </td>
+                                        <td className=" p-1 md:p-2 text-[12px] md:text-[16px] text-md font-content border-r border-black ">
+                                          {' '}
+                                          64000 nos
+                                        </td>
+                                </tr>
+
+                                <tr className="w-full ">
+                                          <td className="w-10 p-2  text-md font-content border-r border-black ">
+                                          {' '}
+                                         2
+                                        </td>
+                                    
+                                        <td className=" p-1 md:p-2 text-[12px] md:text-[16px] text-md font-content border-r border-black ">
+                                          {' '}
+                                          SCHOOLS / ANGANWADI COVERED
+                                        </td>
+                                        <td className=" p-1 md:p-2 text-[12px] md:text-[16px] text-md font-content border-r border-black ">
+                                          {' '}
+                                          64 lakhs
+                                        </td>
+                                        <td className=" p-1 md:p-2 text-[12px] md:text-[16px] text-md font-content border-r border-black ">
+                                          {' '}
+                                          40 lakhs
+                                        </td>
+                                </tr>
+
+                                <tr className="w-full ">
+                                          <td className="w-10 p-2  text-md font-content border-r border-black ">
+                                          {' '}
+                                         3
+                                        </td>
+                                    
+                                        <td className=" p-1 md:p-2 text-[12px] md:text-[16px] text-md font-content border-r border-black ">
+                                          {' '}
+                                          BENEFICIARIES
+                                        </td>
+                                        <td className=" p-1 md:p-2 text-[12px] md:text-[16px] text-md font-content border-r border-black ">
+                                          {' '}
+                                          1st to 10th standard in government and government aided schools in all over Karnataka
+                                        </td>
+                                        <td className=" p-1 md:p-2 text-[12px] md:text-[16px] text-md font-content border-r border-black ">
+                                          {' '}
+                                          Children from 6 months to 6 years
+                                        </td>
+                                </tr>
+
+                                <tr className="w-full ">
+                                          <td className="w-10 p-2  text-md font-content border-r border-black ">
+                                          {' '}
+                                         4
+                                        </td>
+                                    
+                                        <td className=" p-1 md:p-2 text-[12px] md:text-[16px] text-md font-content border-r border-black ">
+                                          {' '}
+                                          MILK POWDER REQUIRED
+                                        </td>
+                                        <td className=" p-1 md:p-2 text-[12px] md:text-[16px] text-md font-content border-r border-black ">
+                                          {' '}
+                                          WMP required per child is 18gms ie. equivalent to serving 150ml of Milk. (given five times a week)
+                                        </td>
+                                        <td className=" p-1 md:p-2 text-[12px] md:text-[16px] text-md font-content border-r border-black ">
+                                          {' '}
+                                          WMP required per child is 15gms ie. equivalent to serving 150ml of Milk. (given five times a week)
+                                        </td>
+                                </tr>
+
+                                <tr className="w-full ">
+                                          <td className="w-10 p-2  text-md font-content border-r border-black ">
+                                          {' '}
+                                         5
+                                        </td>
+                                    
+                                        <td className=" p-1 md:p-2 text-[12px] md:text-[16px] text-md font-content border-r border-black ">
+                                          {' '}
+                                          MILK REQUIRED PER DAY
+                                        </td>
+                                        <td className=" p-1 md:p-2 text-[12px] md:text-[16px] text-md font-content border-r border-black ">
+                                          {' '}
+                                          5 LLPD
+                                        </td>
+                                        <td className=" p-1 md:p-2 text-[12px] md:text-[16px] text-md font-content border-r border-black ">
+                                          {' '}
+                                          3 LLPD
+                                        </td>
+                                </tr>
+
+                                <tr className="w-full ">
+                                          <td className="w-10 p-2  text-md font-content border-r border-black ">
+                                          {' '}
+                                         6
+                                        </td>
+                                    
+                                        <td className=" p-1 md:p-2 text-[12px] md:text-[16px] text-md font-content border-r border-black ">
+                                          {' '}
+                                          COST/CHILD/ONE SERVE
+                                        </td>
+                                        <td className=" p-1 md:p-2 text-[12px] md:text-[16px] text-md font-content border-r border-black ">
+                                          {' '}
+                                          Rs.5.67 Approx.
+                                        </td>
+                                        <td className=" p-1 md:p-2 text-[12px] md:text-[16px] text-md font-content border-r border-black ">
+                                          {' '}
+                                          Rs.4.73 Approx.
+                                        </td>
+                                </tr>
+
+                               
                               </tbody>
                             </table>
-                          );
+                          {/* );
                         },
 
                  
-                      }}
-                    />
-                  )}
-
-
-
-
-      
-
-
-
-
+                      }} */}
+                    {/* />
+                  )} */}
 
     </div>
                

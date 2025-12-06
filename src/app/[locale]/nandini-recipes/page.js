@@ -3,6 +3,16 @@ import React,{useEffect,useState} from 'react'
 import Recipes from './Recipes'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import resp1 from '@/images/recipes/1.jpg'
+import resp2 from '@/images/recipes/2.jpg'
+import resp3 from '@/images/recipes/3.jpg'
+import resp4 from '@/images/recipes/4.png'
+import resp5 from '@/images/recipes/5.jpg'
+import resp6 from '@/images/recipes/6.jpg'
+import resp7 from '@/images/recipes/7.jpg'
+import resp8 from '@/images/recipes/8.jpg'
+import resp9 from '@/images/recipes/9.jpg'
+
 import useApi from '@/hooks/useApi'
 
 import useLocale from '@/hooks/useLocale'
@@ -20,6 +30,75 @@ const locale=useLocale().locale
       }
     )()
   },[])
+
+  const recipes = [
+  {
+    id: 1,
+    title: "AKKI PAYASA",
+    image:
+      resp9.src,
+    link: "https://www.kmfnandini.coop/en/nandini-recipes/6",
+  },
+  {
+    id: 2,
+    title: "BANANA KESARIBATH",
+    image:
+      resp1.src,
+    link: "https://www.kmfnandini.coop/en/nandini-recipes/7",
+  },
+  {
+    id: 3,
+    title: "BESAN LADDU",
+    image:
+      resp2.src,
+    link: "https://www.kmfnandini.coop/en/nandini-recipes/8",
+  },
+  {
+    id: 4,
+    title: "ELLU CHIKKI",
+    image:
+      resp3.src,
+    link: "https://www.kmfnandini.coop/en/nandini-recipes/9",
+  },
+  {
+    id: 5,
+    title: "KADALEBELE PAYASA",
+    image:
+      resp4.src,
+    link: "https://www.kmfnandini.coop/en/nandini-recipes/2",
+  },
+  {
+    id: 6,
+    title: "KOVA HOLIGE",
+    image:
+      resp5.src,
+    link: "https://www.kmfnandini.coop/en/nandini-recipes/3",
+  },
+  {
+    id: 7,
+    title: "KOVA LADDU",
+    image:
+      resp6.src,
+    link: "https://www.kmfnandini.coop/en/nandini-recipes/4",
+  },
+  {
+    id: 8,
+    title: "NANDINI GULAB JAMOON",
+    image:
+      resp7.src,
+    link: "https://www.kmfnandini.coop/en/nandini-recipes/1",
+  },
+  {
+    id: 9,
+    title: "RAVA LADDU",
+    image:
+      resp8.src,
+    link: "https://www.kmfnandini.coop/en/nandini-recipes/5",
+  },
+];
+
+
+
   return (
     <div className='w-full h-full mt-10  md:mt-20 '>
           <div className='w-full h-full text-center mb-20'>
@@ -36,11 +115,11 @@ const locale=useLocale().locale
              {/* <Link > */}
         
         {
-          recipe?.map((item,id)=>{
+          recipes?.map((item,id)=>{
            
             return(
-              <Recipes key={id} title={item?.attributes?.title} image={item?.attributes?.image?.data?.[0]?.attributes?.url}
-              link={`/${locale}/nandini-recipes/${item?.id}`}
+              <Recipes key={id} title={item.title} image={item.image}
+              link=""
               />
             )
           })
