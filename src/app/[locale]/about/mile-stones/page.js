@@ -153,7 +153,7 @@ function OrganizationChart() {
       </h1>
 
       <section className="w-full pb-20 h-auto mb-[150px] m-auto max-w-7xl shadow-lg shadow-gray-600 mt-10">
-        {mileStones?.sort((a, b) => b.year - a.year)?.map((item, id) => {
+        {/* {mileStones?.sort((a, b) => b.year - a.year)?.map((item, id) => {
            
           if (id % 2 === 0) {
             return (
@@ -172,7 +172,7 @@ function OrganizationChart() {
                   <div className="text-5xl font-bold text-secondary-main">{item.year}</div>
                 </div>
 
-                {/* inner milestone */}
+               
                 <div
                   className={`w-full flex flex-col p-2 max-w-5xl m-auto space-y-6 justify-center items-center mt-[150px] transition-all duration-500 ${
                     openAccordion === id ? 'block' : 'hidden'
@@ -288,7 +288,189 @@ function OrganizationChart() {
               </div>
             );
           }
-        })}
+        })} */}
+
+         <div className="w-full h-auto" >
+                <div className="w-full mb-10 space-x-5 flex justify-center items-center relative">
+                  <div className="relative max-w-60">
+                    <div className="w-40 h-40 border-white border-r-secondary-main rounded-[50%] border-[20px] flex justify-center items-center">
+                      <div className="w-20 h-20 border-secondary-main rounded-full border-4"></div>
+                    </div>
+
+                    <div
+                      
+                      className="milestone-pulse w-5 h-5 flex justify-center items-center absolute bottom-[-25px] left-[120px] rounded-full"></div>
+                  </div>
+
+                  <div className="text-5xl font-bold text-secondary-main">2025</div>
+                </div>
+
+                <div className="w-full flex justify-center items-center mb-10 space-x-5">
+                  <div className="text-5xl font-bold text-primary-main">2020</div>
+                  <div className="w-full max-w-60 relative">
+                    <div className="w-40 h-40 border-l-primary-main border-white rounded-[50%] border-[20px] flex justify-center items-center">
+                      <div className="w-20 h-20 border-primary-main rounded-full border-4"></div>
+                    </div>
+                    <div
+                      
+                      className="milestone-pulse w-5 h-5 flex justify-center items-center absolute bottom-[-25px] left-[15px] rounded-full"></div>
+                  </div>
+                </div>
+
+ <div className="w-full mb-10 space-x-5 flex justify-center items-center relative">
+                  <div className="relative max-w-60">
+                    <div className="w-40 h-40 border-white border-r-secondary-main rounded-[50%] border-[20px] flex justify-center items-center">
+                      <div className="w-20 h-20 border-secondary-main rounded-full border-4"></div>
+                    </div>
+
+                    <div
+                      
+                      className="milestone-pulse w-5 h-5 flex justify-center items-center absolute bottom-[-25px] left-[120px] rounded-full"></div>
+                  </div>
+
+                  <div className="text-5xl font-bold text-secondary-main">2015</div>
+                </div>
+
+                <div className="w-full flex justify-center items-center mb-10 space-x-5">
+                  <div className="text-5xl font-bold text-primary-main">2010</div>
+                  <div className="w-full max-w-60 relative">
+                    <div className="w-40 h-40 border-l-primary-main border-white rounded-[50%] border-[20px] flex justify-center items-center">
+                      <div className="w-20 h-20 border-primary-main rounded-full border-4"></div>
+                    </div>
+                    <div
+                      
+                      className="milestone-pulse w-5 h-5 flex justify-center items-center absolute bottom-[-25px] left-[15px] rounded-full"></div>
+                  </div>
+                </div>
+
+
+                 <div className="w-full mb-10 space-x-5 flex justify-center items-center relative">
+                  <div className="relative max-w-60">
+                    <div className="w-40 h-40 border-white border-r-secondary-main rounded-[50%] border-[20px] flex justify-center items-center">
+                      <div className="w-20 h-20 border-secondary-main rounded-full border-4"></div>
+                    </div>
+
+                    <div
+                      
+                      className="milestone-pulse w-5 h-5 flex justify-center items-center absolute bottom-[-25px] left-[120px] rounded-full"></div>
+                  </div>
+
+                  <div className="text-5xl font-bold text-secondary-main">2005</div>
+                </div>
+
+                <div className="w-full flex justify-center items-center mb-10 space-x-5">
+                  <div className="text-5xl font-bold text-primary-main">2000</div>
+                  <div className="w-full max-w-60 relative">
+                    <div className="w-40 h-40 border-l-primary-main border-white rounded-[50%] border-[20px] flex justify-center items-center">
+                      <div className="w-20 h-20 border-primary-main rounded-full border-4"></div>
+                    </div>
+                    <div
+                      
+                      className="milestone-pulse w-5 h-5 flex justify-center items-center absolute bottom-[-25px] left-[15px] rounded-full"></div>
+                  </div>
+                </div>
+
+
+
+                 <div className="w-full mb-10 space-x-5 flex justify-center items-center relative">
+                  <div className="relative max-w-60">
+                    <div className="w-40 h-40 border-white border-r-secondary-main rounded-[50%] border-[20px] flex justify-center items-center">
+                      <div className="w-20 h-20 border-secondary-main rounded-full border-4"></div>
+                    </div>
+
+                    <div
+                      
+                      className="milestone-pulse w-5 h-5 flex justify-center items-center absolute bottom-[-25px] left-[120px] rounded-full"></div>
+                  </div>
+
+                  <div className="text-5xl font-bold text-secondary-main">1995</div>
+                </div>
+
+                <div className="w-full flex justify-center items-center mb-10 space-x-5">
+                  <div className="text-5xl font-bold text-primary-main">1985</div>
+                  <div className="w-full max-w-60 relative">
+                    <div className="w-40 h-40 border-l-primary-main border-white rounded-[50%] border-[20px] flex justify-center items-center">
+                      <div className="w-20 h-20 border-primary-main rounded-full border-4"></div>
+                    </div>
+                    <div
+                      
+                      className="milestone-pulse w-5 h-5 flex justify-center items-center absolute bottom-[-25px] left-[15px] rounded-full"></div>
+                  </div>
+                </div>
+
+
+
+                 <div className="w-full mb-10 space-x-5 flex justify-center items-center relative">
+                  <div className="relative max-w-60">
+                    <div className="w-40 h-40 border-white border-r-secondary-main rounded-[50%] border-[20px] flex justify-center items-center">
+                      <div className="w-20 h-20 border-secondary-main rounded-full border-4"></div>
+                    </div>
+
+                    <div
+                      
+                      className="milestone-pulse w-5 h-5 flex justify-center items-center absolute bottom-[-25px] left-[120px] rounded-full"></div>
+                  </div>
+
+                  <div className="text-5xl font-bold text-secondary-main">1975</div>
+                </div>
+
+                <div className="w-full flex justify-center items-center mb-10 space-x-5">
+                  <div className="text-5xl font-bold text-primary-main">1965</div>
+                  <div className="w-full max-w-60 relative">
+                    <div className="w-40 h-40 border-l-primary-main border-white rounded-[50%] border-[20px] flex justify-center items-center">
+                      <div className="w-20 h-20 border-primary-main rounded-full border-4"></div>
+                    </div>
+                    <div
+                      
+                      className="milestone-pulse w-5 h-5 flex justify-center items-center absolute bottom-[-25px] left-[15px] rounded-full"></div>
+                  </div>
+                </div>
+
+
+                 <div className="w-full mb-10 space-x-5 flex justify-center items-center relative">
+                  <div className="relative max-w-60">
+                    <div className="w-40 h-40 border-white border-r-secondary-main rounded-[50%] border-[20px] flex justify-center items-center">
+                      <div className="w-20 h-20 border-secondary-main rounded-full border-4"></div>
+                    </div>
+
+                    <div
+                      
+                      className="milestone-pulse w-5 h-5 flex justify-center items-center absolute bottom-[-25px] left-[120px] rounded-full"></div>
+                  </div>
+
+                  <div className="text-5xl font-bold text-secondary-main">1955</div>
+                </div>
+
+                
+
+                {/* inner milestone */}
+                {/* <div
+                  className={`w-full flex flex-col p-2 max-w-5xl m-auto space-y-6 justify-center items-center mt-[150px] transition-all duration-500 ${
+                    openAccordion === id ? 'block' : 'hidden'
+                  }`}>
+                   
+                
+                        <Fade bottom key={id}>
+                        <div  className="w-full space-x-3 grid grid-cols-2 relative">
+                               
+                          <div className="flex justify-center items-center">
+                            <div className="text-4xl font-bold text-secondary-main pt-2">{item.year}</div>
+                            <div className="flex justify-center items-center">
+                              <div className="w-10 h-10 border-secondary-main rounded-full border-[8px]"></div>
+                              <div className="flex justify-center items-center">
+                                <div className="w-[40px] md:w-[140px] h-[2px] bg-black"></div>
+                                <div className="w-2 h-2 border-secondary-main rounded-full border-[8px]"></div>
+                              </div>
+                            </div>
+                          </div>
+                   
+                          <div className="w-full max-w-96 m-auto">{item?.description}</div>
+                       
+                        </div>
+                        </Fade>
+                   
+                </div> */}
+              </div>
       </section>
 
        
