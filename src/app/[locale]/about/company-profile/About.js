@@ -37,9 +37,9 @@ const locale=useLocale().locale
 </p><br/>
 
 <p className="text-xl font-josefin   text-justify">
-  Karnataka Cooperative Milk Producers' Federation Limited (KMF) is the Apex Body in Karnataka representing Dairy Farmers' Co-operatives.
+  Karnataka Cooperative Milk Producers'\ Federation Limited (KMF) is the Apex Body in Karnataka representing Dairy Farmers Co-operatives.
   It is the second largest dairy co-operative in the country and the largest in South India in procurement and sales.
-  One of the core functions of the Federation is marketing of Milk and Milk Products. “Nandini" is a household name for pure and fresh milk and milk products.
+  One of the core functions of the Federation is marketing of Milk and Milk Products. Nandini is a household name for pure and fresh milk and milk products.
 </p><br/>
 
 <p className="text-xl font-josefin   text-justify">

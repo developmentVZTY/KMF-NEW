@@ -164,7 +164,7 @@ function MissionVission() {
               })} */}
 
             
-  <li>Karnataka Milk Federation (KMF) evolved as a premier and profitable dairy farmers' organization in Karnataka.</li>
+  <li>Karnataka Milk Federation (KMF) evolved as a premier and profitable dairy farmers organization in Karnataka.</li>
   
   <li>In 1975, Karnataka Dairy Development Corporation (KDDC) was formed as an agency to implement the World Bank–aided Dairy Development Projects.</li>
   
