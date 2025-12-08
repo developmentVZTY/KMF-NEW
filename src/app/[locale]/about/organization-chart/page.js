@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import organizationHero from '@/images/about/organization-chart/organization-hero.png';
 import milkRight from '@/images/about/organization-chart/milk-right.png';
+import Hero from '@/images/about/organization-chart/Farmer.png';
  
 import {Fade,Zoom} from 'react-reveal'
 import 'swiper/css';
@@ -15,6 +16,7 @@ import useApi from '@/hooks/useApi';
 import { achievements as achievementItems } from '@/configtext/companyProfile';
 import Counter from '@/components/Counter';
 import { ParallaxBanner } from "react-scroll-parallax";
+
 
 function OrganizationChart() {
   const locale = useParams().locale;
@@ -40,10 +42,10 @@ function OrganizationChart() {
     const handleSlideView = () => {
       const screen = window.innerWidth;
       if (screen < 1113) {
-        setSlideView(2);
+        // setSlideView(2);
       }
       if (screen < 779) {
-        setSlideView(1);
+        // setSlideView(1);
       }
     };
     handleSlideView();
@@ -113,7 +115,7 @@ function OrganizationChart() {
 
           <Fade bottom>
         <img
-          src={banner? banner?.attributes?.banner?.data?.attributes?.url:organizationHero.src}
+          src={Hero.src}
           className=" w-96 md:w-full  md:max-w-7xl md:h-[500px] object-contain    "
         />
 </Fade>
