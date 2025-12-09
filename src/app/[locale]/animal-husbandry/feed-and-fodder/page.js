@@ -77,7 +77,7 @@ function FeedFodder() {
           <div className="w-full flex flex-col space-y-2 justify-center items-start    p-1   ">
             <Fade bottom>
             <div className="w-full h-full flex justify-center items-center flex-wrap">
-              {feedFodder?.map((_, id) => {
+              {/* {feedFodder?.map((_, id) => {
                 return (
                   <div
                     key={id}
@@ -128,7 +128,41 @@ function FeedFodder() {
                     </div>
                   </div>
                 );
-              })}
+              })} */}
+
+               <div
+                                
+                                  className="  w-full  p-2 rounded-3xl    ">
+                                  <div className="m-auto">
+                                  
+                                    <div className=" ">
+                                    <Fade bottom> <p className=" text-sm text-justify md:text-lg">Nutrition plays a crucial role in the productivity and health of dairy animals. The cooperative supports farmers in cultivating and accessing balanced and affordable cattle feed.
+
+              </p></Fade>  <br/><br/>
+                                     <h1 className="text-2xl  text-black p-2 ">
+                                              Fodder Initiatives:
+                                              </h1>
+                                              <br/>
+                                         <ul className='list-disc ml-5'>
+                                           <li>Supply of high-quality fodder seeds and slips</li>
+                                           <li>Promotion of green fodder cultivation and fodder banks</li>
+                                           <li>Demonstration plots for fodder varieties</li>
+                                           <li>Training on ration balancing and low-cost feed management
+
+
+</li>
+                                             <li>Support for silage making and fodder conservation</li>
+                                               <li>Distribution of mineral mixtures and feed supplements</li>
+                                         </ul>
+              <br/><br/>
+                                            <h1 className="text-black text-2xl  p-2 ">
+                                              Objective:
+                                              </h1><br/>
+              <p className=" text-sm text-justify md:text-lg">To ensure year-round availability of nutritious fodder, reducing feed costs and improving milk yield for member farmers.
+              </p>
+                                    </div>
+                                  </div>
+                                </div>
             </div>
             </Fade>
           </div>

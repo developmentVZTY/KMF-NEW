@@ -98,7 +98,7 @@ const axios =useApi()
                        
                        
                        
-                        {procure?.map((_, id) => {
+                        {/* {procure?.map((_, id) => {
                 return (
                   <div
                     key={id}
@@ -146,11 +146,41 @@ const axios =useApi()
                     </div>
                   </div>
                 );
-              })}
+              })} */}
              
  
              
-          
+                  
+                  <div
+                  
+                    className="  w-full  p-2 rounded-3xl    ">
+                    <div className="m-auto">
+                    
+                      <div className=" ">
+                      <Fade bottom> <p className=" text-sm text-justify md:text-lg">The Dairy Cooperative ensures transparent and efficient milk procurement from farmers across all affiliated societies. Our procurement system is designed to support rural dairy farmers, encourage fair pricing, and maintain the highest standards of milk quality.
+</p></Fade>  <br/><br/>
+                       <h1 className="text-2xl  text-black p-2 ">
+                                Key Activities:
+                                </h1>
+                                <br/>
+                           <ul className='list-disc ml-5'>
+                             <li>Daily milk collection from village-level societies</li>
+                             <li>Quality testing for fat, SNF, adulteration, and freshness</li>
+                             <li>Immediate digital recording of milk quantity and quality</li>
+                             <li>Timely payment to farmers through cooperative systems</li>
+                               <li>Cold chain support to maintain milk freshness from farm to plant</li>
+                                 <li>Farmer awareness programs on hygienic milking and milk handling</li>
+                           </ul>
+<br/><br/>
+                              <h1 className="text-black text-2xl  p-2 ">
+                                Objective:
+                                </h1><br/>
+<p className=" text-sm text-justify md:text-lg">To create a reliable procurement ecosystem that guarantees farmers a stable income while ensuring high-quality milk supply to processing units.
+</p>
+                      </div>
+                    </div>
+                  </div>
+              
          
           
           

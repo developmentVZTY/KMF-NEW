@@ -105,7 +105,7 @@ function AnimalHealth() {
             <Fade bottom>
 
             <div className="w-full h-full flex gap-10 justify-center items-center flex-wrap  ">
-            {animalHealth?.map((_, id) => {
+            {/* {animalHealth?.map((_, id) => {
                 return (
                   <div
                     key={id}
@@ -175,10 +175,40 @@ function AnimalHealth() {
                     </div>
                   </div>
                 );
-              })}
+              })} */}
 
               
-              
+                 
+                                <div
+                                
+                                  className="  w-full  p-2 rounded-3xl    ">
+                                  <div className="m-auto">
+                                  
+                                    <div className=" ">
+                                    <Fade bottom> <p className=" text-sm text-justify md:text-lg">Animal health services are essential to maintaining high milk yield and ensuring the wellbeing of livestock. The cooperative provides accessible and professional veterinary care at the village and taluk levels
+              </p></Fade>  <br/><br/>
+                                     <h1 className="text-2xl  text-black p-2 ">
+                                              Services Provided:
+                                              </h1>
+                                              <br/>
+                                         <ul className='list-disc ml-5'>
+                                           <li>Regular health check-ups and routine treatments</li>
+                                           <li>Vaccination drives (FMD, HS, BQ, etc.)</li>
+                                           <li>Deworming and parasite control programs</li>
+                                           <li>Emergency veterinary support and first-aid services</li>
+                                             <li>Disease diagnosis and management</li>
+                                             <li>Farmer education on animal hygiene, housing, and preventive care</li>
+                                               
+                                         </ul>
+              <br/><br/>
+                                            <h1 className="text-black text-2xl  p-2 ">
+                                              Objective:
+                                              </h1><br/>
+              <p className=" text-sm text-justify md:text-lg">To minimize livestock mortality, prevent disease outbreaks, and improve the productivity and lifespan of dairy cattle
+              </p>
+                                    </div>
+                                  </div>
+                                </div>
             
 
 
@@ -197,7 +227,7 @@ function AnimalHealth() {
           <div className="mb-5 md:mb-20     relative w-full  flex justify-center items-center ">
             
               <h1 className=" text-primary-main relative z-10 font-heading text-4xl font-extrabold uppercase">
-              {locale==='kn'?'':'Health Camps'}
+              {locale==='kn'?'':'Animal Breeding Program'}
               </h1>
             </div>
            
@@ -205,7 +235,7 @@ function AnimalHealth() {
             <Fade bottom>
 
             <div className="w-full h-full flex gap-10 justify-center items-center flex-wrap  ">
-            {healthCamps?.map((_, id) => {
+            {/* {healthCamps?.map((_, id) => {
                 return (
                   <div
                     key={id}
@@ -275,10 +305,43 @@ function AnimalHealth() {
                     </div>
                   </div>
                 );
-              })}
+              })} */}
 
               
-              
+               <div
+                                
+                                  className="  w-full  p-2 rounded-3xl    ">
+                                  <div className="m-auto">
+                                  
+                                    <div className=" ">
+                                    <Fade bottom> <p className=" text-sm text-justify md:text-lg">Our breeding program focuses on improving the genetic potential of cattle by introducing scientifically proven breeding techniques and high-quality semen.
+
+              </p></Fade>  <br/><br/>
+                                     <h1 className="text-2xl  text-black p-2 ">
+                                              Program Highlights:
+                                              </h1>
+                                              <br/>
+                                         <ul className='list-disc ml-5'>
+                                           <li>Artificial Insemination (AI) services at village and district levels</li>
+                                           <li>Use of genetically superior bulls for breed enhancement</li>
+                                           <li>Pregnancy diagnosis and reproductive health monitoring</li>
+                                           <li>Promotion of high-yielding crossbreeds and indigenous breed improvement</li>
+                                             <li>Calf management guidance for better future productivity
+
+
+</li>
+                                             <li>Record keeping for AI, calving, and breeding cycles</li>
+                                               
+                                         </ul>
+              <br/><br/>
+                                            <h1 className="text-black text-2xl  p-2 ">
+                                              Objective:
+                                              </h1><br/>
+              <p className=" text-sm text-justify md:text-lg">To enhance the genetic quality of dairy animals, improve fertility, and increase milk production sustainably.
+              </p>
+                                    </div>
+                                  </div>
+                                </div>
             
 
 
