@@ -11,6 +11,27 @@ import pro6 from '@/images/product/all/6.jpg';
 import pro7 from '@/images/product/all/7.png';
 import pro8 from '@/images/product/all/8.png';
 import pro9 from '@/images/product/all/9.png';
+import pro10 from '@/images/product/all/10.png';
+import pro11 from '@/images/product/all/11.png';
+import pro12 from '@/images/product/all/12.jpg';
+import pro13 from '@/images/product/all/13.jpg';
+import pro14 from '@/images/product/all/14.png';
+import pro15 from '@/images/product/all/15.jpg';
+import pro16 from '@/images/product/all/16.png';
+import pro17 from '@/images/product/all/17.png';
+import pro18 from '@/images/product/all/18.png';
+import pro19 from '@/images/product/all/19.jpg';
+import pro20 from '@/images/product/all/20.png';
+import pro21 from '@/images/product/all/21.png';
+import pro22 from '@/images/product/all/22.png';
+import pro23 from '@/images/product/all/23.png';
+import pro24 from '@/images/product/all/24.jpg';
+import pro25 from '@/images/product/all/25.jpg';
+import pro26 from '@/images/product/all/26.png';
+import pro27 from '@/images/product/all/27.png';
+import pro28 from '@/images/product/all/28.jpg';
+import pro29 from '@/images/product/all/29.png';
+
 import Follow from '@/components/Follow.js';
 import Footer from '@/components/Footer';
 import ProductCard from './[slug]/ProductCard';
@@ -121,6 +142,128 @@ const products = [
         pro9.src,
       link: "",
     },
+    {
+      title: "Chocolates",
+      image:
+        pro10.src,
+      link: "",
+    },
+    {
+      title: "Rusk",
+      image:
+        pro11.src,
+      link: "",
+    },
+    {
+      title: "Cookies",
+      image:
+        pro12.src,
+      link: "",
+    },
+    {
+      title: "Bread & Bun",
+      image:
+        pro13.src,
+      link: "",
+    },
+    {
+      title: "Namkeens",
+      image:
+        pro14.src,
+      link: "",
+    },
+    {
+      title: "Instant Mix",
+      image:
+        pro15.src,
+      link: "",
+    },
+    {
+      title: "Frozen Foods",
+      image:
+        pro16.src,
+      link: "",
+    },
+    {
+      title: "Natural Ice-Cream",
+      image:
+        pro17.src,
+      link: "",
+    },
+    {
+      title: "Cassata",
+      image:
+        pro18.src,
+      link: "",
+    },
+      {
+      title: "Sundae",
+      image:
+        pro19.src,
+      link: "",
+    },
+      {
+      title: "Family Pack Ice-Cream",
+      image:
+        pro20.src,
+      link: "",
+    },
+      {
+      title: "Choco Bar",
+      image:
+        pro21.src,
+      link: "",
+    },
+      {
+      title: "Cone Ice-Cream",
+      image:
+        pro22.src,
+      link: "",
+    },
+      {
+      title: "Cup Ice-Creams",
+      image:
+        pro23.src,
+      link: "",
+    },
+      {
+      title: "Kulfi Ice-Cream",
+      image:
+        pro24.src,
+      link: "",
+    },
+      {
+      title: "GudBud",
+      image:
+        pro25.src,
+      link: "",
+    },
+      {
+      title: "Ice Cream Mockups",
+      image:
+        pro26.src,
+      link: "",
+    },
+      {
+      title: "Sweets",
+      image:
+        pro27.src,
+      link: "",
+    },
+      {
+      title: "Mlik Powder",
+      image:
+        pro28.src,
+      link: "",
+    },
+      {
+      title: "Nandini Good Life Milk",
+      image:
+        pro29.src,
+      link: "",
+    },
+     
+
   ]
 
   const productCategories = [
@@ -168,11 +311,11 @@ const products = [
             </div>
 
         <div className="w-full  grid grid-cols-4 gap-4 p-2 md:grid-cols-7 lg:grid-flow-col   md:space-x-4 ">
-          <p
+          {/* <p
             className="font-subheading transition-all w-full  text-center text-sm cursor-pointer  hover:scale-[1.1]"
             onClick={() => handleProduct('all')}>
           {locale==='kn'?'ಎಲ್ಲವೂ':'  All  '}
-          </p>
+          </p> */}
           {productCategories?.map((item, id) => {
              
             return (

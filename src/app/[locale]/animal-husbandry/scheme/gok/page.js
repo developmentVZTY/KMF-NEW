@@ -194,28 +194,175 @@ const handleButton = (idx) => {
             <section className=" max-w-7xl m-auto h-auto p-3 flex   justify-center items-start    space-y-6  xl:flex-row xl:justify-evenly xl:items-start md:space-x-2">
 
             <Fade left>
-        <div className="w-full xl:max-w-2xl shadow-lg flex flex-col justify-center items-start rounded-tl-3xl  rounded-br-3xl  bg-white space-y-6 p-5 ">
-        <div className=" mb-5 md:mb-20  mt-20  relative w-full   flex justify-center items-center ">
+        <div className="w-full shadow-lg flex flex-col justify-center items-start rounded-tl-3xl  rounded-br-3xl  bg-white space-y-6 p-5 ">
+        {/* <div className=" mb-5 md:mb-20  mt-20  relative w-full   flex justify-center items-center ">
               <img
                 src="/images/heading/heading-color/group.png"
                 className="absolute   w-[530px] top-[-18px] sm:top-[-50px]    object-contain"
               />
-              <h1 className=" text-primary-main relative max-w-[100px] md:max-w-[300px] m-auto text-center z-10 font-heading text-[4px] md:text-sm font-extrabold uppercase">
+              <br /><br />
+              <h1 className=" text-primary-main relative max-w-[100px] md:max-w-[800px] m-auto text-center z-10 font-heading text-[4px] md:text-sm font-extrabold uppercase">
               {scheme[currentIndex]?.title}
+              GOK Schemes
               </h1>
-            </div>
-          
+            </div> */}
+          <p>
+  <strong>1. Ksheera Bhagya:</strong><br/><br/>
+  • The Ksheera Bhagya Scheme was launched on 1st Aug 2013 by the Government of Karnataka in coordination with KMF to provide nutritious milk to School and Anganwadi children for healthy growth and development.<br/>
+  • It was a dream project conceived by KMF based on the suggestion of the Honorable Chief Minister of Karnataka to help poor children and also support milk producers by utilizing surplus milk.<br/><br/>
+  The Gist of the Ksheera Bhagya Scheme is as follows:
+</p>
+
+
+<table border="1" cellpadding="6" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Sl. No.</th>
+      <th>GIST</th>
+      <th>Schools</th>
+      <th>Anganwadi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Schools / Anganwadi covered</td>
+      <td>51,000 nos</td>
+      <td>64,000 nos</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>No. of Children</td>
+      <td>65 lakhs</td>
+      <td>39 lakhs</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Beneficiaries</td>
+      <td>1st to 10th Standard Govt & Aided Schools</td>
+      <td>Children (1–6 years)</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Milk Powder Required</td>
+      <td>18g WMP (150 ml milk, 3 days/week)</td>
+      <td>15g SMP (1 serving)</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Milk Required Per Day</td>
+      <td>4.25 LLPD</td>
+      <td>2.57 LLPD</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Cost / Child / One Serve</td>
+      <td>Rs. 5.25 Approx.</td>
+      <td>Rs. 3.64 Approx.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<br/>
+
+<p>
+  <strong>2. Amruth Yojane:</strong><br/><br/>
+  The scheme was introduced in the 2007–08 budget to support socio-economic upliftment of Devadasis, widows, SC and ST women by providing a milch animal.
+  The initial cost was Rs.20,000 (2007–08 to 2009–10), later increased to Rs.35,000.<br/>
+  • Subsidy: 50% to widows & Devadasis, 60% to SC, 75% to ST.<br/><br/>
+  In 2014–15, the Government enhanced the cost to Rs.50,000 and decided to give two animals per beneficiary with 25% subsidy (general widows & Devadasis) and 75% subsidy (SC/ST).<br/><br/>
+  Under the scheme, Rs.5722.50 lakhs has been released. Up to Aug 2015, a total of 39,897 milch cows have been purchased with an expenditure of Rs.4923.13 lakhs.
+</p>
+
+<p>
+  <strong>3. Milk Incentives to Milk Producers:</strong><br/><br/>
+  Introduced in 2008–09 to encourage rural farmers to take up dairying by offering Rs.2 per litre.
+  From 14-05-2013, the incentive was increased to Rs.4 per litre.<br/><br/>
+  Up to June 2015, Rs.3151.86 crore has been given to milk producers through societies,
+  benefiting around 8.20 lakh farmers per month.
+</p>
+
+<p>
+  <strong>GOI Scheme – Rashtriya Krishi Vikas Yojane (RKVY):</strong><br/><br/>
+  Started in 2009–10. Grants were released for:<br/>
+  • Accelerating dairy development in Bijapur, Gulbarga, Bellary<br/>
+  • Bio-security measures at Nandini Sperm Station<br/>
+  • Strengthening training centres<br/>
+  • Fodder densification units<br/>
+  • Urea enrichment of fodder<br/>
+  • Mineral mixture plant<br/>
+  • Areca sheath powdering plant<br/>
+  • Mobile BMCs, milking machines, chaff cutters, etc.<br/><br/>
+  Multiple programmes are under implementation.
+</p>
+
+<p>
+  <strong>National Programme for Dairy Development (NPDD):</strong><br/><br/>
+  Introduced in 2014–15 for strengthening dairy infrastructure. Proposals worth Rs.2897.08 lakhs were submitted.
+  GOI approved Rs.791.60 lakhs for Gulbarga Milk Union and released Rs.395.80 lakhs.
+</p>
+
+<p>
+  <strong>National Dairy Plan (NDP-I):</strong><br/><br/>
+  Required due to rapidly increasing demand for milk in India. Implemented from 2012–13 to 2017–18.<br/><br/>
+  <strong>Objectives:</strong><br/>
+  • Increase productivity of milch animals<br/>
+  • Provide rural milk producers better access to organised processing sector<br/><br/>
+  <strong>National Outlay: Rs.2242 crore</strong><br/>
+  (World Bank + GOI + NDDB contribution)
+</p>
+
+<p>
+  <strong>Component A – Scientific Breeding & Nutrition:</strong><br/><br/>
+  • Increase AI coverage from 20% to 35%<br/>
+  • Produce High Genetic Merit bulls<br/>
+  • Improve semen production<br/>
+  • Doorstep AI through trained technicians (3000 technicians, 4M AIs/year)<br/>
+  • Ration Balancing Programme (2.7M animals, 40,000 villages)<br/>
+  • Fodder development, silage making<br/>
+  • Computerized village-level breeding & ration advisory systems
+</p>
+
+<p>
+  <strong>Component B – Strengthening Milk Procurement:</strong><br/><br/>
+  • Investment in village-level infrastructure<br/>
+  • Milk cans, BMCs, IT systems, testing equipment<br/>
+  • Increase number of villages and producers linked to DCS
+</p>
+
+<p>
+  <strong>Component C – Project Management & Learning:</strong><br/><br/>
+  • Computerised information systems<br/>
+  • Capacity building & training of field personnel
+</p>
+
+<p>
+  <strong>KMF Progeny Testing Project (NDP-1):</strong><br/><br/>
+  Launched in June 2012 with an outlay of Rs.2055 lakhs for 6 years.<br/>
+  Implemented in Bangalore & Kolar Unions across 5 districts and 12 talukas covering 650 villages.<br/><br/>
+  <strong>Objective:</strong> Produce genetically superior HF bulls and improve milk, fat and protein yields.
+</p>
+
+<p>
+  <strong>Organisation Structure (Three-Tier Cooperative System):</strong><br/><br/>
+  A. Dairy Cooperative Societies at village level<br/>
+  B. District Cooperative Milk Unions<br/>
+  C. Karnataka Milk Federation (State Level)<br/><br/>
+  All are governed by democratically elected boards to ensure efficient functioning and achieving organizational goals.
+</p>
+
          
-          {scheme[currentIndex]?.content?.map((item, id) => {
+          {/* {scheme[currentIndex]?.content?.map((item, id) => {
             return (
               <p  key={id} className="text-[10px] md:text-xl text-neutral-dark1 text-justify">{item?.children?.[0]?.text}</p>
             );
-          })}
+          })} */}
           
         </div>
         </Fade>
 
-        <div className="flex flex-col justify-center items-start rounded-tl-3xl   rounded-br-3xl  bg-white p-5">
+        {/* <div className="flex flex-col justify-center items-start rounded-tl-3xl   rounded-br-3xl  bg-white p-5">
           <div>
             <h1 className=" text-xs  text-center md:text-xl uppercase">{locale==='kn'?`ಕೇಂದ್ರ ಸರಕಾರದ ಯೋಜನೆಗಳು`:`Government Of Karnataka `}</h1>
           </div>
@@ -255,7 +402,7 @@ const handleButton = (idx) => {
             
             </ul>
           </div>
-        </div>
+        </div> */}
       </section>
 
 
