@@ -220,7 +220,7 @@ function AnimalHealth() {
 
 
 
-      <section className=" relative w-full   h-auto pt-10  ">
+      {/* <section className=" relative w-full   h-auto pt-10  ">
         <div className="w-full  h-full flex flex-col p-3 space-y-3 lg:flex-row lg:p-10 lg:space-x-10">
           <div className="w-full flex flex-col space-y-2 justify-center items-start    p-1   ">
 
@@ -235,77 +235,7 @@ function AnimalHealth() {
             <Fade bottom>
 
             <div className="w-full h-full flex gap-10 justify-center items-center flex-wrap  ">
-            {/* {healthCamps?.map((_, id) => {
-                return (
-                  <div
-                    key={id}
-                    className="max-w-2xl w-full m-10 rounded-3xl min-h-[500px] relative   shadow-2xl bg-slate-50 p-5">
-                    <div className="m-auto relative w-full h-full ">
-
-                      
-
-
-                    <div className=' w-full z-[-10]     flex justify-center items-center'>
-            <img src='/images/heading/heading-color/group.png' className='absolute z-[1] w-[450px] top-[-30px] sm:top-[-56px]  object-cover  sm:object-contain'/>
-
-
-                        <h1 className="w-full relative max-w-[300px] m-auto text-center  text-primary-main text-sm sm:text-xl   z-[100] ">
-                        {_?.attributes?.title}
-                        </h1>
-                        </div>
-                      
-                  
-                     
-                      <div className="mt-20 ">
-                        {_?.attributes?.content && (
-                          <BlocksRenderer
-                            content={readMore ? _?.attributes?.content: _?.attributes?.content.slice(0,6) }
-                            blocks={{
-                              paragraph: ({ children }) => <p className="text-xs md:text-lg">{children}</p>,
-                              heading: ({ children, level }) => {
-                                switch (level) {
-                                  case 1:
-                                    return (
-                                      <h1 className="md:text-2xl text-primary-main">{children}</h1>
-                                    );
-                                  case 2:
-                                    return <h2 className="text-lg">{children}</h2>;
-                                  case 3:
-                                    return <h3>{children}</h3>;
-                                  case 4:
-                                    return <h4>{children}</h4>;
-                                  case 5:
-                                    return <h5>{children}</h5>;
-                                  case 6:
-                                    return <h6>{children}</h6>;
-                                  default:
-                                    return <h1>{children}</h1>;
-                                }
-                              },
-                              list: ({ children }) => {
-                                return <li className='text-xs md:text-lg'>{children}</li>;
-                              },
-                              code: ({ children }) => (
-                                <h1 className="text-2xl bg-primary-main text-white p-2 shadow-lg">
-                                  {children}
-                                </h1>
-                              )
-                            }}
-                          />
-                        )}
-
-{
-  _?.attributes?.content.length>3 &&
-
-<button onClick={toggleHealthReadMore} className='w-full flex justify-end text-primary-main'>
-                  {readMoreHealth ? 'Read less' : 'Read more'}
-                </button>
-            }
-                      </div>
-                    </div>
-                  </div>
-                );
-              })} */}
+           
 
               
                <div
@@ -349,7 +279,7 @@ function AnimalHealth() {
             </Fade>
           </div>
         </div>
-      </section>
+      </section> */}
        
 <Footer />
     </div>

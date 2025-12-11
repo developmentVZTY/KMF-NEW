@@ -50,11 +50,11 @@ function UnionCard({ name, image, description, link, idx }) {
               infiniteLoop
               showThumbs={false}
               showIndicators={false}>
-              {image?.data?.map((item, id) => {
+              {image.map((item, id) => {
                 return (
                   <img
                     key={id}
-                    src={item?.attributes?.url}
+                    src={item}
                     className=" max-w-[400px] h-full object-cover"
                   />
                 );

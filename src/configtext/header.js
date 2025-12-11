@@ -58,7 +58,7 @@ export const mobileHeader = {
     },
 
     {
-      title: 'MILK UNIONS',
+      title: 'MILK UNION',
       
       // subItems: [
       //   {
@@ -133,7 +133,7 @@ export const mobileHeader = {
     },
 
     {
-      title: 'KMF UNITS',
+      title: 'KMF UNIT',
       link:'/en/kmf-unit'
        
       // subItems: [
