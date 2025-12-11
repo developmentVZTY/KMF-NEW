@@ -16,6 +16,7 @@ import resp9 from '@/images/recipes/9.jpg'
 import useApi from '@/hooks/useApi'
 
 import useLocale from '@/hooks/useLocale'
+import { recipes } from './recipesData'
 
 function Recipe() {
 
@@ -31,71 +32,80 @@ const locale=useLocale().locale
     )()
   },[])
 
-  const recipes = [
-  {
-    id: 1,
-    title: "AKKI PAYASA",
-    image:
-      resp9.src,
-    link: "https://www.kmfnandini.coop/en/nandini-recipes/6",
-  },
-  {
-    id: 2,
-    title: "BANANA KESARIBATH",
-    image:
-      resp1.src,
-    link: "https://www.kmfnandini.coop/en/nandini-recipes/7",
-  },
-  {
-    id: 3,
-    title: "BESAN LADDU",
-    image:
-      resp2.src,
-    link: "https://www.kmfnandini.coop/en/nandini-recipes/8",
-  },
-  {
-    id: 4,
-    title: "ELLU CHIKKI",
-    image:
-      resp3.src,
-    link: "https://www.kmfnandini.coop/en/nandini-recipes/9",
-  },
-  {
-    id: 5,
-    title: "KADALEBELE PAYASA",
-    image:
-      resp4.src,
-    link: "https://www.kmfnandini.coop/en/nandini-recipes/2",
-  },
-  {
-    id: 6,
-    title: "KOVA HOLIGE",
-    image:
-      resp5.src,
-    link: "https://www.kmfnandini.coop/en/nandini-recipes/3",
-  },
-  {
-    id: 7,
-    title: "KOVA LADDU",
-    image:
-      resp6.src,
-    link: "https://www.kmfnandini.coop/en/nandini-recipes/4",
-  },
-  {
-    id: 8,
-    title: "NANDINI GULAB JAMOON",
-    image:
-      resp7.src,
-    link: "https://www.kmfnandini.coop/en/nandini-recipes/1",
-  },
-  {
-    id: 9,
-    title: "RAVA LADDU",
-    image:
-      resp8.src,
-    link: "https://www.kmfnandini.coop/en/nandini-recipes/5",
-  },
-];
+//   const recipes = [
+//   {
+//     id: 1,
+//     title: "AKKI PAYASA",
+//     video:"",
+//     image:
+//       resp9.src,
+//     link: "https://www.kmfnandini.coop/en/nandini-recipes/1",
+//   },
+//   {
+//     id: 2,
+//     title: "BANANA KESARIBATH",
+//     video:"",
+//     image:
+//       resp1.src,
+//     link: "https://www.kmfnandini.coop/en/nandini-recipes/2",
+//   },
+//   {
+//     id: 3,
+//     title: "BESAN LADDU",
+//     video:"",
+//     image:
+//       resp2.src,
+//     link: "https://www.kmfnandini.coop/en/nandini-recipes/3",
+//   },
+//   {
+//     id: 4,
+//     title: "ELLU CHIKKI",
+//     video:"",
+//     image:
+//       resp3.src,
+//     link: "https://www.kmfnandini.coop/en/nandini-recipes/4",
+//   },
+//   {
+//     id: 5,
+//     title: "KADALEBELE PAYASA",
+//     video:"",
+//     image:
+//       resp4.src,
+//     link: "https://www.kmfnandini.coop/en/nandini-recipes/5",
+//   },
+//   {
+//     id: 6,
+//     title: "KOVA HOLIGE",
+//     video:"",
+//     image:
+//       resp5.src,
+//     link: "https://www.kmfnandini.coop/en/nandini-recipes/6",
+//   },
+//   {
+//     id: 7,
+//     title: "KOVA LADDU",
+//     video:"",
+//     image:
+//       resp6.src,
+//     link: "https://www.kmfnandini.coop/en/nandini-recipes/7",
+//   },
+//   {
+//     id: 8,
+//     title: "NANDINI GULAB JAMOON",
+//     video:"",
+//     image:
+//       resp7.src,
+//     link: "https://www.kmfnandini.coop/en/nandini-recipes/8",
+//   },
+//   {
+//     id: 9,
+//     title: "RAVA LADDU",
+//     video:"",
+//     image:
+//       resp8.src,
+//     link: "https://www.kmfnandini.coop/en/nandini-recipes/9",
+//   },
+// ];
 
 
 
@@ -119,7 +129,7 @@ const locale=useLocale().locale
            
             return(
               <Recipes key={id} title={item.title} image={item.image}
-              link=""
+              link={`/${locale}/nandini-recipes/${item?.id}`}
               />
             )
           })

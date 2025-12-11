@@ -126,10 +126,10 @@ const Awards = () => {
 
 
 
-          {award.map((item,idx)=>{
+          {/* {award.map((item,idx)=>{
                 
-                return(
-              <div key={idx}
+                return( */}
+              {/* <div key={idx}
                   className=" w-96 md:w-72     h-96  rounded-md overflow-hidden   m-auto group   transition-all duration-100  "
                   >
                   <div className="p-2 w-full h-[70%]">
@@ -155,9 +155,130 @@ const Awards = () => {
                   </div>
 
                   
+                  </div> */}
+
+
+
+             <div 
+                  className=" w-96 md:w-72     h-96  rounded-md overflow-hidden   m-auto group   transition-all duration-100  "
+                  >
+                  <div className="p-2 w-full h-[70%]">
+                  <PhotoProvider >
+                          
+                          <PhotoView src={award1.src} width="400px" height="400px"  >
+                         
+                          <img
+                        src={award1.src}
+                        alt="featured-img"
+                        className=" w-full h-full rounded-full transition-all duration-100 group-hover:scale-[1.01] hover:rounded-none "
+                        />   
+                                               </PhotoView>
+                      
+                    
+                    </PhotoProvider>
+                       
                   </div>
-                )
-              })}
+
+                  <div className="p-2  w-full   rounded-full bg-zinc-300 group-hover:bg-orange-500 ">
+                        <h1 className="text-sm text-center group-hover:text-white  "> DAIRY INNOVATION AWARD 2022
+</h1>
+                  </div>
+
+                  
+                  </div> 
+
+
+
+             <div 
+                  className=" w-96 md:w-72     h-96  rounded-md overflow-hidden   m-auto group   transition-all duration-100  "
+                  >
+                  <div className="p-2 w-full h-[70%]">
+                  <PhotoProvider >
+                          
+                          <PhotoView src={award2.src} width="400px" height="400px"  >
+                         
+                          <img
+                        src={award2.src}
+                        alt="featured-img"
+                        className=" w-full h-full rounded-full transition-all duration-100 group-hover:scale-[1.01] hover:rounded-none "
+                        />   
+                                               </PhotoView>
+                      
+                    
+                    </PhotoProvider>
+                       
+                  </div>
+
+                  <div className="p-2  w-full   rounded-full bg-zinc-300 group-hover:bg-orange-500 ">
+                        <h1 className="text-sm text-center group-hover:text-white  "> BUSINESS EXCELLENCE AWARD
+</h1>
+                  </div>
+
+                  
+                  </div> 
+
+
+
+             <div 
+                  className=" w-96 md:w-72     h-96  rounded-md overflow-hidden   m-auto group   transition-all duration-100  "
+                  >
+                  <div className="p-2 w-full h-[70%]">
+                  <PhotoProvider >
+                          
+                          <PhotoView src={award3.src} width="400px" height="400px"  >
+                         
+                          <img
+                        src={award3.src}
+                        alt="featured-img"
+                        className=" w-full h-full rounded-full transition-all duration-100 group-hover:scale-[1.01] hover:rounded-none "
+                        />   
+                                               </PhotoView>
+                      
+                    
+                    </PhotoProvider>
+                       
+                  </div>
+
+                  <div className="p-2  w-full   rounded-full bg-zinc-300 group-hover:bg-orange-500 ">
+                        <h1 className="text-sm text-center group-hover:text-white  "> NCDFI AWARD 2023
+</h1>
+                  </div>
+
+                  
+                  </div> 
+
+
+
+             <div 
+                  className=" w-96 md:w-72     h-96  rounded-md overflow-hidden   m-auto group   transition-all duration-100  "
+                  >
+                  <div className="p-2 w-full h-[70%]">
+                  <PhotoProvider >
+                          
+                          <PhotoView src={award4.src} width="400px" height="400px"  >
+                         
+                          <img
+                        src={award4.src}
+                        alt="featured-img"
+                        className=" w-full h-full rounded-full transition-all duration-100 group-hover:scale-[1.01] hover:rounded-none "
+                        />   
+                                               </PhotoView>
+                      
+                    
+                    </PhotoProvider>
+                       
+                  </div>
+
+                  <div className="p-2  w-full   rounded-full bg-zinc-300 group-hover:bg-orange-500 ">
+                        <h1 className="text-sm text-center group-hover:text-white  "> BRAND
+FOOTPRINT AWARD 2022
+</h1>
+                  </div>
+
+                  
+                  </div> 
+                {/* )
+              })} */}
 
       
               </div>

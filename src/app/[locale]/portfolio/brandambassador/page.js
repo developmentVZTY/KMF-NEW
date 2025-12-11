@@ -19,7 +19,7 @@ import rajkumar3 from '@/images/portfolio/rajkumar-3.jpg'
 import rajkumar4 from '@/images/portfolio/rajkumar-4.jpg'
 import rajkumar5 from '@/images/portfolio/rajkumar-5.jpg'
 import rajkumar6 from '@/images/portfolio/rajkumar-6.jpg'
-import brand from '@/images/portfolio/BrandAmbassador.png'
+import brand from '@/images/portfolio/ba.png'
 import Link from 'next/link';
 import useLocale from '@/hooks/useLocale';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
@@ -147,14 +147,14 @@ const BrandAmbassador = () => {
         showThumbs={false}
         showIndicators={true}
        >
-        {
+        {/* {
           brandAmbassador?.map((item,id)=>{
-            return(
-              <div key={id} className='relative w-full h-[500px] md:h-[750px] '>
+            return( */}
+              <div  className='relative w-full h-[500px] md:h-[750px] '>
 
               <div className='absolute w-full h-full top-0 left-0  bg-black opacity-50 z-[-1]'></div>
               <div className='absolute w-full h-full top-0 left-0   z-[-10]'>
-                 <img className='w-full h-full object-cover' src={item?.attributes?.image?.data?.[0]?.attributes?.url} alt="" />
+                 <img className='w-full h-full object-contain' src={brand.src} alt="" />
                  </div>
     
               <div className='w-full h-full flex flex-col justify-center items-center  '>
@@ -163,25 +163,25 @@ const BrandAmbassador = () => {
                   <div className='max-w-[700px] m-auto'>
     
                  
-                     <h1 className='text-white text-xl md:text-5xl font-bold text-center uppercase'>{item?.attributes?.name}</h1>
-                     {item?.attributes?.description?.map((des,id)=>{
+                     <h1 className='text-white text-xl md:text-5xl font-bold text-center uppercase'>Brand Ambassador</h1>
+                     {/* {item?.attributes?.description?.map((des,id)=>{
 
               
-                     return(
-                      <p key={id} className='text-lg text-center  mt-4 md:mt-10 text-white p-2'>
-                        {des?.children?.[0]?.text}
+                     return( */}
+                      <p  className='text-lg text-center  mt-4 md:mt-10 text-white p-2'>
+                       
     
     </p>
 
-                     )})}
+                    {/* //  )})} */}
                      
     </div>
                  </div>
             </div>
             </div>
-            )
+            {/* )
           })
-        }
+        } */}
        
 
         

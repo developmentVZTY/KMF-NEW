@@ -46,8 +46,7 @@ const locale=useLocale().locale
     title: "Kolar Co-operative Milk Union",
     // link: "https://www.kmfnandini.coop/en/milk-union/55",
     images: [
-      "https://web.archive.org/web/20240819043013/https://kmf-public.s3.ap-south-1.amazonaws.com/download_8edce96810.jpg",
-      "https://web.archive.org/web/20240819043013/https://kmf-public.s3.ap-south-1.amazonaws.com/download_8edce96810.jpg"
+      "https://web.archive.org/web/20240819043006/https://kmf-public.s3.ap-south-1.amazonaws.com/download_8edce96810.jpg"
     ],
     description:
       "Kolar Chikkaballapur two districts do not have any permanent river, canal and irrigation facilities and are constantly prone to drought, but are at the fore with dairy farming as their main occupation. The dairy industry of the two districts is leading as a model in the country today."

@@ -95,6 +95,31 @@ const Marketing = () => {
   };
 
 
+  const marketingData = [
+  {
+    title: "DEFENSE",
+    description:
+      "Excellent U.H.T. Milk is being supplied to Eastern & Northern Command at an average of 28,000 liters per day through the Defense Department. Butter and ghee in tins and milk powder are also provided based on requirement."
+  },
+  {
+    title: "GHEE SUPPLY",
+    description:
+      "KMF supplies high-quality Nandini Ghee to various state and central departments, institutional buyers, and commercial establishments. The ghee meets strict AGMARK standards and is supplied in bulk and consumer packs across Karnataka and neighboring states."
+  },
+  {
+    title: "“NANDINI” PAN INDIA BRAND",
+    description:
+      "Nandini products are now available across major cities in India through a growing distribution network. UHT milk, ghee, butter, sweets, paneer, curd, and value-added products are supplied to supermarkets, retail chains, and e-commerce platforms nationwide."
+  },
+  {
+    title: "CAFEMOO",
+    description:
+      "Cafemoo is KMF’s exclusive dairy café concept offering beverages and snacks like flavored milk, coffee, lassi, yogurt drinks, paneer snacks, and ice creams. The outlets promote healthy dairy consumption with a modern café experience."
+  }
+];
+
+
+
   return (
     <div className='w-full h-full'>
 
@@ -318,12 +343,12 @@ const Marketing = () => {
                    </h1>
 
                
-              {market.map((item,idx)=>{
+              {marketingData.map((item,idx)=>{
               
                 return(
                   <div key={idx} onClick={()=>handleMarket(item)} className='mt-2'>
                      <h1  className='uppercase cursor-pointer text-sm md:text-lg lg:text-sm xl:text-xl text-center hover:text-white transition-all duration-200 hover:scale-[1.5]'>
-                      {item?.attributes?.title}
+                      {item.title}
                     </h1>
                    
                    </div>
@@ -345,12 +370,12 @@ const Marketing = () => {
               An ambitious scheme of the Karnataka State Government, the “Ksheerdhare” scheme has been implemented for the following objective                
               </p>
              </div> */}
-               {market.map((item,idx)=>{
+               {marketingData.map((item,idx)=>{
               
               return(
                 <div key={idx} onClick={()=>handleMarket(item)} className='mt-5'>
                    <h1  className='uppercase cursor-pointer text-sm md:text-lg lg:text-sm xl:text-xl text-center hover:text-white transition-all duration-200 hover:scale-[1.5]'>
-                    {item?.attributes?.title}
+                    {item.title}
                   </h1>
                  
                  </div>

@@ -1461,56 +1461,56 @@ window.addEventListener('resize',handleResize);
               spaceBetween={20}
              
               modules={[FreeMode, Autoplay]}
-              className="max-w-7xl m-auto hidden">
+              className="max-w-7xl m-auto ">
               {/* {sponsore[0]?.attributes?.image?.data?.map((item, idx) => {
                 return ( */}
-                  <SwiperSlide  className="hidden">
-                    <div className="flex justify-center items-center hidden  w-52 h-52 ">
+                  <SwiperSlide  className="">
+                    <div className="flex justify-center items-center  w-52 h-52 ">
                       <img className="m-auto w-44 h-44" src={spon1.src} alt="" />
                     </div>
                   </SwiperSlide>
-                    <SwiperSlide  className="hidden">
-                    <div className="flex justify-center items-center hidden  w-52 h-52 ">
+                    <SwiperSlide  className="">
+                    <div className="flex justify-center items-center  w-52 h-52 ">
                       <img className="m-auto w-44 h-44" src={spon2.src} alt="" />
                     </div>
                   </SwiperSlide>
-                    <SwiperSlide  className="hidden">
-                    <div className="flex justify-center items-center hidden  w-52 h-52 ">
+                    <SwiperSlide  className="">
+                    <div className="flex justify-center items-center  w-52 h-52 ">
                       <img className="m-auto w-44 h-44" src={spon3.src} alt="" />
                     </div>
                   </SwiperSlide>
-                    <SwiperSlide  className="hidden">
-                    <div className="flex justify-center items-center hidden  w-52 h-52 ">
+                    <SwiperSlide  className="">
+                    <div className="flex justify-center items-center  w-52 h-52 ">
                       <img className="m-auto w-44 h-44" src={spon4.src} alt="" />
                     </div>
                   </SwiperSlide>
-                    <SwiperSlide  className="hidden">
-                    <div className="flex justify-center items-center hidden  w-52 h-52 ">
+                    <SwiperSlide  className="">
+                    <div className="flex justify-center items-center  w-52 h-52 ">
                       <img className="m-auto w-44 h-44" src={spon5.src} alt="" />
                     </div>
                   </SwiperSlide>
-                    <SwiperSlide  className="hidden">
-                    <div className="flex justify-center items-center hidden  w-52 h-52 ">
+                    <SwiperSlide  className="">
+                    <div className="flex justify-center items-center  w-52 h-52 ">
                       <img className="m-auto w-44 h-44" src={spon6.src} alt="" />
                     </div>
                   </SwiperSlide>
-                    <SwiperSlide  className="hidden">
-                    <div className="flex justify-center items-center hidden  w-52 h-52 ">
+                    <SwiperSlide  className="">
+                    <div className="flex justify-center items-center  w-52 h-52 ">
                       <img className="m-auto w-44 h-44" src={spon7.src} alt="" />
                     </div>
                   </SwiperSlide>
-                    <SwiperSlide  className="hidden">
-                    <div className="flex justify-center items-center hidden  w-52 h-52 ">
+                    <SwiperSlide  className="">
+                    <div className="flex justify-center items-center  w-52 h-52 ">
                       <img className="m-auto w-44 h-44" src={spon8.src} alt="" />
                     </div>
                   </SwiperSlide>
-                    <SwiperSlide  className="hidden">
-                    <div className="flex justify-center items-center hidden  w-52 h-52 ">
+                    <SwiperSlide  className="">
+                    <div className="flex justify-center items-center  w-52 h-52 ">
                       <img className="m-auto w-44 h-44" src={spon9.src} alt="" />
                     </div>
                   </SwiperSlide>
-                   <SwiperSlide  className="hidden">
-                    <div className="flex justify-center items-center hidden  w-52 h-52 ">
+                   <SwiperSlide  className="">
+                    <div className="flex justify-center items-center  w-52 h-52 ">
                       <img className="m-auto w-44 h-44" src={spon10.src} alt="" />
                     </div>
                   </SwiperSlide>

@@ -162,7 +162,7 @@ return(
                 
           </div>
 
-      <section className="w-full h-auto p-10 mt-10   relative flex justify-center items-center flex-col   ">
+      {/* <section className="w-full h-auto p-10 mt-10   relative flex justify-center items-center flex-col   ">
         <div className="w-full flex flex-col justify-center items-center space-y-5">
        
 
@@ -175,9 +175,9 @@ return(
             </div>
           
         </div>
-      </section>
+      </section> */}
 
-      <section className=" relative w-full   h-auto   ">
+      {/* <section className=" relative w-full   h-auto   ">
         <div className="w-full  h-full flex flex-col p-3 space-y-3 lg:flex-row lg:p-10 lg:space-x-10">
           <div className="w-full h-full flex flex-col space-y-2 justify-center items-start    p-1   ">
           <Fade bottom>
@@ -261,7 +261,138 @@ return(
 
           </div>
         </div>
-      </section>
+      </section> */}
+
+        <section className=" relative w-full   h-auto pt-10  ">
+              <div className="w-full  h-full flex flex-col p-3 space-y-3 lg:flex-row lg:p-10 lg:space-x-10">
+                <div className="w-full flex flex-col space-y-2 justify-center items-start    p-1   ">
+      
+                <div className="mb-5 md:mb-20     relative w-full  flex justify-center items-center ">
+                  
+                    <h1 className=" text-primary-main relative z-10 font-heading text-4xl font-extrabold uppercase">
+                    {locale==='kn'?'ಪಶು ಸಂತಾನಾಭಿವೃದ್ಧಿ ಕಾರ್ಯಕ್ರಮ':'Animal Breeding '}
+                    </h1>
+                  </div>
+                 
+      
+                  <Fade bottom>
+      
+                  <div className="w-full h-full flex gap-10 justify-center items-center flex-wrap  ">
+                  {/* {healthCamps?.map((_, id) => {
+                      return (
+                        <div
+                          key={id}
+                          className="max-w-2xl w-full m-10 rounded-3xl min-h-[500px] relative   shadow-2xl bg-slate-50 p-5">
+                          <div className="m-auto relative w-full h-full ">
+      
+                            
+      
+      
+                          <div className=' w-full z-[-10]     flex justify-center items-center'>
+                  <img src='/images/heading/heading-color/group.png' className='absolute z-[1] w-[450px] top-[-30px] sm:top-[-56px]  object-cover  sm:object-contain'/>
+      
+      
+                              <h1 className="w-full relative max-w-[300px] m-auto text-center  text-primary-main text-sm sm:text-xl   z-[100] ">
+                              {_?.attributes?.title}
+                              </h1>
+                              </div>
+                            
+                        
+                           
+                            <div className="mt-20 ">
+                              {_?.attributes?.content && (
+                                <BlocksRenderer
+                                  content={readMore ? _?.attributes?.content: _?.attributes?.content.slice(0,6) }
+                                  blocks={{
+                                    paragraph: ({ children }) => <p className="text-xs md:text-lg">{children}</p>,
+                                    heading: ({ children, level }) => {
+                                      switch (level) {
+                                        case 1:
+                                          return (
+                                            <h1 className="md:text-2xl text-primary-main">{children}</h1>
+                                          );
+                                        case 2:
+                                          return <h2 className="text-lg">{children}</h2>;
+                                        case 3:
+                                          return <h3>{children}</h3>;
+                                        case 4:
+                                          return <h4>{children}</h4>;
+                                        case 5:
+                                          return <h5>{children}</h5>;
+                                        case 6:
+                                          return <h6>{children}</h6>;
+                                        default:
+                                          return <h1>{children}</h1>;
+                                      }
+                                    },
+                                    list: ({ children }) => {
+                                      return <li className='text-xs md:text-lg'>{children}</li>;
+                                    },
+                                    code: ({ children }) => (
+                                      <h1 className="text-2xl bg-primary-main text-white p-2 shadow-lg">
+                                        {children}
+                                      </h1>
+                                    )
+                                  }}
+                                />
+                              )}
+      
+      {
+        _?.attributes?.content.length>3 &&
+      
+      <button onClick={toggleHealthReadMore} className='w-full flex justify-end text-primary-main'>
+                        {readMoreHealth ? 'Read less' : 'Read more'}
+                      </button>
+                  }
+                            </div>
+                          </div>
+                        </div>
+                      );
+                    })} */}
+      
+                    
+                     <div
+                                      
+                                        className="  w-full  p-2 rounded-3xl    ">
+                                        <div className="m-auto">
+                                        
+                                          <div className=" ">
+                                          <Fade bottom> <p className=" text-sm text-justify md:text-lg">Our breeding program focuses on improving the genetic potential of cattle by introducing scientifically proven breeding techniques and high-quality semen.
+      
+                    </p></Fade>  <br/><br/>
+                                           <h1 className="text-2xl  text-black p-2 ">
+                                                    Program Highlights:
+                                                    </h1>
+                                                    <br/>
+                                               <ul className='list-disc ml-5'>
+                                                 <li>Artificial Insemination (AI) services at village and district levels</li>
+                                                 <li>Use of genetically superior bulls for breed enhancement</li>
+                                                 <li>Pregnancy diagnosis and reproductive health monitoring</li>
+                                                 <li>Promotion of high-yielding crossbreeds and indigenous breed improvement</li>
+                                                   <li>Calf management guidance for better future productivity
+      
+      
+      </li>
+                                                   <li>Record keeping for AI, calving, and breeding cycles</li>
+                                                     
+                                               </ul>
+                    <br/><br/>
+                                                  <h1 className="text-black text-2xl  p-2 ">
+                                                    Objective:
+                                                    </h1><br/>
+                    <p className=" text-sm text-justify md:text-lg">To enhance the genetic quality of dairy animals, improve fertility, and increase milk production sustainably.
+                    </p>
+                                          </div>
+                                        </div>
+                                      </div>
+                  
+      
+      
+                  </div>
+                  </Fade>
+                </div>
+              </div>
+            </section>
     
 
        
