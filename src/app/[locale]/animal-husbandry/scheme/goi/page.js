@@ -93,8 +93,8 @@ const handleButton = (idx) => {
           <section className=" max-w-7xl m-auto h-auto p-3 flex   justify-center items-start    space-y-6  xl:flex-row xl:justify-evenly xl:items-start md:space-x-2">
 
             <Fade left>
-        <div className="w-full xl:max-w-2xl shadow-lg flex flex-col justify-center items-start rounded-tl-3xl  rounded-br-3xl  bg-white space-y-6 p-5 ">
-        <div className="md:mb-20  mt-20  relative w-full   flex justify-center items-center ">
+        <div className="w-full shadow-lg flex flex-col justify-center items-start rounded-tl-3xl  rounded-br-3xl  bg-white space-y-6 p-5 ">
+        {/* <div className="md:mb-20  mt-20  relative w-full   flex justify-center items-center ">
               <img
                 src="/images/heading/heading-color/group.png"
                 className="absolute   w-[530px] top-[-18px] sm:top-[-50px]    object-contain"
@@ -102,19 +102,88 @@ const handleButton = (idx) => {
               <h1 className=" text-primary-main relative max-w-[100px]  sm:max-w-[300px] m-auto text-center z-10 font-heading text-[5px] md:text-[15px] font-extrabold uppercase">
               {scheme[currentIndex]?.title}
               </h1>
-            </div>
+            </div> */}
+
+            <p>
+  <strong>GOI Scheme – Rashtriya Krishi Vikas Yojane (RKVY):</strong><br/><br/>
+  Started in 2009–10. Grants were released for:<br/>
+  • Accelerating dairy development in Bijapur, Gulbarga, Bellary<br/>
+  • Bio-security measures at Nandini Sperm Station<br/>
+  • Strengthening training centres<br/>
+  • Fodder densification units<br/>
+  • Urea enrichment of fodder<br/>
+  • Mineral mixture plant<br/>
+  • Areca sheath powdering plant<br/>
+  • Mobile BMCs, milking machines, chaff cutters, etc.<br/><br/>
+  Multiple programmes are under implementation.
+</p>
+
+<p>
+  <strong>National Programme for Dairy Development (NPDD):</strong><br/><br/>
+  Introduced in 2014–15 for strengthening dairy infrastructure. Proposals worth Rs.2897.08 lakhs were submitted.
+  GOI approved Rs.791.60 lakhs for Gulbarga Milk Union and released Rs.395.80 lakhs.
+</p>
+
+<p>
+  <strong>National Dairy Plan (NDP-I):</strong><br/><br/>
+  Required due to rapidly increasing demand for milk in India. Implemented from 2012–13 to 2017–18.<br/><br/>
+  <strong>Objectives:</strong><br/>
+  • Increase productivity of milch animals<br/>
+  • Provide rural milk producers better access to organised processing sector<br/><br/>
+  <strong>National Outlay: Rs.2242 crore</strong><br/>
+  (World Bank + GOI + NDDB contribution)
+</p>
+
+<p>
+  <strong>Component A – Scientific Breeding & Nutrition:</strong><br/><br/>
+  • Increase AI coverage from 20% to 35%<br/>
+  • Produce High Genetic Merit bulls<br/>
+  • Improve semen production<br/>
+  • Doorstep AI through trained technicians (3000 technicians, 4M AIs/year)<br/>
+  • Ration Balancing Programme (2.7M animals, 40,000 villages)<br/>
+  • Fodder development, silage making<br/>
+  • Computerized village-level breeding & ration advisory systems
+</p>
+
+<p>
+  <strong>Component B – Strengthening Milk Procurement:</strong><br/><br/>
+  • Investment in village-level infrastructure<br/>
+  • Milk cans, BMCs, IT systems, testing equipment<br/>
+  • Increase number of villages and producers linked to DCS
+</p>
+
+<p>
+  <strong>Component C – Project Management & Learning:</strong><br/><br/>
+  • Computerised information systems<br/>
+  • Capacity building & training of field personnel
+</p>
+
+<p>
+  <strong>KMF Progeny Testing Project (NDP-1):</strong><br/><br/>
+  Launched in June 2012 with an outlay of Rs.2055 lakhs for 6 years.<br/>
+  Implemented in Bangalore & Kolar Unions across 5 districts and 12 talukas covering 650 villages.<br/><br/>
+  <strong>Objective:</strong> Produce genetically superior HF bulls and improve milk, fat and protein yields.
+</p>
+
+<p>
+  <strong>Organisation Structure (Three-Tier Cooperative System):</strong><br/><br/>
+  A. Dairy Cooperative Societies at village level<br/>
+  B. District Cooperative Milk Unions<br/>
+  C. Karnataka Milk Federation (State Level)<br/><br/>
+  All are governed by democratically elected boards to ensure efficient functioning and achieving organizational goals.
+</p>
           
          
-          {scheme[currentIndex]?.content?.map((item, id) => {
+          {/* {scheme[currentIndex]?.content?.map((item, id) => {
             return (
               <p  key={id} className="text-[10px] md:text-xl text-neutral-dark1 text-justify">{item?.children?.[0]?.text}</p>
             );
-          })}
+          })} */}
           
         </div>
         </Fade>
 
-        <div className="flex flex-col justify-center items-start rounded-tl-3xl   rounded-br-3xl  bg-white p-5">
+        {/* <div className="flex flex-col justify-center items-start rounded-tl-3xl   rounded-br-3xl  bg-white p-5">
           <div>
             <h1 className=" text-xs  text-center md:text-xl uppercase">{locale==='kn'?`ಕೇಂದ್ರ ಸರಕಾರದ ಯೋಜನೆಗಳು`:`Government Of India `}</h1>
           </div>
@@ -182,7 +251,7 @@ const handleButton = (idx) => {
             
             </ul>
           </div>
-        </div>
+        </div> */}
       </section>
 
 

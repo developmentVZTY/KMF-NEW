@@ -10,6 +10,7 @@ import locationIco from '@/images/milk-union/icons/location_on.svg';
 import mailIco from '@/images/milk-union/icons/mail.svg';
 import callIco from '@/images/milk-union/icons/call.svg';
 import printIco from '@/images/milk-union/icons/print.svg';
+import { unitsData } from '../unitsData';
 function KmfUnitDetail() {
   
   const [unit, setUnit] = useState([]);
@@ -27,15 +28,18 @@ function KmfUnitDetail() {
   const { isScroll, setIsScroll, id, setId } = useMyContext();
   useEffect(() => {
     (async () => {
-      const { data } = await axios.get(`/api/units-of-kmfs/${param?.slug}`);
+      // const { data } = await axios.get(`/api/units-of-kmfs/${param?.slug}`);
       
-      const { data:unions } = await axios.get('/api/units-of-kmfs?sort[0]=order:asc');
-      setAllUnits(unions?.data)
-      setBanner(data?.data?.attributes?.bannervideo?.data?.attributes?.url)
-      setBannerImg(data?.data?.attributes?.banner?.data?.attributes?.url)
-      setUnit(data?.data);
-      setUnitImages(data?.data?.attributes?.image?.data);
-      setLoading(false)
+      // const { data:unions } = await axios.get('/api/units-of-kmfs?sort[0]=order:asc');
+       const unions = unitsData?.filter((item) => item.id === parseInt(param.slug));
+      
+      // setAllUnits(unions?.data)
+      // setBanner(data?.data?.attributes?.bannervideo?.data?.attributes?.url)
+      // setBannerImg(data?.data?.attributes?.banner?.data?.attributes?.url)
+      setUnit(unions[0]);
+       console.log("units",unions[0]);
+      // setUnitImages(data?.data?.attributes?.image?.data);
+      // setLoading(false)
     })();
   }, []);
 
@@ -60,25 +64,25 @@ function KmfUnitDetail() {
        />
      </section>:
       <section className={`w-full h-full md:h-[500px] pt-28 relative  grid place-items-center `}>
-      {/* <img src={banner?banner[0]:HeroImg.src} className="w-full h-full absolute top-0 z-[-1]" />
-       */}
+      <img src={unit.img} className="w-full h-full absolute top-0 z-[-1]" />
       
-      <img
+      
+      {/* <img
         src={bannerImg || ''}
         
         className={`w-full  h-full    object-fill absolute top-0 z-[-1] ${
           isScroll ? 'h-[400px]' : ''
         } `}
-      />
+      /> */}
     </section>
       }
  
 <div className='w-full bg-[#F6F6F6]'>
 
 
-  <section className="max-w-[1282px]  m-auto grid grid-cols-3 gap-5   p-2 ">
+  <section className="max-w-[1282px]  m-auto    p-2 ">
     <div
-      className="w-full max-w-7xl h-full  col-span-2  m-auto p-5  rounded-tl-3xl  rounded-br-3xl  bg-white  shadow-sm"
+      className="w-full  h-full  col-span-2  m-auto p-5  rounded-tl-3xl  rounded-br-3xl  bg-white  shadow-sm"
       >
       <div className="w-full h-full flex flex-col space-x-5 justify-center items-center lg:flex-row lg:justify-start">
 
@@ -101,13 +105,16 @@ function KmfUnitDetail() {
       <div className="mb-8    relative w-full  flex justify-center items-center ">
             
               <h1 className=" text-primary-main relative max-w-[300px] m-auto text-center z-10 font-heading text-xl font-extrabold uppercase">
-              {unit?.attributes?.title}
+              {unit.title}
               </h1>
+         
             </div>
+              <p className="text-[18px] text-center font-semibold "> {unit.description}</p>
+              <p className="text-md"> {unit.para}</p>
 
  
  
-<div className=" w-full h-full ">
+{/* <div className=" w-full h-full ">
 
 {unit?.attributes?.description?.length > 2
 
@@ -152,13 +159,13 @@ function KmfUnitDetail() {
                 
               </div>
 
-</div>
+</div> */}
 </div>
       </div>
     </div>
 
 
-    <div className="w-fit h-fit flex flex-col  shadow-md bg-white p-2  justify-start   items-start rounded-lg border-b-2 border-primary-main  ">
+    {/* <div className="w-fit h-fit flex flex-col  shadow-md bg-white p-2  justify-start   items-start rounded-lg border-b-2 border-primary-main  ">
             <div className='w-full    shadow-md bg-white  '>
               <h1 className='p-5'>{locale==='kn'?'ಕಹಾಮ ಘಟಕಗಳು':'KMF UNITS'}</h1>
             </div>
@@ -173,11 +180,11 @@ function KmfUnitDetail() {
                   </Link>
                 );
               })}
-          </div>
+          </div> */}
   </section>
   </div>
  
-  <section className="w-full   pb-10  p-2 bg-[#F6F6F6]">
+  {/* <section className="w-full   pb-10  p-2 bg-[#F6F6F6]">
         <div className="max-w-[1282px] h-full  m-auto p-5  rounded-lg  bg-primary-darker text-white  shadow-sm ">
           <div className="flex flex-col h-full space-y-1  p-2 justify-between items-start">
             <h1 className="text-2xl">{unit?.attributes?.longtitle}</h1>
@@ -212,7 +219,7 @@ function KmfUnitDetail() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
    
 <Footer />
 </div>
