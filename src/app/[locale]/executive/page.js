@@ -532,7 +532,7 @@ const Executive = () => {
               </h1>
             </div>
     
-
+{/* 
     <div className='  h-full flex justify-center items-center   '>
       <Fade bottom>
     <div className='w-full max-w-7xl mt-auto min-h-44  md:h-2/4   justify-center items-center  rounded-tl-3xl rounded-br-3xl flex flex-col   p-3'>
@@ -551,7 +551,7 @@ const Executive = () => {
         </div>
         </Fade>
     
-      </div>
+      </div> */}
     <div>
 
 

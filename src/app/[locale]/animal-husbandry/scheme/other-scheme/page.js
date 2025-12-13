@@ -62,7 +62,11 @@ function Other() {
       </h1>
       <section className=" relative  w-full flex flex-col space-y-5 mb-10 max-w-7xl m-auto h-auto pt-10  ">
         <div className="w-full h-full flex space-y-3 flex-col text-center">
-        {
+          <h1 className="text-2xl text-primary-main">SRI KSHETRA DHARMASTHALA
+RURAL DEVELOPMENT
+PROJECT (SKDRDP)</h1>
+          <h2 className="text-lg">For construction of buildings, equipments, artificial insemination kit, milk testing machine and other office equipments of HSCs.</h2>
+        {/* {
   scheme?.[0]?.attributes?.Other &&
   <BlocksRenderer
   content={scheme?.[0]?.attributes?.Other}
@@ -130,7 +134,7 @@ function Other() {
   }}
     
   />
-}
+} */}
          
         </div>
 

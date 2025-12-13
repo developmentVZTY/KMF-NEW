@@ -20,6 +20,120 @@ function OngoingAndFuture({ setLoading}) {
       setLoading(false)
     })()
   },[])
+
+   const futureProjectss = [
+  {
+    slNo: 1,
+    project:
+      "Establishment of a new Milk Powder Plant with an approximate outlay of Rs. 300 crores in Ramanagara District to meet surplus milk conversion requirement of southern Karnataka."
+  },
+  {
+    slNo: 2,
+    project:
+      "Establishment of Milk Powder Plant of 30 MT capacity at Channarayapatna by KMF through NDDB at a cost of Rs. 104 crores."
+  },
+  {
+    slNo: 3,
+    project:
+      "Supply & erection of silos, construction of housing complex and other essential works at Shikaripura Cattle Feed Plant at a cost of Rs. 15 crores with Government grants."
+  },
+  {
+    slNo: 4,
+    project:
+      "Construction work of Bengaluru Sales Depot at a cost of Rs. 1.75 crores."
+  },
+  {
+    slNo: 5,
+    project:
+      "Construction of a godown at a cost of Rs. 5 crores at Rajankunte Cattle Feed Plant."
+  },
+  {
+    slNo: 6,
+    project:
+      "Ice Cream Plant at Hassan of 10 TLPD capacity at an estimated cost of Rs. 20 crores."
+  },
+  {
+    slNo: 7,
+    project:
+      "Flexi Pack Plant of 80 TLPD capacity at Belgaum Dairy at an estimated cost of Rs. 20 crores."
+  },
+  {
+    slNo: 8,
+    project:
+      "Flexi Pack Plant of 80 TLPD capacity at Tumkur Dairy at an estimated cost of Rs. 23 crores."
+  },
+  {
+    slNo: 9,
+    project:
+      "Flexi Pack Plant of 60–100 TLPD capacity at Koppala Dairy at an estimated cost of Rs. 38 crores."
+  },
+  {
+    slNo: 10,
+    project:
+      "Flexi Pack Plant of 80 TLPD capacity at Mangalore Dairy at an estimated cost of Rs. 29 crores."
+  },
+  {
+    slNo: 11,
+    project:
+      "1.5 LLPD capacity UHT Brick Format Plant at Mother Dairy at an estimated cost of Rs. 30 crores."
+  },
+  {
+    slNo: 12,
+    project:
+      "2 LLPD capacity UHT Brick Format Plant at Hassan Dairy at an estimated cost of Rs. 55 crores."
+  },
+  {
+    slNo: 13,
+    project:
+      "Development works including fodder production and bull mother farm development at Nandini Sperm Station, Hessaraghatta at a cost of Rs. 4 crores under National Dairy Plan/GOK."
+  },
+  {
+    slNo: 14,
+    project:
+      "3 LLPD to 5 LLPD capacity Dairy at Davanagere at an estimated cost of Rs. 80 crores."
+  },
+  {
+    slNo: 15,
+    project:
+      "Mega Dairy at Mysore at an estimated cost of Rs. 160 crores."
+  },
+  {
+    slNo: 16,
+    project:
+      "New 2 LLPD to 3 LLPD capacity Dairy and 1 LLPD UHT Plant at Chamarajanagara at an estimated cost of Rs. 95 crores."
+  },
+  {
+    slNo: 17,
+    project:
+      "50 TLPD to 100 TLPD capacity Dairy at Bagalkote at an estimated cost of Rs. 29 crores."
+  },
+  {
+    slNo: 18,
+    project:
+      "Establishment of UHT Flavoured Milk in PET bottles, Milk Shakes and Paneer Plant in proposed new Product Block at Mother Dairy."
+  },
+  {
+    slNo: 19,
+    project:
+      "Establishment of Corrugated Box Manufacturing Unit at Challaghatta at an approximate cost of Rs. 15 crores."
+  },
+  {
+    slNo: 20,
+    project:
+      "Expansion of Nandini Packaging Film Plant at Munnekolala at an approximate cost of Rs. 32 crores."
+  },
+  {
+    slNo: 21,
+    project:
+      "New Cattle Feed Plant of 500 MTD capacity."
+  },
+  {
+    slNo: 22,
+    project:
+      "Mega Dairy at Mandya with capacity of 8 to 12 LLPD."
+  }
+];
+
   return (
     <div className="w-full flex-col    max-w-5xl m-auto h-full   overflow-auto  items-start justify-start p-10 space-y-5">
   
@@ -60,14 +174,14 @@ function OngoingAndFuture({ setLoading}) {
         </thead>
 
         <tbody className="text-start  text-sm">
-          {futureProjects?.map((item, idx) => {
+          {futureProjectss?.map((item, idx) => {
          
             return (
-              <tr key={idx}>
+              <tr key={idx} className='border border-2'>
                 
                 <td className="p-2 text-center text-lg ">{idx+1}</td>
                 <Zoom>
-                <td className="p-2 text-lg">{item?.attributes?.project_name}</td>
+                <td className="p-2 text-lg">{item.project}</td>
                 </Zoom>
               </tr>
             );
