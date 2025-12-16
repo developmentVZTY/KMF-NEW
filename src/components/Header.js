@@ -404,13 +404,15 @@ Bengaluru - 560 029
                       </div>
 
                       <p className={`w-full text-white font-heading flex flex-col font-black/10 ${locale==='kn'?'text-[10px]':'text-[10px]'}  `}>
-                        {headerItem?.attributes?.address?.map((item, id) => {
+                      <span className="block"> 12915, KMF Complex,
+Bengaluru - 560 029</span>
+                        {/* {headerItem?.attributes?.address?.map((item, id) => {
                           return (
                             <span key={id} className="block">
                               {item?.children[0]?.text}
                             </span>
                           );
-                        })}
+                        })} */}
                       </p>
            </div>
 
@@ -419,13 +421,17 @@ Bengaluru - 560 029
                      
 
                       <p className={`w-full text-white text-center font-heading flex flex-col font-black/10 ${locale==='kn'?'text-[10px]':'text-[10px]'}  `}>
-                        {headerItem?.attributes?.time?.map((item, id) => {
+                      1800 425 8030 toll free <br/>
+10:00 AM - 5:45 PM <br/>
+Except on Second Saturday and Fourth<br/>
+Saturday, Sunday & State Govt. Holidays
+                        {/* {headerItem?.attributes?.time?.map((item, id) => {
                           return (
                             <span key={id} className="block">
                               {item?.children[0]?.text}
                             </span>
                           );
-                        })}
+                        })} */}
                       </p>
            </div>
 
