@@ -134,6 +134,71 @@ function OngoingAndFuture({ setLoading}) {
   }
 ];
 
+
+const ongoingProjectss = [
+  {
+    sno: 1,
+    projectName:
+      "Establishment of Mega Dairy plant of capacity 10–15 Lakh Liters per day with 60 MTPD Powder Plant at Hassan for Hassan Milk Union."
+  },
+  {
+    sno: 2,
+    projectName:
+      "Establishment of Mega Dairy plant of capacity 10–15 Lakh Liters per day at Tumkur for Tumkur Milk Union."
+  },
+  {
+    sno: 3,
+    projectName:
+      "Construction of Ladies Hostel building with 400 capacity for Tumkur Milk Union at Tumkur."
+  },
+  {
+    sno: 4,
+    projectName:
+      "Establishment of Group Captive Solar Power Project including Operation & Maintenance for 25 years for Karnataka Cooperative Milk Producers Federation Limited (KMF) and its member Milk Unions."
+  },
+  {
+    sno: 5,
+    projectName:
+      "Establishment of Mega Dairy plant of capacity 1 Lakh Liter per day at Arabagonda Village for Haveri Milk Union under Government of Karnataka grants."
+  },
+  {
+    sno: 6,
+    projectName:
+      "Construction of Boiler House and supply, erection, and commissioning of 5 Ton capacity Boiler to Dempo Dairy at Asangi."
+  },
+  {
+    sno: 7,
+    projectName:
+      "Revamping of Main Dairy and construction of Mega UHT Godown with Moving Racking System at Hassan for Hassan Milk Union."
+  },
+  {
+    sno: 8,
+    projectName:
+      "Revamping of Effluent Treatment Plant at Kalburgi Dairy and construction of Nandini Milk Parlours at various locations under Kalburgi Milk Union region."
+  },
+  {
+    sno: 9,
+    projectName:
+      "Establishment of 5000 Liter capacity Ice Cream Plant at Vijayapura District under PPP mode."
+  },
+  {
+    sno: 10,
+    projectName:
+      "Establishment of new Cattle Feed Plants at Priyapatnam (Mysore District) and Hospet (Vijaynagara District) under PPP mode to meet increasing cattle feed demand."
+  },
+  {
+    sno: 11,
+    projectName:
+      "Establishment of a Curd Blast Facility at Mother Dairy Unit, Yelahanka."
+  },
+  {
+    sno: 12,
+    projectName:
+      "Strengthening and infrastructure development works at various KMF Cattle Feed Plants and other units."
+  }
+];
+
+
   return (
     <div className="w-full flex-col    max-w-5xl m-auto h-full   overflow-auto  items-start justify-start p-10 space-y-5">
   
@@ -148,12 +213,12 @@ function OngoingAndFuture({ setLoading}) {
 
 
         <tbody className="text-start  text-sm">
-          {ongoingProjects?.map((item, idx) => {
+          {ongoingProjectss?.map((item, idx) => {
          return (
           <tr key={idx}>
             <td className="p-2 text-center text-lg ">{idx+1}</td>
             <Zoom>
-            <td className="p-2 text-lg">{item?.attributes?.project_name}</td>
+            <td className="p-2 text-lg">{item?.projectName}</td>
             </Zoom>
           </tr>
         );

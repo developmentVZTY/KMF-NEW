@@ -103,7 +103,7 @@ function MilkUnionDetail({ slug }) {
                     {union.title}
                   </h1>
                 </div>
-                <p className="text-md"> {union.para}</p>
+                <p className="text-md leading-relaxed whitespace-pre-wrap"> {union.para}</p>
 
                 {/* <div className=" w-full h-full transition-all duration-300  ">
                   {union && union.attributes && union.attributes.about && (
