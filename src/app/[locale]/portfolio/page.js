@@ -211,12 +211,12 @@ function Portfolio() {
   useEffect(() => {
     (async () => {
       const { data } = await axios.get('/api/kmf-achievements');
-      // const { data: sponsor } = await axios.get('/api/sponsoreds');
-      // const { data: banner } = await axios.get('/api/banners?sort[0]=createdAt:desc');
+      const { data: sponsor } = await axios.get('/api/sponsoreds');
+      const { data: banner } = await axios.get('/api/banners?sort[0]=createdAt:desc');
       // const { data: pdf } = await axios.get('/api/Ksheerasagramagazines');
 
-      // setBanners(banner.data);
-      // setSponsore(sponsor.data);
+      setBanners(banner.data);
+      setSponsore(sponsor.data);
       setAchievments(data.data);
       // setPdf(pdf.data);
       
@@ -1362,7 +1362,7 @@ window.addEventListener('resize',handleResize);
                 {/* );
               })} */}
             </Swiper>
-            <Swiper
+            {/* <Swiper
               watchSlidesProgress={true}
               slidesPerView={3}
               spaceBetween={20}
@@ -1381,7 +1381,7 @@ window.addEventListener('resize',handleResize);
                 </SwiperSlide>
                 );
               })}
-            </Swiper>
+            </Swiper> */}
           </div>
         </div>
       </section>

@@ -16,7 +16,6 @@ import { useParams } from 'next/navigation';
 import Link from 'next/link';
 import { useMyContext } from '@/context/headerContext';
 import { BlocksRenderer, Typography } from '@strapi/blocks-react-renderer';
-import { milkUnions } from '../milkUnions';
 
 function MilkUnionDetail({ slug }) {
   const imagesArr = [bengaluruMilkImg.src, Union1.src, Union2.src];
@@ -34,23 +33,18 @@ function MilkUnionDetail({ slug }) {
 
   const locale = useParams().locale;
   const { isScroll, setIsScroll, id, setId } = useMyContext();
-
-  
   useEffect(() => {
     (async () => {
-      // const { data } = await axios.get(`/api/milk-unions/${param?.slug}`);
-      // const { data: unions } = await axios.get('/api/milk-unions?sort[0]=order:asc');
-      const unions = milkUnions?.filter((item) => item.id === parseInt(param.slug));
-      console.log('milk union data', unions);
-      // setBanner(data?.data?.attributes?.bannervideo?.data?.attributes?.url);
-      // setBannerImg(data?.data?.attributes?.banner?.data?.attributes?.url);
+      const { data } = await axios.get(`/api/milk-unions/${param?.slug}`);
+      const { data: unions } = await axios.get('/api/milk-unions?sort[0]=order:asc');
 
-      // setAllUnions(unions?.data);
-      setUnion(unions[0]);
-      console.log('milk union detail', union);
+      setBanner(data?.data?.attributes?.bannervideo?.data?.attributes?.url);
+      setBannerImg(data?.data?.attributes?.banner?.data?.attributes?.url);
 
-      // setUnionImages(data?.data?.attributes?.image?.data);
-      // setLoading(false);
+      setAllUnions(unions?.data);
+      setUnion(data?.data);
+      setUnionImages(data?.data?.attributes?.image?.data);
+      setLoading(false);
     })();
   }, []);
   const toggleReadMore = () => {
@@ -80,43 +74,43 @@ function MilkUnionDetail({ slug }) {
         </section>
       ) : (
         <section className={`w-full h-full md:h-[500px] pt-28 relative  grid place-items-center `}>
-          <img src={union?.images} className="w-full h-full absolute top-0 z-[-1]" />
-          
+          {/* <img src={banner?banner[0]:HeroImg.src} className="w-full h-full absolute top-0 z-[-1]" />
+           */}
 
-          {/* <img
+          <img
             src={bannerImg || ''}
             className={`w-full  h-full    object-fill absolute top-0 z-[-1] ${
               isScroll ? ' md:h-[400px]' : ''
             } `}
-          /> */}
+          />
         </section>
       )}
 
       <div className="w-full h-auto bg-[#F6F6F6] ">
-        <section className="max-w-[1282px] h-full bg-white   m-auto gap-5   p-2 ">
-          <div className="w-full  h-full  col-span-2  m-auto p-5  rounded-tl-3xl  rounded-br-3xl   shadow-sm">
+        <section className="max-w-[1282px] h-full bg-white   m-auto grid md:grid-cols-3 gap-5   p-2 ">
+          <div className="w-full max-w-7xl h-full  col-span-2  m-auto p-5  rounded-tl-3xl  rounded-br-3xl   shadow-sm">
             <div className="w-full h-full flex flex-col space-x-5 justify-center items-center lg:flex-row lg:justify-start">
               <div className="w-full h-full flex flex-col justify-center items-center pt-10 space-y-5 lg:items-start">
                 <div className="    relative w-full  flex justify-center items-center ">
                
-                  <h1 className=" text-primary-main relative  m-auto text-center z-10 font-heading text-xl font-extrabold uppercase">
-                    {union.title}
+                  <h1 className=" text-primary-main relative max-w-[300px] m-auto text-center z-10 font-heading text-xl font-extrabold uppercase">
+                    {union?.attributes?.name}
                   </h1>
                 </div>
-                <p className="text-md leading-relaxed whitespace-pre-wrap"> {union.para}</p>
+                <p className="text-md"> {union?.attributes?.union_code}</p>
 
-                {/* <div className=" w-full h-full transition-all duration-300  ">
+                <div className=" w-full h-full transition-all duration-300  ">
                   {union && union.attributes && union.attributes.about && (
                     <BlocksRenderer
                       content={
                         readMore ? union.attributes.about : union.attributes.about.slice(0, 5)
                       }
                       blocks={{
-                        
+                        // You can use the default components to set class names...
                         paragraph: ({ children }) => (
                           <p className="text-neutral900 text-justify w-full">{children}</p>
                         ),
-                    
+                        // ...or point to a design system
                         heading: ({ children, level }) => {
                           switch (level) {
                             case 1:
@@ -198,7 +192,7 @@ function MilkUnionDetail({ slug }) {
                             </ul>
                         },
 
-                        
+                        // For links, you may want to use the component from your router or framework
                         link: ({ children, url }) => <Link to={url}>{children}</Link>
                       }}
                     />
@@ -216,12 +210,12 @@ function MilkUnionDetail({ slug }) {
 
 
                   </button>
-                </div> */}
+                </div>
               </div>
             </div>
           </div>
 
-          {/* <div className="w-full h-fit hidden md:flex  flex-col  shadow-md bg-white p-2  justify-start   items-start rounded-lg border-b-2 border-primary-main  ">
+          <div className="w-full h-fit hidden md:flex  flex-col  shadow-md bg-white p-2  justify-start   items-start rounded-lg border-b-2 border-primary-main  ">
             <div className="w-full    shadow-md bg-white  ">
               <h1 className="p-5">{locale==="en" ?"Milk Unions":"ಹಾಲು ಒಕ್ಕೂಟಗಳು"}</h1>
             </div>
@@ -238,11 +232,11 @@ function MilkUnionDetail({ slug }) {
                 </Link>
               );
             })}
-          </div> */}
+          </div>
         </section>
       </div>
 
-      {/* <section className="w-full   pb-10  p-2 bg-[#F6F6F6]">
+      <section className="w-full   pb-10  p-2 bg-[#F6F6F6]">
         <div className="max-w-[1282px] h-full  m-auto p-5  rounded-lg  bg-primary-darker text-white  shadow-sm ">
           <div className="flex flex-col h-full space-y-1  p-2 justify-between items-start">
             <h1 className="text-2xl">{union?.attributes?.longtitle}</h1>
@@ -277,7 +271,7 @@ function MilkUnionDetail({ slug }) {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
        
 <Footer />
