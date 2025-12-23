@@ -28,8 +28,8 @@ const MarketModel = ({ closeModal,market ,close}) => {
 
       <div className='w-full h-[10%]'>
 
-
-        <h1 className='text-xl md:text-2xl text-primary-main'>{market.title}</h1>
+    
+        <h1 className='text-xl md:text-2xl text-primary-main'>{market?.attributes?.title}</h1>
         </div>
 
 
@@ -38,13 +38,13 @@ const MarketModel = ({ closeModal,market ,close}) => {
         </div> */}
 
       <div className='w-full h-[70%]  '>
-      {/* {market?.attributes?.content?.map((item, idx) => {
-                return ( */}
-                  <p  className="text-lg md:text-xl ove text-neutral-dark1 text-justify">
-                    {market.description}
+      {market?.attributes?.content?.map((item, idx) => {
+                return (
+                  <p key={idx} className="text-lg md:text-xl ove text-neutral-dark1 text-justify">
+                    {item?.children[0]?.text}
                   </p>
-                {/* );
-              })} */}
+                );
+              })}
       </div>
       
 

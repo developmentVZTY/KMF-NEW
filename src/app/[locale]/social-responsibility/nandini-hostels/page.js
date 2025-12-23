@@ -16,13 +16,19 @@ function NandiniHostels() {
   const [hostel,setHostels]=useState([])
 
   const axios = useApi();
-  useEffect(() => {
-    (async () => {
-      const { data } = await axios.get('/api/nandini-hostels')
+useEffect(() => {
+  (async () => {
+    try {
+      const { data } = await axios.get('/api/nandini-hostels');
       setHostels(data.data);
-     
-    })();
-  }, []);
+      console.log('nandini-hostels', data);
+    } catch (err) {
+      console.error('API error:', err.response?.data || err.message);
+    }
+  })();
+}, []);
+
+
   return (
     <div className={`w-full h-full absolute company-bg   z-[-1] ${isScroll ? ' md:top-48' : ''}  `}>
   
@@ -64,7 +70,7 @@ function NandiniHostels() {
               
               
                 <div className='w-full h-auto   max-w-7xl bg-white shadow-lg p-5'>
-                       <h1 className="text-2xl text-primary-main mt-5">NANDINI DAIRY FARMERS WELFARE TRUST</h1>  <br />
+                       {/* <h1 className="text-2xl text-primary-main mt-5">NANDINI DAIRY FARMERS WELFARE TRUST</h1>  <br />
                        <Fade bottom> <p className="text-md text-primary-main">NANDINI GIRL STUDENTS HOSTEL, BOOPASANDRA, B-94</p></Fade><br />
                         <ul className='list-disc flex-col flex space-y-5 ml-5'>
 <li>                          On 20th September 2007 “Nandini Girl Students Hostel had been inaugurated in the location of  4th Cross, 4th Main, Vinayaka Layout, Boopasandra, Bangalore-94, under the supervision & guidelines of “Nandini Dairy Farmers Welfare Trust, KMF Complex, Dr M H Marigowda Road, Bangalore-29 
@@ -92,9 +98,12 @@ Also facilitating Library for students.
 </li>
 
 
-                                 </ul>
+                                 </ul> */}
 
-                {/* {hostel?.map((_, id) => {
+                                
+
+
+                {hostel?.map((_, id) => {
                 return (
                   <div
                     key={id}
@@ -151,7 +160,7 @@ Also facilitating Library for students.
                     </div>
                   </div>
                 );
-              })} */}
+              })} 
                 </div>
 
 

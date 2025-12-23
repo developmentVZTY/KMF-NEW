@@ -12,7 +12,6 @@ import Link from 'next/link';
 import { Fade } from 'react-reveal';
 import { IoHomeOutline } from 'react-icons/io5';
 import { useMyContext } from '@/context/headerContext';
-import { womenEmpowermentData } from './womenEmpData';
 
 function WomenEmpowerment() {
   const [womenEmpower, setWomenEmpower] = useState([]);
@@ -28,11 +27,11 @@ function WomenEmpowerment() {
 
   useEffect(() => {
     (async () => {
-      // const { data } = await axios.get('/api/women-empowerments');
-      const womenEmpowerData = womenEmpowermentData.map((item, id) => {
+      const { data } = await axios.get('/api/women-empowerments');
+      const womenEmpowerData = data?.data?.map((item, id) => {
         return {
-          title: item.title,
-          description: item.content
+          title: item?.attributes?.title,
+          description: item?.attributes?.content
         };
       });
       setWomenEmpower(womenEmpowerData);
@@ -134,11 +133,13 @@ function WomenEmpowerment() {
               {womenEmpower[currentIndex]?.title}
               </h1>
             </div>
-       
+        
           
-         
-              <p   className="text-[7px] md:text-xl text-neutral-dark1 text-justify">{womenEmpower[currentIndex]?.description}</p>
-          
+          {womenEmpower[currentIndex]?.description?.map((item, id) => {
+            return (
+              <p  key={id} className="text-[7px] md:text-xl text-neutral-dark1 text-justify">{item?.children?.[0]?.text}</p>
+            );
+          })}
         </div>
         </Fade>
 

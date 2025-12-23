@@ -18,7 +18,7 @@ function MissionVission() {
   useEffect(() => {
     (async () => {
       const { data } = await axios.get('/api/mission-vissions');
-
+      console.log("mission",data.data[0]?.attributes?.vission[0]?.children[0].text)
       setPurpose(data.data[0]);
        
     })();
@@ -67,9 +67,9 @@ function MissionVission() {
              <Fade bottom>
               <h1 className=" text-primary-main font-heading text-3xl font-extrabold uppercase">
                  
-                {/* {purpose?.attributes?.missionandvissiontitle}
-                 */}
-                 VISION AND MISSION
+                {/* {purpose?.attributes?.missionandvissiontitle} */}
+                
+                 {/* VISION AND MISSION */}
               </h1>
               </Fade>
             </div>
@@ -80,12 +80,15 @@ function MissionVission() {
               {/* {purpose?.attributes?.vission?.map((item, id) => {
                 return <li key={id}>{item?.children[0].text}</li>;
               })} */}
-              <li>To promote producer oriented viable cooperative society to impart an impetus to the rural income, dairy productivity and rural employment.</li>
+               {purpose?.attributes?.vission?.map((item, id) => {
+                return <li key={id}>{item?.children[0].text}</li>;
+              })}
+              {/* <li>To promote producer oriented viable cooperative society to impart an impetus to the rural income, dairy productivity and rural employment.</li>
               <li>To abridge the gap between price of milk procurement and sale price.</li>
               <li>To develop business acumen in marketing and trading disciplines so as to serve consumers with quality milk, give a fillip to the income of milk producers.</li>
               <li>To compete with MNCs and Private Dairies with better quality of milk and milk products and in the process sustain invincibility of cooperatives.</li>
               <li>To march forward with a missionary zeal which will make KMF a trailblazer of exemplary performance and achievements beckoning other Milk Federations in the country in pursuit of total emulation of its good deeds.</li>
-              
+               */}
 
             </Fade>
             </ul>
@@ -93,11 +96,11 @@ function MissionVission() {
             <ul className="flex flex-col space-y-5 p-6 w-full h-full justify-center items-center list-disc   text-justify text-lg  md:justify-normal md:items-start">
               <h1 className={`text-4xl font-bold ${locale==='kn'?'text-xl':''}`}>{locale === 'kn' ? 'ಧ್ಯೇಯದೃಷ್ಟಿ' : 'Mission'}</h1>
               
-              {/* {purpose?.attributes?.mission?.map((item, id) => {
+              {purpose?.attributes?.mission?.map((item, id) => {
                 return <li key={id}>{item?.children[0].text}</li>;
               })}
-                */}
-                <li>Heralding economic, social and cultural prosperity in the lives of our milk producer members by promoting vibrant, self-sustaining and holistic cooperative dairy development in Karnataka State.</li>
+               
+                {/* <li>Heralding economic, social and cultural prosperity in the lives of our milk producer members by promoting vibrant, self-sustaining and holistic cooperative dairy development in Karnataka State.</li> */}
             </ul>
           </div>
         </div>
@@ -124,11 +127,11 @@ function MissionVission() {
 
             <ul className="flex flex-col space-y-3 p-6 w-full h-full justify-center items-center list-disc text-justify text-lg  md:justify-normal md:items-start">
               <Fade right>
-              {/* {purpose?.attributes?.objective?.map((item, id) => {
+              {purpose?.attributes?.objective?.map((item, id) => {
                 return <li key={id}>{item?.children[0].text}</li>;
-              })} */}
+              })}
             
-  <li>KMF is a Cooperative Apex Body in the State of Karnataka representing organisations of milk producers and implementing all-round dairy development activities to achieve the following objectives:</li>
+  {/* <li>KMF is a Cooperative Apex Body in the State of Karnataka representing organisations of milk producers and implementing all-round dairy development activities to achieve the following objectives:</li>
   <li>To ensure assured and remunerative market round the year for the milk produced by the farmer members.</li>
   <li>To make available quality milk and other premier dairy products to urban consumers.</li>
   <li>To build and develop village-level institutions as cooperative model units to manage dairy activities.</li>
@@ -136,7 +139,7 @@ function MissionVission() {
   <li>To facilitate rural development by providing opportunities for self-employment at village level, preventing migration to urban areas, introducing cash economy, and providing sustained income.</li>
   <li>The philosophy of dairy development is to eliminate middlemen and organise institutions to be owned and managed by the milk producers themselves, employing professionals.</li>
   <li>Achieve economies of scale to ensure maximum returns to milk producers while providing wholesome milk at reasonable price to urban consumers.</li>
-  <li>The cooperative network should build a bridge between rural producers and urban consumers, achieving socio-economic development across the State.</li>
+  <li>The cooperative network should build a bridge between rural producers and urban consumers, achieving socio-economic development across the State.</li> */}
 
 
               </Fade>
@@ -159,12 +162,12 @@ function MissionVission() {
 
             <ul className="flex flex-col space-y-3 p-6 w-full h-full justify-center items-center list-disc text-justify text-lg  md:justify-normal md:items-start">
               <Fade left>
-              {/* {purpose?.attributes?.evalution?.map((item, id) => {
+              {purpose?.attributes?.evalution?.map((item, id) => {
                 return <li key={id}>{item?.children[0].text}</li>;
-              })} */}
+              })}
 
             
-  <li>Karnataka Milk Federation (KMF) evolved as a premier and profitable dairy farmers organization in Karnataka.</li>
+  {/* <li>Karnataka Milk Federation (KMF) evolved as a premier and profitable dairy farmers organization in Karnataka.</li>
   
   <li>In 1975, Karnataka Dairy Development Corporation (KDDC) was formed as an agency to implement the World Bank–aided Dairy Development Projects.</li>
   
@@ -205,7 +208,7 @@ function MissionVission() {
   
   <li>The goal was to handle increasing milk procurement without declaring milk holidays.</li>
   
-  <li>The current processing capacity stands at 57.40 lakh liters/day and continues to be strengthened.</li>
+  <li>The current processing capacity stands at 57.40 lakh liters/day and continues to be strengthened.</li> */}
 
 
               </Fade>
