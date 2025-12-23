@@ -12,7 +12,6 @@ import useApi from '@/hooks/useApi';
 import documentIco from '@/images/notification/Document.svg';
 import PdfPreview from './PdfPreview';
 import { useMyContext } from '@/context/headerContext';
-import { tenderData } from '../tenderData';
 function Notification() {
   const [tenderItems, setTenderItems] = useState([]);
   const [alltenderItems, setAllTenderItems] = useState([]);
@@ -209,23 +208,20 @@ function Notification() {
           </div>
 
           <div className="w-full h-full flex flex-col justify-evenly items-center flex-wrap pt-10 p-4 space-y-4   ">
-            {tenderData.map((item, index) => {
+            {currentProducts?.map((item, idx) => {
               
               return (
                 <Tenders
-                  key={index}
+                  key={idx}
                   title={item?.title}
                   description={item?.description}
                   tenderNo={item?.tenderNo}
-                  date={item?.lastDate}
-                  link={item?.downloadLink}
+                  date={item?.last_date}
+                  link={item?.link}
                   startDate={item?.startDate}
                 />
               );
             })}
-
-                
-
 
             {/* { 
            (!selectedYear && !selectedMonth) &&

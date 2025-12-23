@@ -211,14 +211,14 @@ function Portfolio() {
   useEffect(() => {
     (async () => {
       const { data } = await axios.get('/api/kmf-achievements');
-      const { data: sponsor } = await axios.get('/api/sponsoreds');
-      const { data: banner } = await axios.get('/api/banners?sort[0]=createdAt:desc');
-      const { data: pdf } = await axios.get('/api/Ksheerasagramagazines');
+      // const { data: sponsor } = await axios.get('/api/sponsoreds');
+      // const { data: banner } = await axios.get('/api/banners?sort[0]=createdAt:desc');
+      // const { data: pdf } = await axios.get('/api/Ksheerasagramagazines');
 
-      setBanners(banner.data);
-      setSponsore(sponsor.data);
+      // setBanners(banner.data);
+      // setSponsore(sponsor.data);
       setAchievments(data.data);
-      setPdf(pdf.data);
+      // setPdf(pdf.data);
       
     })();
   }, []);
@@ -1055,7 +1055,7 @@ window.addEventListener('resize',handleResize);
         </div>
       </section>
 
-      <section id="ACHIEVEMENTS" className="w-full h-auto mt-10 md:mt-20">
+    <section id="ACHIEVEMENTS" className="w-full h-auto mt-10 md:mt-20">
         <div className="w-full text-center">
           <div className="w-full pt-10  md:pt-20 md:pb-20">
               <Fade bottom>
@@ -1125,10 +1125,7 @@ window.addEventListener('resize',handleResize);
 
                     <Fade right>
                     <div className="mt-6">
-                      <p className="text-lg md:text-xl ">State entirely covered by Cooperative Dairy Development.</p>
-                       <p className="text-lg md:text-xl ">Elected boards are in position in all the District Milk Unions and Federation.</p>
-                        <p className="text-lg md:text-xl ">Lowest price spread between procurement price and sale price. Due to efficiency of operations in the Federation and Unions, more than 79% of the consumer rupee is passed on to producers.</p>
-                      {/* {achievments?.filter(
+                      {achievments?.filter(
                         (item) =>
                           item?.attributes?.title === 'KMF Achievements' ||
                           item?.attributes?.title === 'ಕಹಾಮ ಸಾಧನೆಗಳು'
@@ -1150,7 +1147,7 @@ window.addEventListener('resize',handleResize);
                             }
                           }}
                         />
-                      )} */}
+                      )}
                     </div>
                     </Fade>
                   </div>
@@ -1159,7 +1156,7 @@ window.addEventListener('resize',handleResize);
             </div>
 
             <div className="w-full h-auto flex flex-wrap justify-center">
-              {/* {achievments?.map((item, id) => {
+              {achievments?.map((item, id) => {
              
                 if (
                   item?.attributes?.title !== 'KMF Achievements' &&
@@ -1218,159 +1215,7 @@ window.addEventListener('resize',handleResize);
                     </div>
                   );
                 }
-              })} */}
-
-                
-                    <div
-                   
-                      className=" max-w-xl w-full m-3 md:m-10 rounded-3xl  shadow-2xl h-auto bg-slate-50 p-6 md:p-16">
-                      <div className="m-auto">
-                        <div className="w-[300px] md:w-[450px] relative">
-                          <img
-                            src="/images/heading/heading-color/group.png"
-                            className="absolute z-[1] w-fit top-[-25px] md:top-[-48px]   object-contain"
-                          />
-
-                          <h1 className="w-full relative max-w-[250px] md:max-w-[300px] m-auto  text-primary-main text-sm md:text-xl  font-bold z-[100] ">
-                            {' '}
-                          Empowering Producers for Rural Prosperity
-                          </h1>
-                        </div>
-                        <div className=" mt-20">
-                          <ul className="list-disc text-left">
-                             <li>Overwhelming majority of the beneficiaries of Cooperative Dairy Development programs in the State belong to vulnerable section in villages: Total membership of 24.36 lakh covers around 4.34 lakh (20%) landless laborers, 9.01 lakhs(40%) small farmers, 7.11 lakhs(32%) marginal farmers and 3.90 lakhs(18%) others. Of the total membership, 8.66 Lakh (39%) are women members and 3.94 Lakh (18%) belong to SC/ST groups.
-</li>
-                            {/* <button
-                             
-                              className="w-full flex justify-end text-primary-main">
-                              {readMore
-                                ? locale === 'en'
-                                  ? 'Read Less'
-                                  : 'ಕಡಿಮೆ ಓದಿ....'
-                                : locale === 'en'
-                                  ? 'Read More'
-                                  : 'ಮತ್ತಷ್ಟು ಓದಿ....'}
-                            </button> */}
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-               
-
-
-
-                <div
-                   
-                      className=" max-w-xl w-full m-3 md:m-10 rounded-3xl  shadow-2xl h-auto bg-slate-50 p-6 md:p-16">
-                      <div className="m-auto">
-                        <div className="w-[300px] md:w-[450px] relative">
-                          <img
-                            src="/images/heading/heading-color/group.png"
-                            className="absolute z-[1] w-fit top-[-25px] md:top-[-48px]   object-contain"
-                          />
-
-                          <h1 className="w-full relative max-w-[250px] md:max-w-[300px] m-auto  text-primary-main text-sm md:text-xl  font-bold z-[100] ">
-                            {' '}
-                          Input Support to Producers
-                          </h1>
-                        </div>
-                        <div className=" mt-20">
-                          <ul className="list-disc text-left">
-                             <li>Cattle Feed Production and Sales - Supply of balanced cattle feed in sufficient quantity at reasonable price is very essential for boosting milk production in the State. During 2015-16, KMF has supplied 5,07,851 MTs of Cattle feed, which is 16% higher than the 4,37,008 MTs sold during 2014-15.
-</li>
-                            {/* <button
-                             
-                              className="w-full flex justify-end text-primary-main">
-                              {readMore
-                                ? locale === 'en'
-                                  ? 'Read Less'
-                                  : 'ಕಡಿಮೆ ಓದಿ....'
-                                : locale === 'en'
-                                  ? 'Read More'
-                                  : 'ಮತ್ತಷ್ಟು ಓದಿ....'}
-                            </button> */}
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-
-
-
-                     <div
-                   
-                      className=" max-w-xl w-full m-3 md:m-10 rounded-3xl  shadow-2xl h-auto bg-slate-50 p-6 md:p-16">
-                      <div className="m-auto">
-                        <div className="w-[300px] md:w-[450px] relative">
-                          <img
-                            src="/images/heading/heading-color/group.png"
-                            className="absolute z-[1] w-fit top-[-25px] md:top-[-48px]   object-contain"
-                          />
-
-                          <h1 className="w-full relative max-w-[250px] md:max-w-[300px] m-auto  text-primary-main text-sm md:text-xl  font-bold z-[100] ">
-                            {' '}
-                          Profitable Disposal of Farmers’ Produce – Milk
-
-                          </h1>
-                        </div>
-                        <div className=" mt-20">
-                          <ul className="list-disc text-left">
-                             <li>KMF is making all out efforts in market development and is successful in garnering a significant market share of over 65% in liquid milk, which is considered to be highest by a cooperative brand in any city. KMF is marketing over 34.66 LLPD of milk at present.
-
-</li>
-                            {/* <button
-                             
-                              className="w-full flex justify-end text-primary-main">
-                              {readMore
-                                ? locale === 'en'
-                                  ? 'Read Less'
-                                  : 'ಕಡಿಮೆ ಓದಿ....'
-                                : locale === 'en'
-                                  ? 'Read More'
-                                  : 'ಮತ್ತಷ್ಟು ಓದಿ....'}
-                            </button> */}
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-
-
-
-                     <div
-                   
-                      className=" max-w-xl w-full m-3 md:m-10 rounded-3xl  shadow-2xl h-auto bg-slate-50 p-6 md:p-16">
-                      <div className="m-auto">
-                        <div className="w-[300px] md:w-[450px] relative">
-                          <img
-                            src="/images/heading/heading-color/group.png"
-                            className="absolute z-[1] w-fit top-[-25px] md:top-[-48px]   object-contain"
-                          />
-
-                          <h1 className="w-full relative max-w-[250px] md:max-w-[300px] m-auto  text-primary-main text-sm md:text-xl  font-bold z-[100] ">
-                            {' '}
-                          Processing Excellence for Quality and Cost Competitiveness
-
-                          </h1>
-                        </div>
-                        <div className=" mt-20">
-                          <ul className="list-disc text-left">
-                             <li>Bengaluru Milk Union, Mother Dairy, DK Milk Union and Tumakuru Milk Unions have been certified for ISO 22000 (Food Safety Management Systems). Kolar and Mysuru Milk Unions have been certified for ISO 9001 (Quality Management Systems). Other Unions are in the process of implementing ISO 22000.
-
-</li>
-                            {/* <button
-                             
-                              className="w-full flex justify-end text-primary-main">
-                              {readMore
-                                ? locale === 'en'
-                                  ? 'Read Less'
-                                  : 'ಕಡಿಮೆ ಓದಿ....'
-                                : locale === 'en'
-                                  ? 'Read More'
-                                  : 'ಮತ್ತಷ್ಟು ಓದಿ....'}
-                            </button> */}
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
+              })}
             </div>
           </div>
         </div>

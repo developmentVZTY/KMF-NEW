@@ -428,8 +428,8 @@ const Home = () => {
                     About KMF
                   </h1>
                   <div className="space-y-6 text-white">
-                    KMF stands for KARNATAKA MILK FEDERATION’S LTD. KMF is a 5 Decade Organization covering around 24,000 Villages procuring about 85Lakh kg of milk per day. Emphasizing on “Quality Excellence from Cow to Consumer”. KMF heralding economic, social and cultural prosperity in the lives of our milk producer members by promoting vibrant, self-sustaining and holistic cooperative dairy development in Karnataka State.
-                    {/* <TypeWriter text={homedetails?.[0]?.about1 || ''} delay={70} /> */}
+                    {/* KMF stands for KARNATAKA MILK FEDERATION’S LTD. KMF is a 5 Decade Organization covering around 24,000 Villages procuring about 85Lakh kg of milk per day. Emphasizing on “Quality Excellence from Cow to Consumer”. KMF heralding economic, social and cultural prosperity in the lives of our milk producer members by promoting vibrant, self-sustaining and holistic cooperative dairy development in Karnataka State. */}
+                    <TypeWriter text={homedetails?.[0]?.about1 || ''} delay={70} />
                   </div>
                 </div>
               </Fade>
@@ -439,8 +439,8 @@ const Home = () => {
                     OUR BRAND NANDINI
                   </h1>
                   <div className="space-y-6 text-white">
-                    NANDINI MILK is a brand owned by KMF. Nandini was founded in 1974 by the government of Karnataka as Karnataka Dairy Development Corporation (KDDC). NANDINI brand became household name in state of Karnataka. In 1955 First Dairy was established in the State of Karnataka, belonging to KODAGU district at KUDIGE Village. Later in the year 1965, the biggest dairy was built in Bengaluru. Nandini Brand includes varieties of Milk & Milk Products.
-                    {/* <TypeWriter text={homedetails?.[0]?.about2 || ''} delay={70} /> */}
+                    {/* NANDINI MILK is a brand owned by KMF. Nandini was founded in 1974 by the government of Karnataka as Karnataka Dairy Development Corporation (KDDC). NANDINI brand became household name in state of Karnataka. In 1955 First Dairy was established in the State of Karnataka, belonging to KODAGU district at KUDIGE Village. Later in the year 1965, the biggest dairy was built in Bengaluru. Nandini Brand includes varieties of Milk & Milk Products. */}
+                    <TypeWriter text={homedetails?.[0]?.about2 || ''} delay={70} />
                   </div>
                 </div>
               </Fade>
@@ -597,7 +597,7 @@ const Home = () => {
                 <div
                   className="w-full h-[375px] p-4 marquee flex flex-col"
                   style={{ transform: `translateY(${scrollY * 0.5}px)` }}>
-                  {/* {currentYearData
+                  {currentYearData
                     ?.sort((a, b) => b.attributes.createdAt - a.attributes.createdAt)
                     ?.map((item, id) => {
                       return (
@@ -606,18 +606,6 @@ const Home = () => {
                           className="bg-white border m-2 p-2 text-xs flex justify-center items-center space-x-2 rounded w-full ">
                           <FaRegHandPointRight size={20} color="red" />
                           <p className="w-full "> {item?.attributes?.title}</p>
-                        </div>
-                      );
-                    })} */}
-                 
-
-                     {notices.map((text, id) => {
-                      return (
-                        <div
-                          key={id}
-                          className="bg-white border m-2 p-2 text-xs flex justify-center items-center space-x-2 rounded w-full ">
-                          <FaRegHandPointRight size={20} color="red" />
-                          <p className="w-full ">{text}</p>
                         </div>
                       );
                     })}

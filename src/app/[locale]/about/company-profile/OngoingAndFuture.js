@@ -213,12 +213,12 @@ const ongoingProjectss = [
 
 
         <tbody className="text-start  text-sm">
-          {ongoingProjectss?.map((item, idx) => {
+          {ongoingProjects?.map((item, idx) => {
          return (
           <tr key={idx}>
             <td className="p-2 text-center text-lg ">{idx+1}</td>
             <Zoom>
-            <td className="p-2 text-lg">{item?.projectName}</td>
+            <td className="p-2 text-lg">{item?.attributes?.project_name}</td>
             </Zoom>
           </tr>
         );
@@ -239,14 +239,14 @@ const ongoingProjectss = [
         </thead>
 
         <tbody className="text-start  text-sm">
-          {futureProjectss?.map((item, idx) => {
+          {futureProjects?.map((item, idx) => {
          
             return (
               <tr key={idx} className='border border-2'>
                 
                 <td className="p-2 text-center text-lg ">{idx+1}</td>
                 <Zoom>
-                <td className="p-2 text-lg">{item.project}</td>
+                <td className="p-2 text-lg">{item?.attributes?.project_name}</td>
                 </Zoom>
               </tr>
             );
