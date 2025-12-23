@@ -14,7 +14,6 @@ import useLocale from '@/hooks/useLocale';
 import { IoHomeOutline } from 'react-icons/io5';
 
 import { useMyContext } from '@/context/headerContext';
-import { milkUnions } from './milkUnions';
 function MilkUnion() {
   const [milkUnion, setMilkUnions] = useState([]);
   const Api = useApi();
@@ -30,11 +29,6 @@ const locale=useLocale().locale
       setLoading(false)
     })();
   }, []);
-
-  // milkUnions.js
- 
-
-
   return (
     <div className={`w-full h-full absolute top-0 z-[-1]  ${isScroll?'top-36':''}`}>
       <section className={`w-full h-72 pt-28 relative  grid place-items-center company-bg`}>
@@ -64,17 +58,17 @@ const locale=useLocale().locale
 
     
         <div className="max-w-[1400px] m-auto p-2 shadow-lg mt-10    shadow-white bg-white flex flex-col justify-center items-center space-y-5">
-          {milkUnions.map((item, id) => { 
+          {milkUnion.map((union, id) => {
          
             return (
             
               <UnionCard
-                key={id}
-                idx={item.id}
-                name={item.title}
-                image={item.images}
-                description={item.description}
-                link={`/${locale}/milk-union/${item?.id}`}
+                key={union?.id}
+                idx={id}
+                name={union?.attributes?.name}
+                image={union?.attributes?.image}
+                description={union?.attributes?.about}
+                link={`/${params.locale}/milk-union/${union?.id}`}
             
               />
             

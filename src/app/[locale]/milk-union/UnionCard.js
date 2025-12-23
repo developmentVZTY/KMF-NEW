@@ -20,11 +20,11 @@ function UnionCard({ name, image, description, link, idx }) {
               infiniteLoop
               showThumbs={false}
               showIndicators={false}>
-              {image.map((item, id) => {
+              {image?.data?.map((item, id) => {
                 return (
                   <img
                     key={id}
-                    src={item}
+                    src={item?.attributes?.url}
                     className=" max-w-[400px] h-full object-cover"
                   />
                 );
@@ -36,7 +36,7 @@ function UnionCard({ name, image, description, link, idx }) {
             href={link || ''}
             className="w-full flex flex-col justify-start items-start space-y-6">
             <h1 className="text-xl md:text-4xl text-center md:text-start  uppercase text-primary-main">{name}</h1>
-            <p className="text-md  text-justify">{description}</p>
+            <p className="text-md  text-justify">{description?.[0]?.children?.[0]?.text}</p>
           </Link>
         </Fade>
       ) : (
@@ -50,11 +50,11 @@ function UnionCard({ name, image, description, link, idx }) {
               infiniteLoop
               showThumbs={false}
               showIndicators={false}>
-              {image.map((item, id) => {
+              {image?.data?.map((item, id) => {
                 return (
                   <img
                     key={id}
-                    src={item}
+                    src={item?.attributes?.url}
                     className=" max-w-[400px] h-full object-cover"
                   />
                 );
@@ -66,7 +66,7 @@ function UnionCard({ name, image, description, link, idx }) {
             href={link || ''}
             className="w-full flex flex-col justify-start items-start space-y-6">
             <h1 className="text-xl md:text-4xl text-center md:text-start uppercase text-primary-main">{name}</h1>
-            <p className="text-md  text-justify">{description}</p>
+            <p className="text-md  text-justify">{description?.[0]?.children?.[0]?.text}</p>
           </Link>
         </Fade>
       )}

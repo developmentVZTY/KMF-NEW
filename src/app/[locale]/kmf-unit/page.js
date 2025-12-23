@@ -4,8 +4,6 @@ import React, { useEffect, useState } from 'react';
 import Logo from '@/images/logo/logo.png';
 import HeroImg from '@/images/milk-union/milk-union-home.png';
 import unionMapImg from '@/images/milk-union/union-map.png';
-
-
 import UnionCard from './UnionCard';
 import Follow from '@/components/Follow.js';
 import Footer from '@/components/Footer';
@@ -15,7 +13,6 @@ import { useParams } from 'next/navigation';
 import useLocale from '@/hooks/useLocale';
 import { IoHomeOutline } from 'react-icons/io5';
 import { useMyContext } from '@/context/headerContext';
-import { unitsData } from './unitsData';
 
 function KmfUnit() {
   const [kmfUnits, setKmfUnits] = useState([]);
@@ -31,9 +28,6 @@ const locale=useLocale().locale
    
     })();
   }, []);
-
- 
-
   return (
     <div className={`w-full h-full absolute top-0 z-[-1]  ${isScroll?'top-36':''}`}>
       <section className={`w-full h-72 pt-28 relative  grid place-items-center company-bg`}>
@@ -57,18 +51,18 @@ const locale=useLocale().locale
 
     
         <div className="max-w-7xl m-auto p-2 shadow-lg mt-10    shadow-white bg-white flex flex-col justify-center items-center space-y-5">
-          {unitsData.map((item, index) => {
+          {kmfUnits.map((unit, id) => {
              
          
             return (
             
               <UnionCard
-                key={index}
-                idx={item.id}
-                name={item.title}
-                image={item.img || "/no-image.png"}
-                description={item.description}
-                link={`/${params.locale}/kmf-unit/${item.id}`}
+                key={unit?.id}
+                idx={id}
+                name={unit?.attributes?.title}
+                image={unit?.attributes?.image?.data?.[0]?.attributes?.url}
+                description={unit?.attributes?.description}
+                link={`/${params.locale}/kmf-unit/${unit?.id}`}
             
               />
             
