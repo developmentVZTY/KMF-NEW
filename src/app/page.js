@@ -155,9 +155,13 @@ const Home = () => {
   };
 
   const fetchData = async () => {
-    const [{ data: tender }, { data: newsImp }] = await Promise.all([
+    // const [{ data: tender }, { data: newsImp }] = await Promise.all([
+    //   axios.get('/api/tender-notifications?sort[0]=createdAt:desc'),
+    //   axios.get('/api/home-new')
+
+       const [{ data: tender }] = await Promise.all([
       axios.get('/api/tender-notifications?sort[0]=createdAt:desc'),
-      axios.get('/api/home-new')
+      
     ]);
 
     

@@ -50,8 +50,8 @@ function Footer() {
 
               <div className="flex flex-col justify-center items-center md:items-start space-y-5">
                 <p className="text-neutral-dark1 text-left text-[7px] md:text-sm ">
-                  {/* {footerItem?.[0]?.address} */}
-                  Karnataka Co-operative Milk Producers Federation Ltd No 2915, D. R. College Post, Dr M H Marigowda Road, Bangalore-560029, Karnataka.
+                  {footerItem?.[0]?.address}
+                  {/* Karnataka Co-operative Milk Producers Federation Ltd No 2915, D. R. College Post, Dr M H Marigowda Road, Bangalore-560029, Karnataka. */}
                 </p>
               </div>
             </div>
@@ -69,8 +69,8 @@ function Footer() {
 
               <div className="flex flex-col justify-center items-start space-y-5">
                 <p className="text-neutral-dark1 text-left text-[7px] md:text-sm">
-                  {/* {footerItem?.[0]?.telephone} */}
-                  080-260 96800 Helpline : 1800 425 8030 toll free 10:00AM - 5:45PM (Except Second Saturday, Fourth Saturday, Sunday and other State Government Holidays)
+                  {footerItem?.[0]?.telephone}
+                  {/* 080-260 96800 Helpline : 1800 425 8030 toll free 10:00AM - 5:45PM (Except Second Saturday, Fourth Saturday, Sunday and other State Government Holidays) */}
                 </p>
               </div>
             </div>
@@ -87,8 +87,8 @@ function Footer() {
             <MdEmail size={20} height={30} color='red'/>
               <div className="flex flex-col justify-center items-start space-y-5">
                 <p className="text-neutral-dark1 text-left text-[7px] md:text-sm"> 
-                  {/* {footerItem?.[0]?.email} */}
-                  customercare.nandini@kmf.coop
+                  {footerItem?.[0]?.email}
+                  {/* customercare.nandini@kmf.coop */}
 
                 </p>
               </div>

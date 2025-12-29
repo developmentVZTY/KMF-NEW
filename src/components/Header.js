@@ -212,18 +212,18 @@ export const Header = () => {
                       </div>
 
                       <p className={` font-heading flex flex-col font-black/10 ${locale==='kn'?'text-[15px]':'text-[12px]'}  `}>
-                        {/* {headerItem?.attributes?.address?.map((item, id) => {
+                        {headerItem?.attributes?.address?.map((item, id) => {
                           return (
                             <span key={id} className="block">
                               {item?.children[0]?.text}
                             </span>
                           );
-                        })} */}
-                        <span  className="block">
+                        })}
+                        {/* <span  className="block">
                           12915, KMF Complex,</span>
                           <span>
 Bengaluru - 560 029
-                        </span>
+                        </span> */}
                       </p>
                     </div>
 
@@ -268,14 +268,14 @@ Bengaluru - 560 029
                      <MdCall size={30} color='#30ABDC' className='transition-all duration-150 hover:scale-[1.1] cursor-pointer'/>
                     </div>
                     <p className="text-[12px] w-[350px] font-heading  font-black/10 ">
-                      {/* {headerItem?.attributes?.time?.map((item, id) => {
+                      {headerItem?.attributes?.time?.map((item, id) => {
                         return (
                           <span key={id} className="block ">
                             {item?.children[0]?.text}
                           </span>
                         );
-                      })} */}
-                      <span  className="block ">
+                      })}
+                      {/* <span  className="block ">
                             1800 425 8030 toll free 
                           </span>
                           <span  className="block ">
@@ -286,7 +286,7 @@ Bengaluru - 560 029
                           </span>
                           <span  className="block ">
                             Saturday, Sunday & State Govt. Holidays
-                          </span>
+                          </span> */}
                     </p>
                   </div>
                 </div>
@@ -404,15 +404,15 @@ Bengaluru - 560 029
                       </div>
 
                       <p className={`w-full text-white font-heading flex flex-col font-black/10 ${locale==='kn'?'text-[10px]':'text-[10px]'}  `}>
-                      <span className="block"> 12915, KMF Complex,
-Bengaluru - 560 029</span>
-                        {/* {headerItem?.attributes?.address?.map((item, id) => {
+                      {/* <span className="block"> 12915, KMF Complex,
+Bengaluru - 560 029</span> */}
+                        {headerItem?.attributes?.address?.map((item, id) => {
                           return (
                             <span key={id} className="block">
                               {item?.children[0]?.text}
                             </span>
                           );
-                        })} */}
+                        })}
                       </p>
            </div>
 
@@ -421,17 +421,17 @@ Bengaluru - 560 029</span>
                      
 
                       <p className={`w-full text-white text-center font-heading flex flex-col font-black/10 ${locale==='kn'?'text-[10px]':'text-[10px]'}  `}>
-                      1800 425 8030 toll free <br/>
+                      {/* 1800 425 8030 toll free <br/>
 10:00 AM - 5:45 PM <br/>
 Except on Second Saturday and Fourth<br/>
-Saturday, Sunday & State Govt. Holidays
-                        {/* {headerItem?.attributes?.time?.map((item, id) => {
+Saturday, Sunday & State Govt. Holidays */}
+                        {headerItem?.attributes?.time?.map((item, id) => {
                           return (
                             <span key={id} className="block">
                               {item?.children[0]?.text}
                             </span>
                           );
-                        })} */}
+                        })}
                       </p>
            </div>
 
