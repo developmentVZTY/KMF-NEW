@@ -311,12 +311,12 @@ const products = [
             </div>
 
         <div className="w-full  grid grid-cols-4 gap-4 p-2 md:grid-cols-7 lg:grid-flow-col   md:space-x-4 ">
-          {/* <p
+          <p
             className="font-subheading transition-all w-full  text-center text-sm cursor-pointer  hover:scale-[1.1]"
             onClick={() => handleProduct('all')}>
-          {locale==='kn'?'ಎಲ್ಲವೂ':'  All  '}
-          </p> */}
-          {productCategories?.map((item, id) => {
+          {locale==='kn'?'ಎಲ್ಲವೂ':'  All   '}
+          </p>
+          {categories?.map((item, id) => {
              
             return (
 
@@ -334,7 +334,7 @@ const products = [
                 href='#product-cards'
                 onClick={() => handleIdx(item?.id)}
                 className={`font-subheading w-full text-center transition-all duration-300 text-sm cursor-pointer  hover:scale-[1.3] ${item?.id===currentIdx?'text-primary-main underline pb-1':''} ${locale==='kn'?'text-sm':''} `}>
-                {item.name} 
+                {item?.attributes?.title}
                 </Link>
                 </Fade>
                 </div>
@@ -344,13 +344,13 @@ const products = [
         </div>
 
         <div className="w-full h-full grid grid-cols-3 p-2 place-items-center    gap-5 pt-10" id='product-cards'>
-          {products?.map((item, idx) => {
+          {subcategory?.map((item, idx) => {
             return (
               <ProductCard
-                key={idx}
-                title={item.title}
-                image={item.image}
-                link={item.link}
+                key={item?.idx}
+                title={item?.attributes?.title}
+                image={item?.attributes?.image?.data?.[0]?.attributes?.url}
+                link={`/${locale}/our-product/${item?.id}`}
               />
             );
           })}
