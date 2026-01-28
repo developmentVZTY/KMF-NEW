@@ -89,7 +89,7 @@ const getBg = (index) =>
               <div className="relative max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
                 <img
                 //   src={item?.attributes?.image?.data?.[0]?.attributes?.url}
-                src={milkIMG.src}
+                src={item?.attributes?.image?.data?.[0]?.attributes?.url}
                   alt={item?.attributes?.title}
                   className="mx-auto max-h-[420px] object-contain"
                 />
@@ -101,7 +101,7 @@ const getBg = (index) =>
 
                   <Link
                     href={`/${locale}/our-product/${item.id}`}
-                    className="inline-flex items-center gap-2 border border-[#fff] px-6 py-3 hover:bg-black hover:text-white transition"
+                    className="inline-flex items-center text-white gap-2 border border-[#fff] px-6 py-3 hover:bg-white hover:text-primary-main transition"
                   >
                     Explore more →
                   </Link>

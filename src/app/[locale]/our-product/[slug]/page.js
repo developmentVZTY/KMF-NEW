@@ -95,7 +95,7 @@ function Milk() {
   return (
     <div className={`w-full h-full relative ${isScroll ? 'top-0' : ''}  `}>
 
-      {/* { title?.attributes?.title ==='Ghee' ?  
+       {/* { title?.attributes?.title ==='Ghee' ?  
       
       <div className={`w-full relative   ${isScroll ? 'h-[240px] md:h-[812px]' : 'h-[240px]  md:h-screen'}`}  >
                   <div
@@ -152,7 +152,7 @@ function Milk() {
                   
                  </div>
       
-      :   */}
+      :   
       <section
         className={`w-full h-[300px]    relative  grid place-items-center ${
           isScroll ? 'md:h-[600px]' : 'h-[85vh]'
@@ -167,34 +167,37 @@ function Milk() {
           className={`w-full h-full  object-fill absolute top-0    `}
         />
       </section>
-      {/* } */}
+     }  */}
     
 
        
      
 
       <section className="w-full h-full     bg-[#FFFFFF] ">
-        <div className="w-full     pb-10">
-          <div className="flex w-full    justify-center pt-5 space-x-2 items-center relative before:absolute before:-bottom-3 before:w-20   before:h-0.5 before:bg-primary-main">
-            <Link className="  text-sm font-bold  " href={`/${locale}/our-product/` || ''}>
+        
+        <div className="w-full  pb-10">
+          <div className='bg-[radial-gradient(circle_at_center,#3e73a7,#074989)] pb-10 w-full'>
+          <div className="flex w-full    justify-center pt-5 space-x-2 items-center relative before:absolute before:-bottom-3 before:w-20   before:h-0.5 before:bg-white">
+            <Link className="  text-[#fff] opacity-[.5] text-sm font-bold  " href={`/${locale}/our-product/` || ''}>
               {locale === 'kn' ? 'ನಮ್ಮ ಉತ್ಪನ್ನಗಳು' : 'Our Products'}
             </Link>
 
-            <p className="text-primary-main">&gt;</p>
-            <Link className="  text-sm font-bold  " href={`/${locale}/our-product/`}>
+            <p className="text-white">&gt;</p>
+            <Link className=" text-[#fff] opacity-[.5] text-sm font-bold  " href={`/${locale}/our-product/`}>
               {title?.attributes?.title}
             </Link>
-            <p className="text-primary-main">&gt;</p>
-            <Link className="  text-sm font-bold text-primary-main" href={''}>
+            <p className="text-white">&gt;</p>
+            <Link className="  text-sm font-bold text-white" href={''}>
               {title?.attributes?.title}
             </Link>
           </div>
           <div className="w-full max-w-7xl m-auto flex flex-col justify-center items-center space-y-4 pt-10 ">
-            <h1 className="text-4xl text-primary-main text-center font-subheading">
-              {title?.attributes?.Heading}
+            <h1 className="text-[#fff] opacity-[.5] relative  m-auto text-center z-10 font-heading text-4xl font-extrabold uppercase">
+              {title?.attributes?.title} {locale === 'kn' ? ' ' : 'Family'}
             </h1>
 
             {/* <p className="text-2xl ">{title?.attributes?.description}</p> */}
+          </div>
           </div>
 
 
@@ -203,19 +206,19 @@ function Milk() {
             className={`w-full h-full mt-10 max-w-[1600px] m-auto  flex flex-col space-y-5 ${
               title?.attributes?.Heading ? 'mt-' : ''
             } `}>
-            <div className="mb-20    relative w-full  flex justify-center items-center ">
+            {/* <div className="mb-20    relative w-full  flex justify-center items-center ">
               <h1 className=" text-primary-main relative  m-auto text-center z-10 font-heading text-4xl font-extrabold uppercase">
                 {title?.attributes?.title} {locale === 'kn' ? ' ' : 'Family'}
               </h1>
-            </div>
+            </div> */}
 
             <div className="flex w-full justify-evenly items-start space-x-5">
-              <div className="w-full max-w-7xl m-auto h-full pt-10 place-items-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+              <div className="w-full max-w-8xl m-auto h-full pt-10 place-items-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
                 {product?.map((item, id) => {
                   return (
                     <div
                       key={id}
-                      className={`max-w-96 h-full  bg-[#F7F7F7] relative flex flex-col justify-between items-start ${
+                      className={`max-w-96 h-full   relative flex flex-col justify-between items-start ${
                         item?.attributes?.isLatest ? 'our-product-latest' : ''
                       } `}>
                       {item?.attributes?.isLatest && (
@@ -249,7 +252,7 @@ function Milk() {
                                   <img
                                     key={id}
                                     src={item?.attributes?.url}
-                                    className="w-40 h-80  object-contain  transition-all duration-300 hover:scale-[1.1]"
+                                    className="w-40 h-80  object-contain transition-transform duration-300 ease-in-out hover:scale-125"
                                   />
                                 );
                               } else {
@@ -261,7 +264,7 @@ function Milk() {
                                     muted
                                     key={id}
                                     src={item?.attributes?.url}
-                                    className="w-full h-80   object-contain  transition-all duration-300 hover:scale-[1.1]"
+                                    className="w-full h-80   object-contain  transition-all duration-300 hover:scale-105"
                                   />
                                 );
                               }
@@ -273,14 +276,14 @@ function Milk() {
                         <div
                           className="w-full h-full  p-2 text-justify flex flex-col space-y-3 pb-3 justify-start items-start
                                   ">
-                          <p className="text-2xl text-center w-full">{item?.attributes?.name}</p>
+                          <p className="text-xl text-center w-full">{item?.attributes?.name}</p>
                           <p
                             className={`text-center w-[80%] m-auto  p-3 rounded-lg ${
                               item?.attributes?.quantity ? 'bg-yellow-300' : 'hidden'
                             }`}>
                             {item?.attributes?.quantity}
                           </p>
-                          <p
+                          {/* <p
                             className={`text-md text-center w-full ${
                               item?.attributes?.description ? '' : 'hidden'
                             }`}>
@@ -296,7 +299,7 @@ function Milk() {
                                 {expandedDescriptionIndex === id ? 'See less' : 'See more'}
                               </button>
                             )}
-                          </p>
+                          </p> */}
                         </div>
                       </Fade>
                     </div>
@@ -304,7 +307,7 @@ function Milk() {
                 })}
               </div>
 
-              <div className="w-60 pt-10 transition-all duration-300 hidden lg:block">
+              {/* <div className="w-60 pt-10 transition-all duration-300 hidden lg:block">
                 <div className="w-full h-fit transition-all duration-300 flex flex-col  shadow-lg    justify-start   items-start rounded-lg border-b-2 border-primary-main  ">
                   <div className="w-full mb-2    shadow-md bg-primary-main  ">
                     <h1 className="p-5 text-lg uppercase   text-white text-center w-full">
@@ -377,7 +380,7 @@ function Milk() {
                         }
                       })}
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
