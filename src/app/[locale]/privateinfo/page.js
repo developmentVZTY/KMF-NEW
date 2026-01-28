@@ -1,8 +1,8 @@
 import React from 'react'
 import { Header } from '@/components/Header'
 // import secretinfoImg from "@/images/Privateinfo-new.png"
-import secretinfoImg from "@/images/Private-info-26.png"
-import Footer from '@/components/Footer'
+import secretinfoImg from "@/images/private-info-26.png"
+
 
 function PrivateInfo() {
   return (
