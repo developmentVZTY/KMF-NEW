@@ -19,8 +19,7 @@ const getBg = (index) =>
   gradientBgs[index % gradientBgs.length];
 
 
-
-  useEffect(() => {
+useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -29,7 +28,11 @@ const getBg = (index) =>
           }
         });
       },
-      { threshold: 0.6 }
+      {
+        root: null,
+        rootMargin: '-40% 0px -40% 0px',
+        threshold: 0,
+      }
     );
 
     Object.values(sectionRefs.current).forEach((el) => {
@@ -37,7 +40,8 @@ const getBg = (index) =>
     });
 
     return () => observer.disconnect();
-  }, []);
+  }, [subcategory]);
+
 
   const scrollTo = (id) => {
     sectionRefs.current[id]?.scrollIntoView({ behavior: 'smooth' });
@@ -53,7 +57,7 @@ const getBg = (index) =>
             onClick={() => scrollTo(`product-${item.id}`)}
             className={`cursor-pointer flex uppercase justify-end items-center text-[11px] gap-2 transition ${
               active === `product-${item.id}`
-                ? 'text-black font-semibold'
+                ? 'text-white font-semibold'
                 : 'text-gray-400'
             }`}
           >
@@ -62,7 +66,7 @@ const getBg = (index) =>
             <span
               className={`w-3 h-3 rounded-full ${
                 active === `product-${item.id}`
-                  ? 'bg-black'
+                  ? 'bg-white'
                   : 'bg-gray-300'
               }`}
             />
@@ -74,12 +78,8 @@ const getBg = (index) =>
       {/* SCROLL SECTIONS */}
       <div className="w-full">
         {subcategory?.map((item, index) => {
-          const imageUrl =
-            item?.attributes?.image?.data?.[0]?.attributes?.url
-              ? `${item.attributes.image.data[0].attributes.url}`
-              : '/placeholder.png';
-
-          return (
+          if(index%2===0){
+             return (
             <section
               key={item.id}
               id={`product-${item.id}`}
@@ -95,20 +95,91 @@ const getBg = (index) =>
                 />
 
                 <div>
-                  <h2 className="absolute top-[-50px] md:left-[50%] text-6xl text-[#fff] opacity-[.4] font-bold mb-6">
+                  <h2 className="absolute top-[-50px] md:left-[47%] text-6xl md:text-8xl text-[#fff] opacity-[.4] font-bold mb-6">
                     {item?.attributes?.title}
                   </h2>
 
                   <Link
-                    href={`/${locale}/our-product/${item.id}`}
-                    className="inline-flex items-center text-white gap-2 border border-[#fff] px-6 py-3 hover:bg-white hover:text-primary-main transition"
-                  >
-                    Explore more →
-                  </Link>
+  href={`/${locale}/our-product/${item.id}`}
+  className="
+    relative inline-flex items-center gap-2
+    rounded-[30px] border border-white
+    px-6 py-3 font-medium mt-4
+    text-white overflow-hidden
+    bg-primary-main
+    before:absolute before:inset-0
+    before:bg-white
+    before:translate-x-full
+    before:transition-transform before:duration-700
+    before:ease-in-out
+    hover:before:translate-x-0
+    
+    hover:text-primary-main
+    z-0
+  "
+>
+  <span className="relative z-10">
+    Explore more →
+  </span>
+</Link>
+
                 </div>
               </div>
             </section>
           );
+          }else{
+return (
+            <section
+              key={item.id}
+              id={`product-${item.id}`}
+              ref={(el) => (sectionRefs.current[`product-${item.id}`] = el)}
+              className={`min-h-screen flex items-center ${getBg(index)} px-6`}
+            >
+              <div className="relative max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+                
+
+                <div className='flex justify-center'>
+                  <h2 className="absolute top-[-50px] md:right-[47%] text-6xl md:text-8xl text-[#fff] opacity-[.4] font-bold mb-6">
+                    {item?.attributes?.title}
+                  </h2>
+
+                  <Link
+  href={`/${locale}/our-product/${item.id}`}
+  className="
+    relative inline-flex items-center gap-2
+    rounded-[30px] border border-white
+    px-6 py-3 font-medium mt-4
+    text-white overflow-hidden
+    bg-primary-main
+    before:absolute before:inset-0
+    before:bg-white
+    before:translate-x-full
+    before:transition-transform before:duration-700
+    before:ease-in-out
+    hover:before:translate-x-0
+    
+    hover:text-primary-main
+    z-0
+  "
+>
+  <span className="relative z-10">
+    Explore more →
+  </span>
+</Link>
+
+                </div>
+                <img
+                //   src={item?.attributes?.image?.data?.[0]?.attributes?.url}
+                src={item?.attributes?.image?.data?.[0]?.attributes?.url}
+                  alt={item?.attributes?.title}
+                  className="mx-auto max-h-[420px] object-contain"
+                />
+              </div>
+            </section>
+          );
+          }
+
+          
         })}
       </div>
     </div>
