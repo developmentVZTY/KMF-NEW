@@ -456,9 +456,9 @@ Bengaluru - 560 029
           <div className="grid grid-cols-4 gap-6 overflow-y-auto max-h-[400px]">
             {subcategory.map((p, idx) => (
              
-              <Link href={`/${locale}/our-product/${p.id}`}>
+              <Link key={idx} href={`/${locale}/our-product/${p.id}`}>
               <div
-                key={idx}
+                
                 className="text-center group cursor-pointer"
               >
                 <img
