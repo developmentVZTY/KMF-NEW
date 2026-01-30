@@ -52,6 +52,27 @@ export const Header = () => {
  const [products,setProducts]=useState([])
  const [rotateLogo, setRotateLogo] = useState(false); // State to control logo rotation
   const {openNav,setOpenNav} =useMyContext()
+   const [subcategory, setSubcategory] = useState([]);
+    useEffect(() => {
+       (async () => {
+        //  const { data } = await axios.get('/api/categories?sort[0]=order:asc');
+         const { data: subcategory } = await axios.get('/api/subcategories?sort[0]=createdAt:asc');
+   
+        //  setBanner(data?.data?.map((item) => item?.attributes?.banner?.data?.attributes?.url));
+        //  setCategories(data.data?.sort((a, b) => b.attributes.createdAt - a.attributes?.createdAt));
+
+         setSubcategory(subcategory.data);
+   
+        //  if (id) {
+        //    const filterItems = subcategory?.data?.filter(
+        //      (item) => item?.attributes?.category?.data?.id === parseInt(id)
+        //    );
+        //    setSubcategory(filterItems);
+        //  } else {
+        //    setSubcategory(subcategory.data);
+        //  }
+       })();
+     }, []);
  useEffect(() => {
    // When component mounts, trigger logo rotation after 1 second
    const timeout = setInterval(() => {
@@ -171,6 +192,29 @@ export const Header = () => {
 
   const headerPathname=pathname===`/${locale}/portfolio`
  
+const productMegaMenu = {
+  categories: [
+    "Milk",
+    "Curd",
+    "Lassi",
+    "Buttermilk",
+    "Paneer",
+    "Ghee",
+    "Cheese",
+    "Cold Coffee",
+    "Whey Drink",
+  ],
+  products: [
+    { name: "Gold Milk", img: "/dummy/milk1.png" },
+    { name: "Super Gold", img: "/dummy/milk2.png" },
+    { name: "Buffalo Milk", img: "/dummy/milk3.png" },
+    { name: "Toned Milk", img: "/dummy/milk4.png" },
+    { name: "Full Cream", img: "/dummy/milk5.png" },
+    { name: "Standardized", img: "/dummy/milk6.png" },
+    { name: "Slim Milk", img: "/dummy/milk7.png" },
+    { name: "Cow Milk", img: "/dummy/milk8.png" },
+  ],
+};
 
 
   return (
@@ -320,6 +364,9 @@ Bengaluru - 560 029
               <div className="w-full h-full hidden lg:block   ">
                 <ul className=" h-full w-full text-light-light4 flex   space-x-2 items-center text-[12px]">
                   {headItem?.map((header, i) => {
+                    const isProductMenu =
+                    header.title === "OUR PRODUCTS";
+
                     const hasItems = header?.subItems?.length;
                     const isLink = header?.link;
                    
@@ -337,12 +384,110 @@ Bengaluru - 560 029
                             onMouseEnter={() => setOpen(hasItems ? i : null)}>
                             {header.title}
                             {hasItems && (
-                              <div
+                              <div>
+                                {isProductMenu?
+
+                                <div
+                                className={`bg-primary-darker z-50 absolute  flex  top-[2.71rem] left-[20px] w-[810px] overflow-auto  ${
+                                  open === i ? 'visible' : 'invisible'
+                                }  `}
+                                onMouseLeave={() => setOpen(null)}>
+        {/* LEFT CATEGORY LIST */}
+        <div className="w-[200px] bg-primary-darker p-4">
+          <ul className="space-y-3 text-sm overflow-y-auto max-h-[400px]">
+            {/* {header.subItems?.map((subItem, idx) => {
+                                  
+                                    return (
+                                      <Link
+                                        href={subItem?.link || ''}
+                                        className="text-[12px] text-white block hover:text-secondary-lighter"
+                                        key={idx}
+                                        onClick={() => setOpen(null)}>
+                                        <li key={idx}>
+                                          {subItem.title}
+                                          
+
+                                       
+                                          </li>
+                                      </Link>
+                                    );
+                                  })} */}
+                                  <Link href={`/${locale}/our-product/`} >
+                                  <li className="text-[12px] text-white block hover:text-secondary-lighter" >
+                                          All Products
+                                          
+                                          </li>
+                                          </Link>
+            {subcategory?.map((subItem, idx) => {
+                                  
+                                    return (
+                                      <Link
+                                        href={`/${locale}/our-product/${subItem.id}`}
+                                        className="ml-2  text-[11px] text-white block hover:text-secondary-lighter"
+                                        key={idx}
+                                        onClick={() => setOpen(null)}>
+                                        <li key={idx} className='uppercase'>
+                                          {subItem?.attributes?.title}
+                                          
+
+                                       
+                                          </li>
+                                      </Link>
+                                    );
+                                  })}
+                                    <Link href={`/${locale}/nandini-recipes/`} >
+                                  <li className='text-[12px] mt-2 text-white block hover:text-secondary-lighter'>
+
+                                  Nandini Recipes
+                                  </li>
+                                  </Link>
+                                   <Link href={`/${locale}/comingsoon/`}>
+                                  <li className='text-[12px] mt-1 text-white block hover:text-secondary-lighter'>
+                            
+                                    Bulk Order
+                                  </li>
+                                  </Link>
+            
+          </ul>
+        </div>
+
+        {/* RIGHT PRODUCT GRID */}
+        <div className="flex-1 bg-white p-6">
+          <div className="grid grid-cols-4 gap-6 overflow-y-auto max-h-[400px]">
+            {subcategory.map((p, idx) => (
+             
+              <Link href={`/${locale}/our-product/${p.id}`}>
+              <div
+                key={idx}
+                className="text-center group cursor-pointer"
+              >
+                <img
+                  src={p?.attributes?.image?.data?.[0]?.attributes?.url}
+                  alt={p?.attributes?.title}
+                  className="h-20 mx-auto object-contain group-hover:scale-110 transition"
+                />
+                <p className="text-xs mt-2 text-gray-700 uppercase">
+                  {p?.attributes?.title}
+                </p>
+              </div>
+              </Link>
+              
+            ))}
+          </div>
+        </div>
+      </div>
+                                
+                                
+                                :
+
+                                
+                                <div
                                 className={`p-4 bg-primary-darker z-50 absolute   top-[2.71rem] left-[20px] w-[200px] overflow-auto max-h-[300px] ${
                                   open === i ? 'visible' : 'invisible'
                                 }  `}
                                 onMouseLeave={() => setOpen(null)}>
-                                <ul className="w-full  space-y-4 text-white">
+                                  
+                                  <ul className="w-full  space-y-4 text-white">
                                   {header.subItems?.map((subItem, idx) => {
                                   
                                     return (
@@ -361,6 +506,12 @@ Bengaluru - 560 029
                                     );
                                   })}
                                 </ul>
+                                
+                                
+                              </div>
+
+                                }
+                              
                               </div>
                             )}
                           </li>
