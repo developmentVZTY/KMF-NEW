@@ -1,13 +1,22 @@
 import React from 'react';
 import { Header } from '@/components/Header';
-import img1 from "@/images/pdf/1.png"
-import img2 from "@/images/pdf/2.png"
-import img3 from "@/images/pdf/3.png"
-import img4 from "@/images/pdf/4.png"
-import img5 from "@/images/pdf/5.png"
-import img6 from "@/images/pdf/6.png"
-import img7 from "@/images/pdf/7.png"
-import img8 from "@/images/pdf/8.png"
+// import img1 from "@/images/pdf/1.png"
+// import img2 from "@/images/pdf/2.png"
+// import img3 from "@/images/pdf/3.png"
+// import img4 from "@/images/pdf/4.png"
+// import img5 from "@/images/pdf/5.png"
+// import img6 from "@/images/pdf/6.png"
+// import img7 from "@/images/pdf/7.png"
+// import img8 from "@/images/pdf/8.png"
+import img1 from "@/images/scret-new/secret-1.png"
+import img2 from "@/images/scret-new/secret-2.png"
+import img3 from "@/images/scret-new/secret-3.png"
+import img4 from "@/images/scret-new/secret-4.png"
+import img5 from "@/images/scret-new/secret-5.png"
+import img6 from "@/images/scret-new/secret-6.png"
+import img7 from "@/images/scret-new/secret-7.png"
+import img8 from "@/images/scret-new/secret-8.png"
+
 
 
 function SecretInfo() {
