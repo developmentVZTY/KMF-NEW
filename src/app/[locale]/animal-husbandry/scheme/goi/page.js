@@ -94,7 +94,7 @@ const handleButton = (idx) => {
 
             <Fade left>
         <div className="w-full shadow-lg flex flex-col justify-center items-start rounded-tl-3xl  rounded-br-3xl  bg-white space-y-6 p-5 ">
-        {/* <div className="md:mb-20  mt-20  relative w-full   flex justify-center items-center ">
+        <div className="md:mb-20  mt-20  relative w-full   flex justify-center items-center ">
               <img
                 src="/images/heading/heading-color/group.png"
                 className="absolute   w-[530px] top-[-18px] sm:top-[-50px]    object-contain"
@@ -102,9 +102,9 @@ const handleButton = (idx) => {
               <h1 className=" text-primary-main relative max-w-[100px]  sm:max-w-[300px] m-auto text-center z-10 font-heading text-[5px] md:text-[15px] font-extrabold uppercase">
               {scheme[currentIndex]?.title}
               </h1>
-            </div> */}
+            </div>
 
-            <p>
+            {/* <p>
   <strong>GOI Scheme – Rashtriya Krishi Vikas Yojane (RKVY):</strong><br/><br/>
   Started in 2009–10. Grants were released for:<br/>
   • Accelerating dairy development in Bijapur, Gulbarga, Bellary<br/>
@@ -171,19 +171,19 @@ const handleButton = (idx) => {
   B. District Cooperative Milk Unions<br/>
   C. Karnataka Milk Federation (State Level)<br/><br/>
   All are governed by democratically elected boards to ensure efficient functioning and achieving organizational goals.
-</p>
+</p> */}
           
          
-          {/* {scheme[currentIndex]?.content?.map((item, id) => {
+          {scheme[currentIndex]?.content?.map((item, id) => {
             return (
               <p  key={id} className="text-[10px] md:text-xl text-neutral-dark1 text-justify">{item?.children?.[0]?.text}</p>
             );
-          })} */}
+          })}
           
         </div>
         </Fade>
 
-        {/* <div className="flex flex-col justify-center items-start rounded-tl-3xl   rounded-br-3xl  bg-white p-5">
+        <div className="flex flex-col justify-center items-start rounded-tl-3xl   rounded-br-3xl  bg-white p-5">
           <div>
             <h1 className=" text-xs  text-center md:text-xl uppercase">{locale==='kn'?`ಕೇಂದ್ರ ಸರಕಾರದ ಯೋಜನೆಗಳು`:`Government Of India `}</h1>
           </div>
@@ -251,7 +251,7 @@ const handleButton = (idx) => {
             
             </ul>
           </div>
-        </div> */}
+        </div>
       </section>
 
 

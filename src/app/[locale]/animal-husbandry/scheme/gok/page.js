@@ -27,7 +27,7 @@ const handleButton = (idx) => {
     (
       async()=>{
         const {data}=await axios.get('/api/goks?sort[0]=createdAt:asc')
-        const { data: bhagaya } = await axios.get(`/api/ksheerabhagaya`);
+        // const { data: bhagaya } = await axios.get(`/api/ksheerabhagaya`);
         const gokData = data?.data?.map((item, id) => {
           return {
             title: item?.attributes?.title,
@@ -35,7 +35,7 @@ const handleButton = (idx) => {
           };
         });
 
-        setBhagaya(bhagaya?.data);
+        // setBhagaya(bhagaya?.data);
         setScheme(gokData)
       }
     )()
@@ -195,7 +195,7 @@ const handleButton = (idx) => {
 
             <Fade left>
         <div className="w-full shadow-lg flex flex-col justify-center items-start rounded-tl-3xl  rounded-br-3xl  bg-white space-y-6 p-5 ">
-        {/* <div className=" mb-5 md:mb-20  mt-20  relative w-full   flex justify-center items-center ">
+        <div className=" mb-5 md:mb-20  mt-20  relative w-full   flex justify-center items-center ">
               <img
                 src="/images/heading/heading-color/group.png"
                 className="absolute   w-[530px] top-[-18px] sm:top-[-50px]    object-contain"
@@ -205,8 +205,8 @@ const handleButton = (idx) => {
               {scheme[currentIndex]?.title}
               GOK Schemes
               </h1>
-            </div> */}
-          <p>
+            </div>
+          {/* <p>
   <strong>1. Ksheera Bhagya:</strong><br/><br/>
   • The Ksheera Bhagya Scheme was launched on 1st Aug 2013 by the Government of Karnataka in coordination with KMF to provide nutritious milk to School and Anganwadi children for healthy growth and development.<br/>
   • It was a dream project conceived by KMF based on the suggestion of the Honorable Chief Minister of Karnataka to help poor children and also support milk producers by utilizing surplus milk.<br/><br/>
@@ -281,21 +281,21 @@ const handleButton = (idx) => {
   From 14-05-2013, the incentive was increased to Rs.4 per litre.<br/><br/>
   Up to June 2015, Rs.3151.86 crore has been given to milk producers through societies,
   benefiting around 8.20 lakh farmers per month.
-</p>
+</p> */}
 
 
 
          
-          {/* {scheme[currentIndex]?.content?.map((item, id) => {
+          {scheme[currentIndex]?.content?.map((item, id) => {
             return (
               <p  key={id} className="text-[10px] md:text-xl text-neutral-dark1 text-justify">{item?.children?.[0]?.text}</p>
             );
-          })} */}
+          })}
           
         </div>
         </Fade>
 
-        {/* <div className="flex flex-col justify-center items-start rounded-tl-3xl   rounded-br-3xl  bg-white p-5">
+        <div className="flex flex-col justify-center items-start rounded-tl-3xl   rounded-br-3xl  bg-white p-5">
           <div>
             <h1 className=" text-xs  text-center md:text-xl uppercase">{locale==='kn'?`ಕೇಂದ್ರ ಸರಕಾರದ ಯೋಜನೆಗಳು`:`Government Of Karnataka `}</h1>
           </div>
@@ -335,7 +335,7 @@ const handleButton = (idx) => {
             
             </ul>
           </div>
-        </div> */}
+        </div>
       </section>
 
 
