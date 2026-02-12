@@ -69,7 +69,7 @@ function MissionVission() {
                  
                 {/* {purpose?.attributes?.missionandvissiontitle} */}
                 
-                 {/* VISION AND MISSION */}
+                  {locale === 'en' ? 'VISION AND MISSION' : 'ದೃಷ್ಟಿ ಮತ್ತು ಮಿಷನ್'}
               </h1>
               </Fade>
             </div>
@@ -120,7 +120,7 @@ function MissionVission() {
              
               <h1 className=" text-primary-main font-heading text-3xl font-extrabold uppercase">
               {/* {purpose?.attributes?.objectivetitle} */}
-              OBJECTIVES
+              {/*  */}   {locale === 'en' ? 'OBJECTIVES' : 'ಉದ್ದೇಶಗಳು'}
               </h1>
             </div>
             </Fade>
@@ -155,7 +155,7 @@ function MissionVission() {
             <div className="mb-8   relative w-full  flex justify-center items-center ">
               <h1 className=" text-primary-main font-heading text-3xl font-extrabold uppercase">
               {/* {purpose?.attributes?.evalutiontitle} */}
-              EVOLUTION
+               {locale === 'en' ? 'EVOLUTION' : 'ವಿಕಸನ'}
               </h1>
             </div>
             </Fade>

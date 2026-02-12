@@ -508,7 +508,7 @@ const Home = () => {
                                       className="transition-all duration-200 hover:scale-110"
                                     />
                                     <p className="text-white text-xs md:text-lg text-center font-heading">
-                                      Essential nutrition in milk
+                                      ಹಾಲಿನಲ್ಲಿರುವ ಅಗತ್ಯ ಪೋಷಕಾಂಶಗಳು
                                     </p>
                                   </div>
                                   <div
@@ -520,7 +520,7 @@ const Home = () => {
                                       className="transition-all duration-200 hover:scale-110"
                                     />
                                     <p className="text-white text-xs md:text-lg text-center font-heading">
-                                      Importance of milk
+                                      ಹಾಲಿನ ಮಹತ್ವ
                                     </p>
                                   </div>
                                     <div
@@ -532,7 +532,7 @@ const Home = () => {
                                       className="transition-all duration-200 hover:scale-110"
                                     />
                                     <p className="text-white text-xs md:text-lg text-center font-heading">
-                                      Class & type of milk
+                                      ಹಾಲಿನ ವರ್ಗ ಮತ್ತು ಪ್ರಕಾರ
                                     </p>
                                   </div>
                                   <div
@@ -544,7 +544,7 @@ const Home = () => {
                                       className="transition-all duration-200 hover:scale-110"
                                     />
                                     <p className="text-white text-xs md:text-lg text-center font-heading">
-                                      Milk for every Age group
+                                      ಎಲ್ಲಾ ವಯೋಮಾನದವರಿಗೂ ಹಾಲು
                                     </p>
                                   </div>
                                 
@@ -774,7 +774,7 @@ const Home = () => {
         <div className="p-4 md:p-10 flex flex-col items-center space-y-10 justify-center max-w-[1600px] md:items-start md:m-auto">
           <div className="w-full justify-center flex items-center space-y-3">
             <h1 className="text-xs md:text-2xl font-heading uppercase text-center w-full max-w-96 shadow-md p-3 shadow-black bg-primary-gradient text-white">
-              Our Certificates
+              ನಮ್ಮ ಪ್ರಮಾಣಪತ್ರಗಳು
             </h1>
           </div>
 
