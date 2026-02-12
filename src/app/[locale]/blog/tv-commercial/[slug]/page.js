@@ -20,6 +20,16 @@ import FoodStops from './FoodStops';
 import DairyTour from './DairyTour';
 import { Fade } from 'react-reveal';
 import NandiniAdds from './NandiniAdds';
+import { SwiperSlide,Swiper } from 'swiper/react';
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  EffectCoverflow,
+  Autoplay,
+  FreeMode
+} from 'swiper/modules';
 
 
 function TvcommercialDetails() {
@@ -29,6 +39,7 @@ function TvcommercialDetails() {
    
   const [openAccordion, SetOpenAccordion] = useState(null);
   const [brandAsset, setBrandAsset] = useState([]);
+  const [url, setUrl] = useState('');
   const axios = useApi();
   const param=useParams()
   const [commercialCategory, setCommercialCategory] = useState(null);
@@ -61,7 +72,7 @@ function TvcommercialDetails() {
   };
 
  
- const subId=window.location.search?.split("=")[1]
+//  const subId=window.location.search?.split("=")[1]
  
  
    
@@ -79,24 +90,25 @@ function TvcommercialDetails() {
         const { data: brandAmbassador } = await axios.get('/api/brand-ambassadors');
  
         const { data: commercialCategory } = await axios.get('/api/tv-commercials');
-        const { data: commercialItems } = await axios.get('/api/tv-commercial-items?sort[0]=createdAt:asc');
- 
-         
+        // const { data: commercialItems } = await axios.get('/api/tv-commercial-items?sort[0]=createdAt:asc');
+        const brandAsset= commercialCategory?.data?.filter(item=>item?.id===parseInt(param.slug))
+         setUrl(brandAsset?.[0]?.attributes?.video?.data?.attributes?.url);
+        console.log("second",brandAsset?.[0]?.attributes?.video?.data?.attributes?.url);
  
 
-      if(subId){
-       const brandAsset= brandAmbassador?.data?.filter(item=>item?.id===parseInt(subId))
+      // if(subId){
+      //  const brandAsset= brandAmbassador?.data?.filter(item=>item?.id===parseInt(subId))
       
-        setAssets(brandAsset?.sort((a,b)=>b.attributes.createdAt-a.attributes.createdAt))
+      //   setAssets(brandAsset?.sort((a,b)=>b.attributes.createdAt-a.attributes.createdAt))
      
-      }
-      else{
-        const brandAsset= commercialItems?.data?.filter(item=> item?.attributes?.tv_commercial?.data?.id===parseInt(param.slug))
+      // }
+      // else{
+      //   const brandAsset= commercialItems?.data?.filter(item=> item?.attributes?.tv_commercial?.data?.id===parseInt(param.slug))
         
-        const sortedArray=brandAsset.sort((a,b)=>b.id-a.id)
+      //   const sortedArray=brandAsset.sort((a,b)=>b.id-a.id)
         
-        setAssets(brandAsset.sort((a,b)=>b?.id-a?.id))
-      }
+      //   setAssets(brandAsset.sort((a,b)=>b?.id-a?.id))
+      // }
      
       setBrandAmbassador(brandAmbassador.data)
       setCommercialCategory(commercialCategory.data)
@@ -178,35 +190,38 @@ function TvcommercialDetails() {
            <div className='w-full h-full   flex flex-col flex-wrap     gap-5 lg:flex-row lg:items-start'>
 
 
-          {subId && assets?.[0]?.attributes?.assets?.data?.[0]?.attributes?.ext.includes('.mp4') &&
+          {/* {subId && assets?.[0]?.attributes?.assets?.data?.[0]?.attributes?.ext.includes('.mp4') && */}
 
+
+ 
       
           
           <div className="w-full m-auto h-auto flex flex-col justify-center items-center ">
           <video
-            src={assets?.[0]?.attributes?.assets?.data?.[0]?.attributes?.url}
-            title="YouTube video player"
+            src={url}
+            title="YouTube video player22"
+            autoPlay
             loop
             muted
             controls
             allowfullscreen
             className="w-full max-w-[1400px] m-auto h-[500px]        "></video>
         </div>
-          }
+          {/* } */}
 
 
 
-{!subId && param?.slug==='5' && <NewsAndMedia/>}
+{/* {!subId && param?.slug==='5' && <NewsAndMedia/>}
 {!subId && param?.slug==='3' && <NandiniAdds/>}
 {!subId && param?.slug==='4' && <FoodStops/>}
-{!subId && param?.slug==='6' && <DairyTour/>}
+{!subId && param?.slug==='6' && <DairyTour/>} */}
 
 
      
 
 
 {/* //punnet rajkumar */}
-{subId==='3' && param?.slug==='3' &&
+{/* {subId==='3' && param?.slug==='3' &&
             vidLinks?.sort((a,b)=>b.order-a.order).map((item, id) => {
               return (
                 <iframe
@@ -214,15 +229,15 @@ function TvcommercialDetails() {
                   className='w-72 m-auto md:w-full  md:max-w-[1350px]   md:h-[500px] '
                   
                   src={item.link}
-                  title="YouTube video player"
+                  title="YouTube video player2222"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   referrerpolicy="strict-origin-when-cross-origin"
                   allowfullscreen></iframe>
               );
-            })}
+            })} */}
  
- {
+ {/* {
   subId ?
   assets?.map((items)=>{
                
@@ -331,7 +346,7 @@ function TvcommercialDetails() {
   
 })
  
-}        
+}         */}
 
 
 
@@ -349,7 +364,7 @@ function TvcommercialDetails() {
                 
                 className="w-72  m-auto md:w-[400px]   md:h-[250px] object-fill      transition-all duration-300  "
                 src={items?.attributes?.youtube_link}
-                title="YouTube video player"
+                title="YouTube video player1111"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin"
