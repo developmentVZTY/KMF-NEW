@@ -119,7 +119,7 @@ useEffect(() => {
   "
 >
   <span className="relative z-10">
-    Explore more →
+   {locale === 'kn' ? 'ಇನ್ನಷ್ಟು ಅನ್ವೇಷಿಸಿ →' : 'Explore more →'}
   </span>
 </Link>
 
@@ -163,7 +163,8 @@ return (
   "
 >
   <span className="relative z-10">
-    Explore more →
+ 
+    {locale === 'kn' ? 'ಇನ್ನಷ್ಟು ಅನ್ವೇಷಿಸಿ →' : 'Explore more →'}
   </span>
 </Link>
 

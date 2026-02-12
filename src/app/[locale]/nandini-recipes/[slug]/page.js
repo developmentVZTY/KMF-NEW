@@ -21,7 +21,6 @@ import 'swiper/css/scrollbar';
 import { useParams } from 'next/navigation';
 import { VscArrowSmallRight } from 'react-icons/vsc';
 import { VscArrowSmallLeft } from 'react-icons/vsc';
-import { recipes } from '../recipesData';
 
 const RecipeDetail = ({ slug }) => {
   const [recipeDetail, SetRecipeDetail] = useState([]);
@@ -30,10 +29,8 @@ const RecipeDetail = ({ slug }) => {
   const locale = useLocale().locale;
   useEffect(() => {
     (async () => {
-      console.log("param.slug",param.slug);
-      // const { data: recipe } = await axios.get('/api/recipes');
-      const recipeDetail = recipes?.filter((item) => item?.id === parseInt(param.slug));
-      console.log("nedjwendwedw",recipeDetail);
+      const { data: recipe } = await axios.get('/api/recipes');
+      const recipeDetail = recipe?.data?.filter((item) => item?.id === parseInt(param.slug));
        
       SetRecipeDetail(recipeDetail[0]);
     })();
@@ -50,7 +47,7 @@ const RecipeDetail = ({ slug }) => {
           </div>
           <div className="w-40 h-1 bg-primary-main mt-"></div>
           <h1 className="text-primary-main  text-2xl md:text-4xl mt-10">
-            {recipeDetail?.title}
+            {recipeDetail && recipeDetail?.attributes?.title}
           </h1>
         </div>
 
@@ -73,7 +70,7 @@ const RecipeDetail = ({ slug }) => {
             </div>
  
             <Carousels
-              className="w-2xl h-[700px] relative z-[2]"
+              className="w-2xl h-[500px] relative z-[2]"
               autoPlay={true}
               interval={4000}
               showStatus={false}
@@ -81,26 +78,24 @@ const RecipeDetail = ({ slug }) => {
               showThumbs={false}
               showIndicators={true}
               showArrows={true}>
-              <div className="m-auto max-w-5xl h-[700px] flex justify-center items-center p-1">
+              <div className="m-auto max-w-3xl h-[500px] flex justify-center items-center p-1">
                 <img
                   className="w-full  "
-                  src={recipeDetail && recipeDetail.image}
+                  src={recipeDetail && recipeDetail?.attributes?.image?.data?.[0]?.attributes?.url}
                   alt=""
                 />
               </div>
                  
-              <div className="m-auto max-w-5xl h-[700px] flex justify-center items-center p-1">
-                {/* <video
+              <div className="m-auto max-w-3xl h-[500px] flex justify-center items-center p-1">
+                <video
                   className=" w-full h-full object-fill"
                   muted
                   controls
                   loop
                   playsInline
                   src={
-                    recipeDetail && recipeDetail.video
-                  }></video> */}
-
-                  <iframe className=" w-full h-full object-fill" src={recipeDetail.video} title={recipeDetail.title} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    recipeDetail && recipeDetail?.attributes?.video?.data?.[0]?.attributes?.url
+                  }></video>
               </div>
             </Carousels>
           </div>

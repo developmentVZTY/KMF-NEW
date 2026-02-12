@@ -125,10 +125,10 @@ const locale=useLocale().locale
              {/* <Link > */}
         
         {
-          recipes?.map((item,id)=>{
+          recipe?.map((item,id)=>{
            
             return(
-              <Recipes key={id} title={item.title} image={item.image}
+              <Recipes key={id} title={item?.attributes?.title} image={item?.attributes?.image?.data?.[0]?.attributes?.url}
               link={`/${locale}/nandini-recipes/${item?.id}`}
               />
             )
