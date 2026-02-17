@@ -55,7 +55,7 @@ useEffect(() => {
           <li
             key={item.id}
             onClick={() => scrollTo(`product-${item.id}`)}
-            className={`cursor-pointer flex uppercase justify-end items-center text-[11px] gap-2 transition ${
+            className={`cursor-pointer flex uppercase justify-end items-center mt-2 text-2xl gap-2 transition ${
               active === `product-${item.id}`
                 ? 'text-white font-semibold'
                 : 'text-gray-400'
@@ -86,16 +86,16 @@ useEffect(() => {
               ref={(el) => (sectionRefs.current[`product-${item.id}`] = el)}
               className={`min-h-screen flex items-center ${getBg(index)} px-6`}
             >
-              <div className="relative max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+              <div className="relative max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
                 <img
                 //   src={item?.attributes?.image?.data?.[0]?.attributes?.url}
                 src={item?.attributes?.image?.data?.[0]?.attributes?.url}
                   alt={item?.attributes?.title}
-                  className="mx-auto max-h-[420px] object-contain"
+                  className="mx-auto max-h-[420px]  object-contain"
                 />
 
-                <div>
-                  <h2 className="absolute top-[-50px] md:left-[47%] text-6xl md:text-8xl text-[#fff] opacity-[.4] font-bold mb-6">
+                <div className=''>
+                  <h2 className="absolute top-[-50px]  md:left-[47%] text-6xl md:text-8xl text-[#fff] opacity-[.4] font-bold mb-6">
                     {item?.attributes?.title}
                   </h2>
 
