@@ -55,7 +55,7 @@ useEffect(() => {
           <li
             key={item.id}
             onClick={() => scrollTo(`product-${item.id}`)}
-            className={`cursor-pointer flex uppercase justify-end items-center mt-2 text-2xl gap-2 transition ${
+            className={`cursor-pointer flex uppercase justify-end items-center text-[11px] gap-2 transition ${
               active === `product-${item.id}`
                 ? 'text-white font-semibold'
                 : 'text-gray-400'
