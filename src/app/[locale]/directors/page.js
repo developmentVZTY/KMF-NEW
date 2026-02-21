@@ -71,25 +71,30 @@ function Directors() {
           {locale === 'en' ? 'Board of Directors' : 'ಆಡಳಿತ ಮಂಡಳಿ ನಿರ್ದೇಶಕರು'}
               </h1> 
               <br />
-              <p className=" text-primary-main relative z-10 font-heading text-xl font-extrabold uppercase">
+              {/* <p className=" text-primary-main relative z-10 font-heading text-xl font-extrabold uppercase">
               
           {locale === 'en' ? 'Will be updated soon' : 'Will be updated soon'}
-              </p>
+              </p> */}
             </div>
          
         <div className="  h-full  ">
-        {/* <div className='  h-full flex justify-center items-center   '>
+        <div className='  h-full flex justify-center items-center   '>
           <Fade bottom>
         <div className='w-full max-w-7xl mt-auto min-h-44  md:h-2/4   justify-center items-center  rounded-tl-3xl rounded-br-3xl flex flex-col   p-3'>
             <div className='md:w-1/2 flex   justify-center  items-center mt-6 lg:pt-3 lg:pb-3 md:mt-0 rounded-full transition-all duration-300 hover:scale-[1.1]  '  >
               <Zoom>
-              <img className='w-[200px] h-[200px]   object-contain  sm:w-[350px] sm:h-[390px] transition-all duration-300   ' src={chairmain?.attributes?.image?.data?.attributes?.url} alt="" />
+              <img className='w-[200px] h-[200px]  object-cover  sm:w-[350px] sm:h-[390px] transition-all duration-300   ' src={chairmain?.attributes?.image?.data?.attributes?.url} alt="" />
               </Zoom>
             </div>
             <div className=' md:w-2/3 flex flex-col justify-center items-center mt-3 md:p-3 md:items-center lg:mt-0 '>
               <div>
                 <p className='text-3xl md:text-4xl font-lato font-bold text-start text-black'>{chairmain?.attributes?.name}</p>
-                <p className=' text-lg flex justify-center items-center  w-full  font-lato md:text-start text-black '>{chairmain?.attributes?.description}</p>
+                {/* <p className=' text-lg flex justify-center items-center  w-full  font-lato md:text-start text-black '>{chairmain?.attributes?.description}</p> */}
+                                <p className=' text-lg flex justify-center items-center  w-full  font-lato md:text-start text-black '>Administrative Office, <br/>
+                                    Karnataka Co-operative Milk Producers’ Federation Ltd. (KMF)
+
+</p>
+
               </div>
            
             </div>
@@ -97,7 +102,7 @@ function Directors() {
 
         </Fade>
     
-      </div> */}
+      </div>
           {/* <div className="grid grid-cols-2 p-2 md:grid-cols-4  sm:grid-cols-3  place-items-center gap-5 md:flex-row mt-10 justify-center">
 
     
