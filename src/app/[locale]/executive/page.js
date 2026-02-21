@@ -29,10 +29,11 @@ const Executive = () => {
       async()=>{
    
 
-        // const {data:chairman}= await axios.get('/api/md')
+       
         const {data:executive}=await axios.get('/api/executives?sort[0]=order:asc')
         const {data:unitchief}=await axios.get('/api/unitcheifs?sort[0]=order:asc')
         const {data:unioncheif}=await axios.get('/api/unioncheifs?sort[0]=createdAt:asc')
+         const {data:chairman}= await axios.get('/api/md')
         
         let orderExecutive = new Array(executive?.data?.length).fill(null);
         let orderUnion = new Array(unioncheif?.data?.length).fill(null);
@@ -91,10 +92,11 @@ const Executive = () => {
 
    
        
-        // setMd(chairman?.data)
+       
         setUnionCheif(unioncheif?.data)
         setUnitCheif(unitchief?.data)
         setExecutives(orderExecutive)
+         setMd(chairman?.data)
      
     
       }
@@ -121,8 +123,8 @@ const Executive = () => {
               </h1>
             </div>
     
-
-    {/* <div className='  h-full flex justify-center items-center   '>
+ { md ? 
+  <div className='  h-full flex justify-center items-center   '>
       <Fade bottom>
     <div className='w-full max-w-7xl mt-auto min-h-44  md:h-2/4   justify-center items-center  rounded-tl-3xl rounded-br-3xl flex flex-col   p-3'>
             <div className='md:w-1/2 flex   justify-center  items-center mt-6 lg:pt-3 lg:pb-3 transition-all duration-300 md:mt-0 rounded-full hover:scale-[1.1]  '  >
@@ -140,7 +142,11 @@ const Executive = () => {
         </div>
         </Fade>
     
-      </div> */}
+      </div>
+ :
+ ""}
+   
+
     <div>
 
 
