@@ -129,13 +129,17 @@ const Executive = () => {
     <div className='w-full max-w-7xl mt-auto min-h-44  md:h-2/4   justify-center items-center  rounded-tl-3xl rounded-br-3xl flex flex-col   p-3'>
             <div className='md:w-1/2 flex   justify-center  items-center mt-6 lg:pt-3 lg:pb-3 transition-all duration-300 md:mt-0 rounded-full hover:scale-[1.1]  '  >
               <Zoom>
-              <img className='w-[200px] h-[200px]   object-contain  sm:w-[350px] sm:h-[390px] transition-all duration-300   ' src={md?.attributes?.image?.data?.attributes?.url} alt="" />
+              <img className='w-[200px] h-[200px]   object-cover  sm:w-[350px] sm:h-[390px] transition-all duration-300   ' src={md?.attributes?.image?.data?.attributes?.url} alt="" />
               </Zoom>
             </div>
             <div className=' md:w-2/3 flex flex-col justify-center items-center mt-3 md:p-3 md:items-center lg:mt-0 '>
               <div>
                 <p className='text-3xl md:text-4xl font-lato font-bold text-center md:text-start text-black'>{md?.attributes?.name}</p>
-                <p className=' text-lg flex justify-center items-center  w-full  font-lato text-center md:text-start text-black '>{md?.attributes?.description}</p>
+                {/* <p className=' text-lg flex justify-center items-center  w-full  font-lato text-center md:text-start text-black '>{md?.attributes?.description}</p> */}
+                                <p className=' text-lg flex justify-center items-center  w-full  font-lato text-center md:text-start text-black '>Managing Director, <br/>
+
+Karnataka Co-operative Milk Producers’ Federation Ltd. (KMF)</p>
+
               </div>
            
             </div>

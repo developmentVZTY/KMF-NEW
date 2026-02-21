@@ -22,7 +22,8 @@ function Counter({endNumber,title}) {
   return (
     <div className='flex flex-col  space-y-10  justify-center items-center'>
         <p className='text-lg lg:text-[100px] text-white font-subheading flex justify-center items-center'>
-          {title==='Milk Unions' || title==='Kmf Units' || title==='ಹಾಲು ಒಕ್ಕೂಟಗಳು' || title==='ಕಹಾಮ ಘಟಕಗಳು' ?currentNumber.toLocaleString():currentNumber.toLocaleString().concat('+')}
+          
+          {title==='Milk Unions' || title==='Kmf Units' || title==='ಹಾಲು ಒಕ್ಕೂಟಗಳು' || title==='ಕಹಾಮ ಘಟಕಗಳು' ?currentNumber.toLocaleString() : currentNumber.toLocaleString().concat('+')}
           
           
           </p>
