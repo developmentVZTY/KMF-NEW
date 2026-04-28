@@ -20,7 +20,11 @@ function Tenders({ title, tenderNo, date, link, handlePdfPreview, startDate }) {
           </div>
         </div>
         <div className=" shrink-0  flex  flex-col  items-end  justify-end">
-         <Link href={link || ''} className="text-sm leading-6 cursor-pointer bg-primary-gradient p-2   text-white" download target='blank'> Download </Link> 
+         {link ? (
+           <Link href={link} className="text-sm leading-6 cursor-pointer bg-primary-gradient p-2   text-white" download target='blank'> Download </Link>
+         ) : (
+           <span aria-disabled="true" className="text-sm leading-6 bg-gray-300 p-2 text-white cursor-not-allowed opacity-60 pointer-events-none"> Download </span>
+         )}
         </div>
       </li>
     
