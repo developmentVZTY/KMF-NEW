@@ -82,18 +82,28 @@ function Directors() {
           <Fade bottom>
         <div className='w-full max-w-7xl mt-auto min-h-44  md:h-2/4   justify-center items-center  rounded-tl-3xl rounded-br-3xl flex flex-col   p-3'>
             <div className='md:w-1/2 flex   justify-center  items-center mt-6 lg:pt-3 lg:pb-3 md:mt-0 rounded-full transition-all duration-300 hover:scale-[1.1]  '  >
-              <Zoom>
+              {/* <Zoom>
               <img className='w-[200px] h-[200px]  object-cover  sm:w-[350px] sm:h-[390px] transition-all duration-300   ' src={chairmain?.attributes?.image?.data?.attributes?.url} alt="" />
-              </Zoom>
+              </Zoom> */}
             </div>
             <div className=' md:w-2/3 flex flex-col justify-center items-center mt-3 md:p-3 md:items-center lg:mt-0 '>
               <div>
-                <p className='text-3xl md:text-4xl font-lato font-bold text-start text-black'>{chairmain?.attributes?.name}</p>
+                <p className='text-3xl md:text-4xl font-lato font-bold text-center text-black'>{chairmain?.attributes?.name}</p>
                 {/* <p className=' text-lg flex justify-center items-center  w-full  font-lato md:text-start text-black '>{chairmain?.attributes?.description}</p> */}
-                                <p className=' text-lg flex justify-center items-center  w-full  font-lato md:text-start text-black '>Administrative Office, <br/>
-                                    Karnataka Co-operative Milk Producers’ Federation Ltd. (KMF)
-
-</p>
+                {
+  locale === 'en' ? (
+    <p className="text-lg flex justify-center items-center w-full font-lato md:text-center text-black">
+      Administrator, <br />
+      Karnataka Co-operative Milk Producers’ Federation Ltd. (KMF)
+    </p>
+  ) : (
+    <p className="text-lg flex justify-center items-center w-full font-lato md:text-center text-black">
+      ಆಡಳಿತಾಧಿಕಾರಿಗಳು <br />
+      ಕರ್ನಾಟಕ ಸಹಕಾರ ಹಾಲು ಉತ್ಪಾದಕರ ಮಹಾಮಂಡಳಿ ನಿಯಮಿತ (ಕೆಎಂಎಫ್)
+    </p>
+  )
+}
+                                
 
               </div>
            
