@@ -134,9 +134,9 @@ const Executive = () => {
             </div>
             <div className=' md:w-2/3 flex flex-col justify-center items-center mt-3 md:p-3 md:items-center lg:mt-0 '>
               <div>
-                <p className='text-3xl md:text-4xl font-lato font-bold text-center md:text-start text-black'>{md?.attributes?.name}</p>
+                <p className='text-3xl md:text-4xl font-lato font-bold text-center md:text-center text-black'>{md?.attributes?.name}</p>
                 {/* <p className=' text-lg flex justify-center items-center  w-full  font-lato text-center md:text-start text-black '>{md?.attributes?.description}</p> */}
-                                <p className=' text-lg flex justify-center items-center  w-full  font-lato text-center md:text-start text-black '>Managing Director, <br/>
+                                <p className=' text-lg flex justify-center items-center  w-full  font-lato text-center  text-black '>Managing Director, <br/>
 
 Karnataka Co-operative Milk Producers’ Federation Ltd. (KMF)</p>
 
