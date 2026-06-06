@@ -1,7 +1,7 @@
 import React from 'react'
 import { Header } from '@/components/Header'
 // import secretinfoImg from "@/images/scret-info-1.jpeg"
-import secretinfoImg from "@/images/scret-info-26.png"
+import secretinfoImg from "@/images/scret-info-06-26.png"
 
 function SecretInfoLink() {
   return (
