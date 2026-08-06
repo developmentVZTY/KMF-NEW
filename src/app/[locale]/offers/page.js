@@ -33,7 +33,7 @@ function Offers() {
   
     <div className='w-full rounded-full absolute right-[10px] bottom-[50px] sm:hidden  flex  justify-end items-end space-x-2'>
     <p className='font-semibold text-blue-700'>Click Above</p>
-    <img src='https://media.tenor.com/LUNANcnXLiUAAAAM/up-arrow.gif'  className='rounded-full w-8'/>
+    <img loading="lazy" decoding="async" src='https://media.tenor.com/LUNANcnXLiUAAAAM/up-arrow.gif'  className='rounded-full w-8'/>
     </div>
     
       
@@ -56,7 +56,7 @@ function Offers() {
           <div className="mb-10    relative w-full  flex justify-center items-center ">
              
               <h1 className=" text-primary-main relative z-10 font-heading text-4xl font-extrabold uppercase">
-              <img src='/images/product-new/new.gif' className='w-20 absolute right-5 top-[-70px]  z-[-10]'/>
+              <img loading="lazy" decoding="async" src='/images/product-new/new.gif' className='w-20 absolute right-5 top-[-70px]  z-[-10]'/>
 
               {locale==='kn'?'':'Offers'}
               </h1>
@@ -79,7 +79,7 @@ function Offers() {
                     
                     
                       <div className="w-full   justify-center items-center flex p-2  ">
-                      <img
+                      <img loading="lazy" decoding="async"
                                   
                                   src={item?.attributes?.image?.data?.[0]?.attributes?.url}
                                   className="w-80 h-80  object-contain  transition-all duration-300 hover:scale-[1.1]"

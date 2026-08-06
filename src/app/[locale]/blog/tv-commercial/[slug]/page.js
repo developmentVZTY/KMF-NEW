@@ -124,7 +124,7 @@ function TvcommercialDetails() {
             <div className="w-40 h-8 bg-red-600"></div>
             <div className="w-40 h-8 bg-red-600"></div>
           </div>
-      <img src={'/images/gallery.png'} className="w-full max-w-7xl h-full object-fill absolute top-0 z-[-1]" />
+      <img loading="lazy" decoding="async" src={'/images/gallery.png'} className="w-full max-w-7xl h-full object-fill absolute top-0 z-[-1]" />
     </section>
       <section className="w-full h-fit m-auto pt-10   ">
         <div className="w-full space-y-5 p-4 ">
@@ -250,7 +250,7 @@ function TvcommercialDetails() {
       return (
       <div key={id} className=' w-full h-full relative'>
 
-        <img
+        <img loading="lazy" decoding="async"
           
           src={item?.attributes?.url}
           className="w-96 h-80    transition-all duration-300  "
@@ -267,7 +267,7 @@ function TvcommercialDetails() {
     return (
 
       <div>
-      <video
+      <video preload="none"
         
         controls
         loop
@@ -303,7 +303,7 @@ function TvcommercialDetails() {
 
 <PhotoView src={items?.attributes?.assets?.data?.[0]?.attributes?.url}>
 
-        <img
+        <img loading="lazy" decoding="async"
           
           src={items?.attributes?.assets?.data?.[0]?.attributes?.url}
           className="w-96 h-80    transition-all duration-300  "
@@ -326,7 +326,7 @@ function TvcommercialDetails() {
       return (
 
         <div  key={id} className='w-72 mt-16  m-auto md:w-[400px]   md:h-[250px] object-fill      transition-all duration-300 '>
-        <video
+        <video preload="none"
           
           controls
           loop

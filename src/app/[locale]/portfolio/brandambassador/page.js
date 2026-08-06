@@ -135,7 +135,7 @@ const BrandAmbassador = () => {
        
       <section id='AMBASSADOR' className='relative w-full h-auto '>
         <div className='absolute w-full h-full'>
-         {/* <img className='w-full h-full'  src={brand.src} alt="" /> */}
+         {/* <img loading="lazy" decoding="async" className='w-full h-full'  src={brand.src} alt="" /> */}
         </div>
       <Carousels
        className='w-full '
@@ -154,7 +154,7 @@ const BrandAmbassador = () => {
 
               <div className='absolute w-full h-full top-0 left-0  bg-black opacity-50 z-[-1]'></div>
               <div className='absolute w-full h-full top-0 left-0   z-[-10]'>
-                 <img className='w-full h-full object-contain' src={brand.src} alt="" />
+                 <img loading="lazy" decoding="async" className='w-full h-full object-contain' src={brand.src} alt="" />
                  </div>
     
               <div className='w-full h-full flex flex-col justify-center items-center  '>
@@ -240,7 +240,7 @@ const BrandAmbassador = () => {
                     <PhotoProvider >
                         
                         <PhotoView src={item.url} height="400px"  >
-                        <img className=' cursor-pointer m-auto w-full h-full object-cover' src={item.url} alt="" />
+                        <img loading="lazy" decoding="async" className=' cursor-pointer m-auto w-full h-full object-cover' src={item.url} alt="" />
                         </PhotoView>
                     
                   
@@ -300,7 +300,7 @@ const BrandAmbassador = () => {
                     <PhotoProvider >
                         
                         <PhotoView src={item.url} height="400px"  >
-                        <img className=' cursor-pointer m-auto w-full h-full object-cover' src={item.url} alt="" />
+                        <img loading="lazy" decoding="async" className=' cursor-pointer m-auto w-full h-full object-cover' src={item.url} alt="" />
                         </PhotoView>
                     
                   

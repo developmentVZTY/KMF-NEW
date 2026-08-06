@@ -18,7 +18,7 @@ function UnionCard({name,image,description,link,idx}) {
   <PhotoProvider >
    
       <PhotoView src={image} height="400px"  >
-      <img src={image} className=' max-w-[400px] h-full object-fill'/>
+      <img loading="lazy" decoding="async" src={image} className=' max-w-[400px] h-full object-fill'/>
       </PhotoView>
   
 
@@ -47,7 +47,7 @@ function UnionCard({name,image,description,link,idx}) {
       <PhotoProvider >
        
           <PhotoView src={image} height="400px"  >
-          <img src={image} className=' max-w-[400px] h-full object-fill'/>
+          <img loading="lazy" decoding="async" src={image} className=' max-w-[400px] h-full object-fill'/>
           </PhotoView>
       
     

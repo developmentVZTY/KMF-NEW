@@ -369,70 +369,70 @@ window.addEventListener('resize',handleResize);
                 {/* {banners?.map((item, id) => {
                   return ( */}
                     <SwiperSlide >
-                      <img
+                      <img loading="lazy" decoding="async"
                         src={home1.src}
                         alt=""
                         className="w-full h-full"
                       />
                     </SwiperSlide>
                      <SwiperSlide >
-                      <img
+                      <img loading="lazy" decoding="async"
                         src={home2.src}
                         alt=""
                         className="w-full h-full"
                       />
                     </SwiperSlide>
                      <SwiperSlide >
-                      <img
+                      <img loading="lazy" decoding="async"
                         src={home3.src}
                         alt=""
                         className="w-full h-full"
                       />
                     </SwiperSlide>
                      <SwiperSlide >
-                      <img
+                      <img loading="lazy" decoding="async"
                         src={home4.src}
                         alt=""
                         className="w-full h-full"
                       />
                     </SwiperSlide>
                      <SwiperSlide >
-                      <img
+                      <img loading="lazy" decoding="async"
                         src={home5.src}
                         alt=""
                         className="w-full h-full"
                       />
                     </SwiperSlide>
                      <SwiperSlide >
-                      <img
+                      <img loading="lazy" decoding="async"
                         src={home6.src}
                         alt=""
                         className="w-full h-full"
                       />
                     </SwiperSlide>
                      <SwiperSlide >
-                      <img
+                      <img loading="lazy" decoding="async"
                         src={home7.src}
                         alt=""
                         className="w-full h-full"
                       />
                     </SwiperSlide>
                      <SwiperSlide >
-                      <img
+                      <img loading="lazy" decoding="async"
                         src={home9.src}
                         alt=""
                         className="w-full h-full"
                       />
                     </SwiperSlide>
                      <SwiperSlide >
-                      <img
+                      <img loading="lazy" decoding="async"
                         src={home10.src}
                         alt=""
                         className="w-full h-full"
                       />
                     </SwiperSlide>
                      <SwiperSlide >
-                      <img
+                      <img loading="lazy" decoding="async"
                         src={home11.src}
                         alt=""
                         className="w-full h-full"
@@ -570,7 +570,7 @@ window.addEventListener('resize',handleResize);
                   <div className="w-full flex   space-x-5" >
                     <div className="flex justify-center items-center      ">
                       <div className="">
-                        <img
+                        <img loading="lazy" decoding="async"
                           src={locationIco.src}
                           className="w-10 h-7 hover:scale-125 transition-all duration-300"
                         />
@@ -595,7 +595,7 @@ window.addEventListener('resize',handleResize);
 
                   <div className="flex justify-center md:justify-start items-center w-full   ">
                     <div>
-                      <img
+                      <img loading="lazy" decoding="async"
                         src={contactIco.src}
                         className="w-10 h-7 hover:scale-125 transition-all duration-300"
                       />
@@ -614,18 +614,18 @@ window.addEventListener('resize',handleResize);
                       <Link
                         href={'https://www.facebook.com/kmfnandini.coop'}
                         className="hover:scale-125 transition-all duration-300">
-                        <img src={facebookIco.src} className="w-7" />
+                        <img loading="lazy" decoding="async" src={facebookIco.src} className="w-7" />
                       </Link>
                       <Link
                         href={'https://twitter.com/kmfnandinimilk'}
                         className="hover:scale-125 transition-all duration-300">
-                        <img src={twitterIco.src} className="w-7" />
+                        <img loading="lazy" decoding="async" src={twitterIco.src} className="w-7" />
                       </Link>
                       <Link
                         href={'https://www.kmfnandini.coop/en/contact-us'}
                         className="hover:scale-125 transition-all duration-300">
                         {' '}
-                        <img src={mailIco.src} className="w-7" />
+                        <img loading="lazy" decoding="async" src={mailIco.src} className="w-7" />
                       </Link>
                       <Link
                         href={
@@ -633,13 +633,13 @@ window.addEventListener('resize',handleResize);
                         }
                         className="hover:scale-125 transition-all duration-300">
                         {' '}
-                        <img src={insta.src} className="w-7" />
+                        <img loading="lazy" decoding="async" src={insta.src} className="w-7" />
                       </Link>
                       <Link
                         href={'https://www.youtube.com/@kmfnandini12'}
                         className="hover:scale-125 transition-all duration-300">
                         {' '}
-                        <img src={ytIco.src} className="w-7" />
+                        <img loading="lazy" decoding="async" src={ytIco.src} className="w-7" />
                       </Link>
                     </div>
                 </div>
@@ -678,7 +678,7 @@ window.addEventListener('resize',handleResize);
           return(
             <SwiperSlide key={id}>
           
-            <img src={item?.attributes?.banner?.data?.attributes?.url} alt="" className='w-full h-[700px]' />
+            <img loading="lazy" decoding="async" src={item?.attributes?.banner?.data?.attributes?.url} alt="" className='w-full h-[700px]' />
          
             </SwiperSlide>
           )
@@ -736,7 +736,7 @@ window.addEventListener('resize',handleResize);
           <div className="relative max-w-7xl  h-full bg-[#f99457] m-auto flex flex-col lg:flex-row justify-center pt-7 pb-7">
             <Fade left>
             <div className="w-full lg:w-[50%]  lg:p-10 h-full flex justify-center items-center">
-              <img className="w-[70%] lg:w-full" src={founderOfMilk2Img.src} alt="" />
+              <img loading="lazy" decoding="async" className="w-[70%] lg:w-full" src={founderOfMilk2Img.src} alt="" />
             </div>
 
             </Fade>
@@ -820,7 +820,7 @@ window.addEventListener('resize',handleResize);
             </div>
             <div className="order-1 lg:order-last w-full lg:w-[50%] lg:p-10 h-full flex justify-center items-center">
               <Fade right>
-              <img className="w-[70%] lg:w-full" src={KRISHNAPPA.src} alt="" />
+              <img loading="lazy" decoding="async" className="w-[70%] lg:w-full" src={KRISHNAPPA.src} alt="" />
               </Fade>
             </div>
           </div>
@@ -847,7 +847,7 @@ window.addEventListener('resize',handleResize);
 
               <div className="relative  w-[100%]  h-full bg-[#f99457] group ">
                 <div className="absolute w-full h-full top-0 left-0 z-20">
-                  <img
+                  <img loading="lazy" decoding="async"
                     className="w-full h-full opacity-0 transition duration-0 group-hover:opacity-30 group-hover:duration-1000 "
                     src={milkImg.src}
                     alt=""
@@ -899,14 +899,14 @@ window.addEventListener('resize',handleResize);
                     modules={[FreeMode, Autoplay]}
                     className="w-full h-full">
                     <SwiperSlide>
-                      <img
+                      <img loading="lazy" decoding="async"
                         className="w-full h-full opacity-0 transition duration-0 group-hover:opacity-30 group-hover:duration-1000 "
                         src={band1.src}
                         alt=""
                       />
                     </SwiperSlide>
                     <SwiperSlide>
-                      <img
+                      <img loading="lazy" decoding="async"
                         className="w-full h-full opacity-0 transition duration-0 group-hover:opacity-30 group-hover:duration-1000 "
                         src={band2.src}
                         alt=""
@@ -914,7 +914,7 @@ window.addEventListener('resize',handleResize);
                     </SwiperSlide>
 
                     <SwiperSlide>
-                      <img
+                      <img loading="lazy" decoding="async"
                         className="w-full h-full object-fill opacity-0 transition duration-0 group-hover:opacity-30 group-hover:duration-1000 "
                         src={band4.src}
                         alt=""
@@ -957,7 +957,7 @@ window.addEventListener('resize',handleResize);
             <SwiperSlide className="">
               <div className="relative  w-[100%]  h-full bg-[#f99457] group">
                 <div className="absolute w-full h-full top-0 left-0 z-20">
-                  <img
+                  <img loading="lazy" decoding="async"
                     className="w-full h-full opacity-0 transition duration-0 group-hover:opacity-30 group-hover:duration-1000 "
                     src={achivement.src}
                     alt=""
@@ -1010,14 +1010,14 @@ window.addEventListener('resize',handleResize);
                     modules={[FreeMode, Autoplay]}
                     className="w-full h-full">
                     <SwiperSlide>
-                      <img
+                      <img loading="lazy" decoding="async"
                         className="w-full h-full opacity-0 transition duration-0 group-hover:opacity-30 group-hover:duration-1000 "
                         src={spon2.src}
                         alt=""
                       />
                     </SwiperSlide>
                     <SwiperSlide>
-                      <img
+                      <img loading="lazy" decoding="async"
                         className="w-full h-full opacity-0 transition duration-0 group-hover:opacity-30 group-hover:duration-1000 "
                         src={spon3.src}
                         alt=""
@@ -1063,7 +1063,7 @@ window.addEventListener('resize',handleResize);
               <h1 className="w-full  m-auto text-center  text-primary-main text-2xl md:text-5xl font-bold ">
                 {locale === 'en' ? 'KMF ACHIEVEMENTS' : 'ಕಹಾಮ ಸಾಧನೆಗಳು'}
               </h1>
-              <img className="absolute top-[-52px] left-[40%] md:left-[55%] w-40 " src={titleBG.src} alt="" />
+              <img loading="lazy" decoding="async" className="absolute top-[-52px] left-[40%] md:left-[55%] w-40 " src={titleBG.src} alt="" />
             </div>
               </Fade>
           </div>
@@ -1104,7 +1104,7 @@ window.addEventListener('resize',handleResize);
           <div className="w-full h-auto">
             {/* <div className=" relative w-full">
               <h1 className="text-primary-main text-2xl md:text-4xl "> KMF ACHIEVEMENTS </h1>
-              <img
+              <img loading="lazy" decoding="async"
                 className="absolute top-[-35px] md:top-[-50px] left-[49%] md:left-[51%] w-32 md:w-40 "
                 src={titleBG.src}
                 alt=""
@@ -1112,7 +1112,7 @@ window.addEventListener('resize',handleResize);
             </div> */}
 
             <div className="  lg:block lg:max-w-none lg:shadow-none lg:p-0   p-6 md:p-16  relative max-w-xl m-auto w-full     rounded-3xl  shadow-2xl     max-h-[500px] h-full z-[-1]">
-              <img className="w-full h-full hidden  lg:block " src={flag.src} alt="" />
+              <img loading="lazy" decoding="async" className="w-full h-full hidden  lg:block " src={flag.src} alt="" />
               <div className=" lg:absolute top-[60px] lg:top-0 xl:top-[60px] w-full h-full">
                 <div className="w-full h-full flex justify-center items-center">
                   <div className="max-w-xl lg:max-w-lg xl:max-w-3xl w-full m-auto">
@@ -1168,7 +1168,7 @@ window.addEventListener('resize',handleResize);
                       className=" max-w-xl w-full m-3 md:m-10 rounded-3xl  shadow-2xl h-auto bg-slate-50 p-6 md:p-16">
                       <div className="m-auto">
                         <div className="w-[300px] md:w-[450px] relative">
-                          <img
+                          <img loading="lazy" decoding="async"
                             src="/images/heading/heading-color/group.png"
                             className="absolute z-[1] w-fit top-[-25px] md:top-[-48px]   object-contain"
                           />
@@ -1227,7 +1227,7 @@ window.addEventListener('resize',handleResize);
             <Fade top>
             <h1 className="relative  m-auto text-center  text-primary-main text-2xl md:text-5xl font-bold  ">
               {locale === 'en' ? 'KSHEERASAGARA MAGAZINE' : 'ಕ್ಷೀರಸಾಗರ ಮಾಸಪತ್ರಿಕೆ'} 
-              <span><img className="absolute top-[-55px] right-[20px]  w-40 " src={titleBG.src} alt="" /></span>
+              <span><img loading="lazy" decoding="async" className="absolute top-[-55px] right-[20px]  w-40 " src={titleBG.src} alt="" /></span>
             </h1>
             </Fade>
 
@@ -1288,7 +1288,7 @@ window.addEventListener('resize',handleResize);
               <h1 className="w-full  m-auto text-center  text-primary-main text-2xl md:text-5xl font-bold  ">
                 {locale === 'en' ? 'SPONSORED' : 'ಪ್ರಾಯೋಜಕತ್ವ'}
               </h1>
-              <img className="absolute top-[-52px] left-[35%] md:left-[50%] w-40 " src={titleBG.src} alt="" />
+              <img loading="lazy" decoding="async" className="absolute top-[-52px] left-[35%] md:left-[50%] w-40 " src={titleBG.src} alt="" />
             </div>
           </div>
           {/* <h1 className="text-primary-main text-2xl md:text-6xl "> SPONSORED </h1> */}
@@ -1311,52 +1311,52 @@ window.addEventListener('resize',handleResize);
                 return ( */}
                   <SwiperSlide  className="">
                     <div className="flex justify-center items-center  w-52 h-52 ">
-                      <img className="m-auto w-44 h-44" src={spon1.src} alt="" />
+                      <img loading="lazy" decoding="async" className="m-auto w-44 h-44" src={spon1.src} alt="" />
                     </div>
                   </SwiperSlide>
                     <SwiperSlide  className="">
                     <div className="flex justify-center items-center  w-52 h-52 ">
-                      <img className="m-auto w-44 h-44" src={spon2.src} alt="" />
+                      <img loading="lazy" decoding="async" className="m-auto w-44 h-44" src={spon2.src} alt="" />
                     </div>
                   </SwiperSlide>
                     <SwiperSlide  className="">
                     <div className="flex justify-center items-center  w-52 h-52 ">
-                      <img className="m-auto w-44 h-44" src={spon3.src} alt="" />
+                      <img loading="lazy" decoding="async" className="m-auto w-44 h-44" src={spon3.src} alt="" />
                     </div>
                   </SwiperSlide>
                     <SwiperSlide  className="">
                     <div className="flex justify-center items-center  w-52 h-52 ">
-                      <img className="m-auto w-44 h-44" src={spon4.src} alt="" />
+                      <img loading="lazy" decoding="async" className="m-auto w-44 h-44" src={spon4.src} alt="" />
                     </div>
                   </SwiperSlide>
                     <SwiperSlide  className="">
                     <div className="flex justify-center items-center  w-52 h-52 ">
-                      <img className="m-auto w-44 h-44" src={spon5.src} alt="" />
+                      <img loading="lazy" decoding="async" className="m-auto w-44 h-44" src={spon5.src} alt="" />
                     </div>
                   </SwiperSlide>
                     <SwiperSlide  className="">
                     <div className="flex justify-center items-center  w-52 h-52 ">
-                      <img className="m-auto w-44 h-44" src={spon6.src} alt="" />
+                      <img loading="lazy" decoding="async" className="m-auto w-44 h-44" src={spon6.src} alt="" />
                     </div>
                   </SwiperSlide>
                     <SwiperSlide  className="">
                     <div className="flex justify-center items-center  w-52 h-52 ">
-                      <img className="m-auto w-44 h-44" src={spon7.src} alt="" />
+                      <img loading="lazy" decoding="async" className="m-auto w-44 h-44" src={spon7.src} alt="" />
                     </div>
                   </SwiperSlide>
                     <SwiperSlide  className="">
                     <div className="flex justify-center items-center  w-52 h-52 ">
-                      <img className="m-auto w-44 h-44" src={spon8.src} alt="" />
+                      <img loading="lazy" decoding="async" className="m-auto w-44 h-44" src={spon8.src} alt="" />
                     </div>
                   </SwiperSlide>
                     <SwiperSlide  className="">
                     <div className="flex justify-center items-center  w-52 h-52 ">
-                      <img className="m-auto w-44 h-44" src={spon9.src} alt="" />
+                      <img loading="lazy" decoding="async" className="m-auto w-44 h-44" src={spon9.src} alt="" />
                     </div>
                   </SwiperSlide>
                    <SwiperSlide  className="">
                     <div className="flex justify-center items-center  w-52 h-52 ">
-                      <img className="m-auto w-44 h-44" src={spon10.src} alt="" />
+                      <img loading="lazy" decoding="async" className="m-auto w-44 h-44" src={spon10.src} alt="" />
                     </div>
                   </SwiperSlide>
                 {/* );
@@ -1376,7 +1376,7 @@ window.addEventListener('resize',handleResize);
                 return (
                   <SwiperSlide key={idx} className=" text-center">
                   <div className="flex justify-center items-center md:ml-[27%]  w-52 h-52 ">
-                    <img className="m-auto w-44 h-44" src={item?.attributes?.url} alt="" />
+                    <img loading="lazy" decoding="async" className="m-auto w-44 h-44" src={item?.attributes?.url} alt="" />
                   </div>
                 </SwiperSlide>
                 );

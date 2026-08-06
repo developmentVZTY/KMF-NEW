@@ -44,7 +44,7 @@ function KmfUnitDetail() {
 
       {banner?
        <section className={`w-full h-full md:h-[600px] pt-28 relative  grid place-items-center `}>
-       {/* <img src={banner?banner[0]:HeroImg.src} className="w-full h-full absolute top-0 z-[-1]" />
+       {/* <img loading="lazy" decoding="async" src={banner?banner[0]:HeroImg.src} className="w-full h-full absolute top-0 z-[-1]" />
         */}
        
        <video
@@ -60,10 +60,10 @@ function KmfUnitDetail() {
        />
      </section>:
       <section className={`w-full h-full md:h-[500px] pt-28 relative  grid place-items-center `}>
-      {/* <img src={banner?banner[0]:HeroImg.src} className="w-full h-full absolute top-0 z-[-1]" />
+      {/* <img loading="lazy" decoding="async" src={banner?banner[0]:HeroImg.src} className="w-full h-full absolute top-0 z-[-1]" />
        */}
       
-      <img
+      <img loading="lazy" decoding="async"
         src={bannerImg || ''}
         
         className={`w-full  h-full    object-fill absolute top-0 z-[-1] ${
@@ -85,7 +85,7 @@ function KmfUnitDetail() {
         {/* {unionImages?.[currentIndex]?
           <div className="w-full flex flex-col justify-center items-center space-y-5">
           <div className="  max-w-[458px]    ">
-            <img
+            <img loading="lazy" decoding="async"
               src={unionImages?.[currentIndex]?.attributes?.url}
               alt="slider-img"
               className="w-full h-full"
@@ -183,22 +183,22 @@ function KmfUnitDetail() {
             <h1 className="text-2xl">{unit?.attributes?.longtitle}</h1>
 
             <div className="flex justify-center items-start space-x-4">
-              <img src={locationIco.src} className="w-5 h-5" />
+              <img loading="lazy" decoding="async" src={locationIco.src} className="w-5 h-5" />
               <p className="text-lg">{unit?.attributes?.address}</p>
             </div>
 
             <div className="flex justify-center items-start space-x-4">
-              <img src={callIco.src} className="w-5 h-5" />
+              <img loading="lazy" decoding="async" src={callIco.src} className="w-5 h-5" />
               <p className="text-lg"> {unit?.attributes?.phone}</p>
             </div>
 
             <div className="flex justify-center items-start space-x-4">
-              <img src={printIco.src} className="w-5 h-5" />
+              <img loading="lazy" decoding="async" src={printIco.src} className="w-5 h-5" />
               <p className="text-lg"> {unit?.attributes?.fax}</p>
             </div>
 
             <div className="flex justify-center items-start space-x-4">
-              <img src={mailIco.src} className="w-5 h-5" />
+              <img loading="lazy" decoding="async" src={mailIco.src} className="w-5 h-5" />
               <p className="text-lg"> {unit?.attributes?.email}</p>
             </div>
 

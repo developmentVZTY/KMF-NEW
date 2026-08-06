@@ -14,7 +14,7 @@ function ArrivalCard({imgUrl,title,link}) {
     className=" w-full h-full   rounded-md overflow-hidden   m-auto group   transition-all duration-500  "
      >
     <div className="p-2 w-full h-[70%]">
-      <img
+      <img loading="lazy" decoding="async"
         src={imgUrl}
         alt="featured-img"
         className=" w-full h-full  transition-all duration-100 group-hover:scale-[1.01] hover:rounded-none "

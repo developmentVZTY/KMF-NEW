@@ -50,7 +50,7 @@ const KsheeraDhare = () => {
             <h1 className='text-primary-main text-2xl md:text-5xl  ' >  {locale === 'en' ?  'KSHEERADHARE' : 'ಕ್ಷೀರಧಾರೆ'} </h1>
             <div className='bg-primary-main w-[200px] h-[4px] mt-2'></div>
 
-            <img className='absolute top-[-50px] left-[38%] md:left-[52%] w-40 ' src={titleBG.src} alt="" />
+            <img loading="lazy" decoding="async" className='absolute top-[-50px] left-[38%] md:left-[52%] w-40 ' src={titleBG.src} alt="" />
         </div>
 
 
@@ -61,7 +61,7 @@ const KsheeraDhare = () => {
     <div className='w-full h-auto'>
         
             <div className=' hidden lg:block relative w-full max-h-[500px] h-full z-[-1]'>
-                <img className='w-full h-full' src={flag.src} alt="" />
+                <img loading="lazy" decoding="async" className='w-full h-full' src={flag.src} alt="" />
                 <div className='absolute top-[60px] lg:top-0 xl:top-[60px] w-full h-full'>
                     <div className='w-full h-full flex justify-center items-center'>
                     <div className='max-w-xl lg:max-w-lg xl:max-w-xl w-full m-auto'>

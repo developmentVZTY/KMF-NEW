@@ -34,13 +34,13 @@ const HistoryOfMilk = () => {
 
         <h1 className='text-primary-main   flex justify-center items-center text-2xl md:text-4xl  ' >  {locale==='en'?'HISTORY OF MILK':'ಹಾಲಿನ ಇತಿಹಾಸ'}  </h1>
         <div className='bg-primary-main w-[200px] h-[4px] mt-2'></div>
-        <img className='absolute top-[-50px] left-[40%] md:left-[49%] w-40 ' src={titleBG.src} alt="" />
+        <img loading="lazy" decoding="async" className='absolute top-[-50px] left-[40%] md:left-[49%] w-40 ' src={titleBG.src} alt="" />
 </div>
       </section>
          <section className={`w-full h-auto md:h-[90vh]    mt-10`}>
 
               
-           <img src={home2.src} alt="" />
+           <img loading="lazy" decoding="async" src={home2.src} alt="" />
 
         </section>
 

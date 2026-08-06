@@ -4,7 +4,7 @@ function FoodStops() {
  
   return (
     <div className="w-full m-auto h-auto flex flex-col justify-center items-center ">
-      <video
+      <video preload="none"
         src="https://kmf-public.s3.ap-south-1.amazonaws.com/KMF_RAMESHWARAM_VIDEO_FINAL_de3421b512.mp4"
         title="YouTube video player"
         controls

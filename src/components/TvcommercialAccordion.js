@@ -17,7 +17,7 @@ const TvcommercialAccordion = ({ title, children, open, arrow, onToggle, id,link
           <span className=' text-sm text-white'>{title}</span>
         </div>
 
-        <img src={open ? arrow.up : arrow.down} className="bg-white" />
+        <img loading="lazy" decoding="async" src={open ? arrow.up : arrow.down} className="bg-white" />
       </button>
       {open && <div className="p-4 bg-secondary-main">{children}</div>}
     </li>

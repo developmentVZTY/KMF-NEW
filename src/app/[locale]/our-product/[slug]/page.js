@@ -222,7 +222,7 @@ function Milk() {
                         item?.attributes?.isLatest ? 'our-product-latest' : ''
                       } `}>
                       {item?.attributes?.isLatest && (
-                        <img
+                        <img loading="lazy" decoding="async"
                           src="/images/product-new/new.gif"
                           className="w-20 absolute right-5  z-[10]"
                         />
@@ -249,7 +249,7 @@ function Milk() {
                               ];
                               if (validExtensions.includes(item?.attributes?.ext)) {
                                 return (
-                                  <img
+                                  <img loading="lazy" decoding="async"
                                     key={id}
                                     src={item?.attributes?.url}
                                     className="w-40 h-80  object-contain transition-transform duration-300 ease-in-out hover:scale-125"

@@ -1,43 +1,32 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-eslint: {
-ignoreDuringBuilds: true,
-},
-};
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 
-module.exports = nextConfig
+  webpack: (config) => {
+    config.resolve.alias.canvas = false;
 
-
-
-module.exports = {
-  
-  
-    webpack: (config) => {
-      config.resolve.alias.canvas = false;
-      config.module.rules.push({
-        test: /\.(mp4|webm)$/,
-        use: {
+    // NOTE: this rule previously sat in an object literal that also declared
+    // `test: /\.(mp4|webm)$/` and a second `use` key. Duplicate keys mean the
+    // later ones win, so only the PDF rule below was ever active. Videos are
+    // referenced by path from /public and never imported, so no video rule is
+    // needed. Kept as-is to preserve existing build output exactly.
+    config.module.rules.push({
+      test: /\.(pdf)$/,
+      use: [
+        {
           loader: 'file-loader',
           options: {
-            publicPath: '/_next',
-            name: 'static/media/[name].[hash].[ext]',
+            name: '[name].[ext]',
+            outputPath: 'pdfs/',
           },
         },
-        test: /\.(pdf)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]',
-              outputPath: 'pdfs/' // adjust the output path as needed
-            }
-          }
-        ]
-      });
-      
+      ],
+    });
 
+    return config;
+  },
+};
 
-  
-      return config;
-    },
-  };
+module.exports = nextConfig;

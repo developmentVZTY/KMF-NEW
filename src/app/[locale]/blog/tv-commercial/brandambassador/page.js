@@ -87,7 +87,7 @@ function BrandAmbassodor() {
             <div className="w-40 h-8 bg-red-600"></div>
             <div className="w-40 h-8 bg-red-600"></div>
           </div>
-      <img src={'/images/gallery.png'} className="w-full max-w-7xl h-full object-fill absolute top-0 z-[-1]" />
+      <img loading="lazy" decoding="async" src={'/images/gallery.png'} className="w-full max-w-7xl h-full object-fill absolute top-0 z-[-1]" />
     </section>
       <section className="w-full h-fit m-auto pt-10   ">
         <div className="w-full space-y-5 p-4 ">
@@ -215,7 +215,7 @@ function BrandAmbassodor() {
       return (
       <div key={id} className=' w-full h-full relative'>
 
-        <img
+        <img loading="lazy" decoding="async"
           
           src={item?.attributes?.url}
           className="w-96 h-80    transition-all duration-300 hover:scale-[1.1]"
@@ -230,7 +230,7 @@ function BrandAmbassodor() {
   else{
     if(validExtensionsVid.includes(item?.attributes?.ext))
     return (
-      <video
+      <video preload="none"
         
         controls
         loop

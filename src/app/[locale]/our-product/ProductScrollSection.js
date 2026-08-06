@@ -87,7 +87,7 @@ useEffect(() => {
               className={`min-h-screen flex items-center ${getBg(index)} px-6`}
             >
               <div className="relative max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-                <img
+                <img loading="lazy" decoding="async"
                 //   src={item?.attributes?.image?.data?.[0]?.attributes?.url}
                 src={item?.attributes?.image?.data?.[0]?.attributes?.url}
                   alt={item?.attributes?.title}
@@ -169,7 +169,7 @@ return (
 </Link>
 
                 </div>
-                <img
+                <img loading="lazy" decoding="async"
                 //   src={item?.attributes?.image?.data?.[0]?.attributes?.url}
                 src={item?.attributes?.image?.data?.[0]?.attributes?.url}
                   alt={item?.attributes?.title}

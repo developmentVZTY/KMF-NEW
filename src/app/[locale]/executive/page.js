@@ -111,7 +111,7 @@ const Executive = () => {
     <section
       className={`w-full h-full  md:h-[500px] pt-28 relative  grid place-items-center company-bg`}>
        
-      <img src="/images/executive.jpg" className="w-full h-full object-cover absolute top-0 z-[-1]" />
+      <img loading="lazy" decoding="async" src="/images/executive.jpg" className="w-full h-full object-cover absolute top-0 z-[-1]" />
     
     </section>
 
@@ -129,7 +129,7 @@ const Executive = () => {
     <div className='w-full max-w-7xl mt-auto min-h-44  md:h-2/4   justify-center items-center  rounded-tl-3xl rounded-br-3xl flex flex-col   p-3'>
             <div className='md:w-1/2 flex   justify-center  items-center mt-6 lg:pt-3 lg:pb-3 transition-all duration-300 md:mt-0 rounded-full hover:scale-[1.1]  '  >
               <Zoom>
-              <img className='w-[200px] h-[200px]   object-cover  sm:w-[350px] sm:h-[390px] transition-all duration-300   ' src={md?.attributes?.image?.data?.attributes?.url} alt="" />
+              <img loading="lazy" decoding="async" className='w-[200px] h-[200px]   object-cover  sm:w-[350px] sm:h-[390px] transition-all duration-300   ' src={md?.attributes?.image?.data?.attributes?.url} alt="" />
               </Zoom>
             </div>
             <div className=' md:w-2/3 flex flex-col justify-center items-center mt-3 md:p-3 md:items-center lg:mt-0 '>

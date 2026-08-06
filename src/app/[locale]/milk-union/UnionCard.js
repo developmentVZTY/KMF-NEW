@@ -22,7 +22,7 @@ function UnionCard({ name, image, description, link, idx }) {
               showIndicators={false}>
               {image?.data?.map((item, id) => {
                 return (
-                  <img
+                  <img loading="lazy" decoding="async"
                     key={id}
                     src={item?.attributes?.url}
                     className=" max-w-[400px] h-full object-cover"
@@ -52,7 +52,7 @@ function UnionCard({ name, image, description, link, idx }) {
               showIndicators={false}>
               {image?.data?.map((item, id) => {
                 return (
-                  <img
+                  <img loading="lazy" decoding="async"
                     key={id}
                     src={item?.attributes?.url}
                     className=" max-w-[400px] h-full object-cover"

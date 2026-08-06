@@ -70,7 +70,7 @@ const CarouselImage = ({ images }) => {
         style={{ boxShadow: '0px 11px 49px 0px rgba(0, 0, 0, 0.15)' }}>
         <div className="  w-full h-full">
          
-  <video autoPlay muted loop controls className='relative w-[800px] m-auto object-fill  h-full hover:scale-[1.1] z-[10]' src="/video/market.mp4"></video>
+  <video poster="/video-poster/market.jpg" preload="none" loop controls className='relative w-[800px] m-auto object-fill  h-full hover:scale-[1.1] z-[10]' src="/video/market.mp4"></video>
 
           
         </div>
@@ -82,7 +82,7 @@ const CarouselImage = ({ images }) => {
         style={{ boxShadow: '0px 11px 49px 0px rgba(0, 0, 0, 0.15)' }}>
         <div className="  w-full h-full">
          
-  <video autoPlay muted loop controls className='relative w-[800px] m-auto object-fill  h-full hover:scale-[1.1] z-[10]' src="/video/market.mp4"></video>
+  <video poster="/video-poster/market.jpg" preload="none" loop controls className='relative w-[800px] m-auto object-fill  h-full hover:scale-[1.1] z-[10]' src="/video/market.mp4"></video>
 
           
         </div>
@@ -94,7 +94,7 @@ const CarouselImage = ({ images }) => {
         style={{ boxShadow: '0px 11px 49px 0px rgba(0, 0, 0, 0.15)' }}>
         <div className="  w-full h-full">
          
-  <video autoPlay muted loop controls className='relative w-[800px] m-auto object-fill  h-full hover:scale-[1.1] z-[10]' src="/video/market.mp4"></video>
+  <video poster="/video-poster/market.jpg" preload="none" loop controls className='relative w-[800px] m-auto object-fill  h-full hover:scale-[1.1] z-[10]' src="/video/market.mp4"></video>
 
           
         </div>
@@ -106,7 +106,7 @@ const CarouselImage = ({ images }) => {
         style={{ boxShadow: '0px 11px 49px 0px rgba(0, 0, 0, 0.15)' }}>
         <div className="  w-full h-full">
          
-  <video autoPlay muted loop controls className='relative w-[800px] m-auto object-fill  h-full hover:scale-[1.1] z-[10]' src="/video/market.mp4"></video>
+  <video poster="/video-poster/market.jpg" preload="none" loop controls className='relative w-[800px] m-auto object-fill  h-full hover:scale-[1.1] z-[10]' src="/video/market.mp4"></video>
 
           
         </div>
@@ -118,7 +118,7 @@ const CarouselImage = ({ images }) => {
         style={{ boxShadow: '0px 11px 49px 0px rgba(0, 0, 0, 0.15)' }}>
         <div className="  w-full h-full">
          
-  <video autoPlay muted loop controls className='relative w-[800px] m-auto object-fill  h-full hover:scale-[1.1] z-[10]' src="/video/market.mp4"></video>
+  <video poster="/video-poster/market.jpg" preload="none" loop controls className='relative w-[800px] m-auto object-fill  h-full hover:scale-[1.1] z-[10]' src="/video/market.mp4"></video>
 
           
         </div>

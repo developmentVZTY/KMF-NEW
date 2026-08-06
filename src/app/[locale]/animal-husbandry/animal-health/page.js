@@ -39,7 +39,7 @@ function AnimalHealth() {
   return (
     <div className={`w-full h-full absolute   z-[-1] ${isScroll ? ' md:top-48' : ''}  `}>
       <section className={`w-full h-full md:h-[700px] pt-28 relative  grid place-items-center `}>
-         <img src={'/animal-husbandary/animal-husbandary.png'} className="w-full h-full absolute top-0 z-[-1]" />
+         <img loading="lazy" decoding="async" src={'/animal-husbandary/animal-husbandary.png'} className="w-full h-full absolute top-0 z-[-1]" />
         
         {/* <video
           src="/video/precrument.mp4"
@@ -116,7 +116,7 @@ function AnimalHealth() {
 
 
                     <div className=' w-full z-[-10]     flex justify-center items-center'>
-            <img src='/images/heading/heading-color/group.png' className='absolute z-[1] w-[450px] top-[-30px] sm:top-[-56px] object-cover  sm:object-contain'/>
+            <img loading="lazy" decoding="async" src='/images/heading/heading-color/group.png' className='absolute z-[1] w-[450px] top-[-30px] sm:top-[-56px] object-cover  sm:object-contain'/>
 
 
                         <h1 className="w-full relative max-w-[300px] m-auto text-center  text-primary-main text-sm sm:text-xl   z-[100] ">
@@ -216,7 +216,7 @@ function AnimalHealth() {
 
 
                     <div className=' w-full z-[-10]     flex justify-center items-center'>
-            <img src='/images/heading/heading-color/group.png' className='absolute z-[1] w-[450px] top-[-30px] sm:top-[-56px]  object-cover  sm:object-contain'/>
+            <img loading="lazy" decoding="async" src='/images/heading/heading-color/group.png' className='absolute z-[1] w-[450px] top-[-30px] sm:top-[-56px]  object-cover  sm:object-contain'/>
 
 
                         <h1 className="w-full relative max-w-[300px] m-auto text-center  text-primary-main text-sm sm:text-xl   z-[100] ">

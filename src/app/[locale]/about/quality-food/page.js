@@ -143,7 +143,7 @@ function OrganizationChart() {
   return (
     <div className={`w-full h-full absolute   z-[-1] ${isScroll ? ' md:top-48' : ''}  `}>
     <section className={`w-full h-full md:h-[700px] pt-28 relative  grid place-items-center `}>
-     {/* <img src={banner?banner[0]:HeroImg.src} className="w-full h-full absolute top-0 z-[-1]" />
+     {/* <img loading="lazy" decoding="async" src={banner?banner[0]:HeroImg.src} className="w-full h-full absolute top-0 z-[-1]" />
       */}
      <video
        src={banner?.attributes?.banner?.data?.attributes?.url}
@@ -200,7 +200,7 @@ function OrganizationChart() {
                     <PhotoProvider className='w-full' >
                         
                         <PhotoView src={item} height="400px"  >
-                        <img className=' m-auto w-52 h-52 md:w-[400px] md:h-96 object-fill' src={item} alt="" />
+                        <img loading="lazy" decoding="async" className=' m-auto w-52 h-52 md:w-[400px] md:h-96 object-fill' src={item} alt="" />
                         </PhotoView>
                     
                   

@@ -57,7 +57,7 @@ function MilkUnionDetail({ slug }) {
     <div className={`w-full h-full absolute   z-[-1] ${isScroll ? ' md:top-48' : ''}  `}>
       {banner ? (
         <section className={`w-full h-full md:h-[700px] pt-28 relative  grid place-items-center `}>
-          {/* <img src={banner?banner[0]:HeroImg.src} className="w-full h-full absolute top-0 z-[-1]" />
+          {/* <img loading="lazy" decoding="async" src={banner?banner[0]:HeroImg.src} className="w-full h-full absolute top-0 z-[-1]" />
            */}
 
           <video
@@ -74,10 +74,10 @@ function MilkUnionDetail({ slug }) {
         </section>
       ) : (
         <section className={`w-full h-full md:h-[500px] pt-28 relative  grid place-items-center `}>
-          {/* <img src={banner?banner[0]:HeroImg.src} className="w-full h-full absolute top-0 z-[-1]" />
+          {/* <img loading="lazy" decoding="async" src={banner?banner[0]:HeroImg.src} className="w-full h-full absolute top-0 z-[-1]" />
            */}
 
-          <img
+          <img loading="lazy" decoding="async"
             src={bannerImg || ''}
             className={`w-full  h-full    object-fill absolute top-0 z-[-1] ${
               isScroll ? ' md:h-[400px]' : ''
@@ -242,22 +242,22 @@ function MilkUnionDetail({ slug }) {
             <h1 className="text-2xl">{union?.attributes?.longtitle}</h1>
 
             <div className="flex justify-center items-start space-x-4">
-              <img src={locationIco.src} className="w-5 h-5" />
+              <img loading="lazy" decoding="async" src={locationIco.src} className="w-5 h-5" />
               <p className="text-lg">{union?.attributes?.address}</p>
             </div>
 
             <div className="flex justify-center items-start space-x-4">
-              <img src={callIco.src} className="w-5 h-5" />
+              <img loading="lazy" decoding="async" src={callIco.src} className="w-5 h-5" />
               <p className="text-lg"> {union?.attributes?.phone}</p>
             </div>
 
             <div className="flex justify-center items-start space-x-4">
-              <img src={printIco.src} className="w-5 h-5" />
+              <img loading="lazy" decoding="async" src={printIco.src} className="w-5 h-5" />
               <p className="text-lg"> {union?.attributes?.fax}</p>
             </div>
 
             <div className="flex justify-center items-start space-x-4">
-              <img src={mailIco.src} className="w-5 h-5" />
+              <img loading="lazy" decoding="async" src={mailIco.src} className="w-5 h-5" />
               <p className="text-lg"> {union?.attributes?.email}</p>
             </div>
 

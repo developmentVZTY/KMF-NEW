@@ -34,7 +34,7 @@ const MarketModel = ({ closeModal,market ,close}) => {
 
 
         {/* <div className='w-full h-[60%]  '>
-          <img src={kymMilk?.attributes?.image?.data?.attributes?.url} className='w-full max-w-[90%] h-full object-containf  m-auto'/>
+          <img loading="lazy" decoding="async" src={kymMilk?.attributes?.image?.data?.attributes?.url} className='w-full max-w-[90%] h-full object-containf  m-auto'/>
         </div> */}
 
       <div className='w-full h-[70%]  '>

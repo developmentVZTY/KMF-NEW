@@ -19,7 +19,7 @@ const BlogModal = ({ closeModal,blogDetails ,close}) => {
 
 
         <div className='w-full h-[60%]  '>
-          <img src={blogDetails?.attributes?.image?.data?.attributes?.url} className='w-full max-w-[90%] h-full object-containf  m-auto'/>
+          <img loading="lazy" decoding="async" src={blogDetails?.attributes?.image?.data?.attributes?.url} className='w-full max-w-[90%] h-full object-containf  m-auto'/>
         </div>
 
       <div className='w-full h-[30%]  '>

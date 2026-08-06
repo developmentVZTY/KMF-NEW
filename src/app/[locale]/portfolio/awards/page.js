@@ -52,7 +52,7 @@ const Awards = () => {
         <h1 className='text-primary-main text-2xl md:text-5xl  ' > {locale === 'en' ?   'AWARDS' : 'ಪ್ರಶಸ್ತಿಗಳು'} </h1>
         <div className='bg-primary-main w-[100px] h-[4px] mt-2'></div>
 
-        <img className='absolute top-[-50px] left-[47%] w-40 ' src={titleBG.src} alt="" />
+        <img loading="lazy" decoding="async" className='absolute top-[-50px] left-[47%] w-40 ' src={titleBG.src} alt="" />
     </div>
 
 
@@ -67,7 +67,7 @@ const Awards = () => {
 
         
         <div className=' hidden lg:block relative w-full max-h-[500px] h-full z-[-1]'>
-                <img className='w-full h-full' src={flag.src} alt="" />
+                <img loading="lazy" decoding="async" className='w-full h-full' src={flag.src} alt="" />
                 <div className='absolute top-[60px] lg:top-0 xl:top-[60px] w-full h-full'>
                     <div className='w-full h-full flex justify-center items-center'>
                     <div className='max-w-xl lg:max-w-lg xl:max-w-xl w-full m-auto'>
@@ -137,7 +137,7 @@ const Awards = () => {
                           
                           <PhotoView src={item?.attributes?.image?.data?.[0]?.attributes?.url} width="400px" height="400px"  >
                          
-                          <img
+                          <img loading="lazy" decoding="async"
                         src={item?.attributes?.image?.data?.[0]?.attributes?.url}
                         alt="featured-img"
                         className=" w-full h-full rounded-full transition-all duration-100 group-hover:scale-[1.01] hover:rounded-none "
@@ -167,7 +167,7 @@ const Awards = () => {
                           
                           <PhotoView src={award1.src} width="400px" height="400px"  >
                          
-                          <img
+                          <img loading="lazy" decoding="async"
                         src={award1.src}
                         alt="featured-img"
                         className=" w-full h-full rounded-full transition-all duration-100 group-hover:scale-[1.01] hover:rounded-none "
@@ -197,7 +197,7 @@ const Awards = () => {
                           
                           <PhotoView src={award2.src} width="400px" height="400px"  >
                          
-                          <img
+                          <img loading="lazy" decoding="async"
                         src={award2.src}
                         alt="featured-img"
                         className=" w-full h-full rounded-full transition-all duration-100 group-hover:scale-[1.01] hover:rounded-none "
@@ -227,7 +227,7 @@ const Awards = () => {
                           
                           <PhotoView src={award3.src} width="400px" height="400px"  >
                          
-                          <img
+                          <img loading="lazy" decoding="async"
                         src={award3.src}
                         alt="featured-img"
                         className=" w-full h-full rounded-full transition-all duration-100 group-hover:scale-[1.01] hover:rounded-none "
@@ -257,7 +257,7 @@ const Awards = () => {
                           
                           <PhotoView src={award4.src} width="400px" height="400px"  >
                          
-                          <img
+                          <img loading="lazy" decoding="async"
                         src={award4.src}
                         alt="featured-img"
                         className=" w-full h-full rounded-full transition-all duration-100 group-hover:scale-[1.01] hover:rounded-none "

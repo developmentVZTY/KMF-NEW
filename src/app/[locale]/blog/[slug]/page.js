@@ -39,7 +39,7 @@ const locale=useLocale().locale
   return (
     <div className="w-full h-full absolute top-36 z-[-1] ">
       <section className={`w-full  h-80 pt-28 relative  grid place-items-center company-bg`}>
-        <img src={AboutHeroImg.src} className="w-full h-full object-cover absolute top-0 z-[-1]" />
+        <img loading="lazy" decoding="async" src={AboutHeroImg.src} className="w-full h-full object-cover absolute top-0 z-[-1]" />
       </section>    
       
       
@@ -80,7 +80,7 @@ const locale=useLocale().locale
                           
                           return(
 
-                            <img
+                            <img loading="lazy" decoding="async"
                             key={id}
                             src={item?.attributes?.url}
                             className="w-40 h-80  object-contain  transition-all duration-300 hover:scale-[1.1]"
@@ -127,7 +127,7 @@ const locale=useLocale().locale
                     <div className="max-w-72 h-36  relative  before:absolute before:-bottom-3 before:w-full before:h-0.5 before:bg-neutral-dark4">
                       <div className=" w-full  h-full flex justify-center items-start space-x-4">
                         <div className="w-72 h-40">
-                          <img
+                          <img loading="lazy" decoding="async"
                             src={news?.attributes?.image?.data?.[0]?.attributes?.url}
                             className="w-full h-full object-cover"
                           />

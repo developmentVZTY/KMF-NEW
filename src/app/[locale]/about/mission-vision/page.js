@@ -29,7 +29,7 @@ function MissionVission() {
     
       {purpose?.attributes?.bannervideo?.data ?
        <section className={`w-full h-[600px] pt-28 relative  grid place-items-center `}>
-       {/* <img src={banner?banner[0]:HeroImg.src} className="w-full h-full absolute top-0 z-[-1]" />
+       {/* <img loading="lazy" decoding="async" src={banner?banner[0]:HeroImg.src} className="w-full h-full absolute top-0 z-[-1]" />
         */}
        
        <video
@@ -48,7 +48,7 @@ function MissionVission() {
       <section className={`w-full h-[200px] md:h-[450px] lg:h-[750px] pt-28 relative grid place-items-center `}>
        
       <Fade top>
-      <img
+      <img loading="lazy" decoding="async"
         src={MV.src}
         
         className={`w-full  h-full    object-fill absolute top-0 z-[-1] ${
@@ -110,7 +110,7 @@ function MissionVission() {
         <div className="w-full  h-full flex flex-col p-3 space-y-5 lg:flex-row lg:p-10 lg:space-x-10">
           <Fade left>
           <div className="w-full   flex justify-center items-center">
-            <img src={CowImg1.src} />
+            <img loading="lazy" decoding="async" src={CowImg1.src} />
           </div>
           </Fade>
 
@@ -219,12 +219,12 @@ function MissionVission() {
           <Fade right>
 
           <div className="w-full h-full flex justify-center items-center">
-            <img src={CowImg2.src} className=" w-[400px] h-full" />
+            <img loading="lazy" decoding="async" src={CowImg2.src} className=" w-[400px] h-full" />
           </div>
           </Fade>
         </div>
 
-        {/* <img src={MilkBottomImg.src} className="w-full h-full " /> */}
+        {/* <img loading="lazy" decoding="async" src={MilkBottomImg.src} className="w-full h-full " /> */}
       </section>
 
        

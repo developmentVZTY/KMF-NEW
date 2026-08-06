@@ -26,7 +26,7 @@ function HealthCamps() {
                     className="max-w-3xl w-full m-10 rounded-3xl min-h-[400px] shadow-2xl bg-slate-50 p-16">
                     <div className="m-auto">
                     <div className=' w-full relative flex justify-center items-center'>
-            <img src='/images/heading/heading-color/group.png' className='absolute z-[1] w-[450px] top-[-56px]   object-contain'/>
+            <img loading="lazy" decoding="async" src='/images/heading/heading-color/group.png' className='absolute z-[1] w-[450px] top-[-56px]   object-contain'/>
 
 
                         <h1 className="w-full relative max-w-[300px] m-auto text-center  text-primary-main text-xl   z-[100] ">

@@ -72,7 +72,7 @@ const CarouselImage = ({ images,mobileImg }) => {
             
             return (
               <SwiperSlide className="  " key={id}>
-                <img src={img} className="w-full h-[600px]  object-fill " />
+                <img loading="lazy" decoding="async" src={img} className="w-full h-[600px]  object-fill " />
               </SwiperSlide>
             );
           })
@@ -116,7 +116,7 @@ const CarouselImage = ({ images,mobileImg }) => {
         
           
               <SwiperSlide className="  " >
-                <img src={mobileImg} className="w-full h-[600px]  object-fill " />
+                <img loading="lazy" decoding="async" src={mobileImg} className="w-full h-[600px]  object-fill " />
               </SwiperSlide>
           
           
@@ -157,7 +157,7 @@ export const CarouselNotification = ({ images, title, description, link }) => {
         {images.map((img, idx) => {
           return (
             <div key={idx}>
-              <img src={img} alt="" className="w-full h-80 object-cover" />
+              <img loading="lazy" decoding="async" src={img} alt="" className="w-full h-80 object-cover" />
 
               <div className="absolute top-1/3 w-full left-0 flex flex-col justify-center space-y-7 items-center pl-10 pr-10 sm:flex-row   sm:items-end sm:justify-between ">
                 <div className="flex justify-start items-start flex-col lg:pl-20">

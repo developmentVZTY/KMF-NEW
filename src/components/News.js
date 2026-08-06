@@ -7,7 +7,7 @@ function News({date,image,title,link}) {
 
     <div className="relative">
               <div className="max-w-[400px] h-96 overflow-hidden">
-                <img
+                <img loading="lazy" decoding="async"
                   src={image}
                   className="w-full object-cover hover:scale-[1.2]  "
                   style={{ transition: '1s all' }}

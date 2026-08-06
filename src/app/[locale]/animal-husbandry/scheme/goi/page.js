@@ -46,7 +46,7 @@ const handleButton = (idx) => {
   return (
     <div className={`w-full h-full absolute     ${isScroll ? ' md:top-48' : ''}  `}>
       <section className={`w-full h-full md:h-[700px] pt-28 relative  grid place-items-center `}>
-        {/* <img src={banner?banner[0]:HeroImg.src} className="w-full h-full absolute top-0 z-[-1]" />
+        {/* <img loading="lazy" decoding="async" src={banner?banner[0]:HeroImg.src} className="w-full h-full absolute top-0 z-[-1]" />
          */}
         <video
           src="/video/precrument.mp4"
@@ -95,7 +95,7 @@ const handleButton = (idx) => {
             <Fade left>
         <div className="w-full shadow-lg flex flex-col justify-center items-start rounded-tl-3xl  rounded-br-3xl  bg-white space-y-6 p-5 ">
         <div className="md:mb-20  mt-20  relative w-full   flex justify-center items-center ">
-              <img
+              <img loading="lazy" decoding="async"
                 src="/images/heading/heading-color/group.png"
                 className="absolute   w-[530px] top-[-18px] sm:top-[-50px]    object-contain"
               />
@@ -200,7 +200,7 @@ const handleButton = (idx) => {
                       key={idx}
                       className="  relative w-full h-full flex justify-start p-2 space-x-3 items-center text-[5.5px] md:text-sm before:absolute before:w-[120px]  md:before:w-full  before:h-0.5 before:bg-neutral-dark4 before:bottom-0"
                       onClick={() => handleButton(idx)}>
-                      <img src={rightArrow.src} className='w-4' />
+                      <img loading="lazy" decoding="async" src={rightArrow.src} className='w-4' />
                       <Fade right >
                       <p
                         className={` cursor-pointer ${
@@ -224,7 +224,7 @@ const handleButton = (idx) => {
                       key={idx}
                       className=" cursor-pointer relative w-full h-full flex justify-start p-2 space-x-3 items-center text-[5.5px] md:text-sm before:absolute before:w-[120px]  md:before:w-full  before:h-0.5 before:bg-neutral-dark4 before:bottom-0"
                       onClick={() => handleButton(idx)}>
-                      <img src={rightArrow.src} className='w-2' />
+                      <img loading="lazy" decoding="async" src={rightArrow.src} className='w-2' />
                       <Fade right>
                       <p
                         className={`cursor-pointer ${

@@ -47,7 +47,7 @@ const handleButton = (idx) => {
   return (
     <div className={`w-full h-full absolute     ${isScroll ? ' md:top-48' : ''}  `}>
       <section className={`w-full h-full md:h-[700px] pt-28 relative  grid place-items-center `}>
-        {/* <img src={banner?banner[0]:HeroImg.src} className="w-full h-full absolute top-0 z-[-1]" />
+        {/* <img loading="lazy" decoding="async" src={banner?banner[0]:HeroImg.src} className="w-full h-full absolute top-0 z-[-1]" />
          */}
         <video
           src="/video/precrument.mp4"
@@ -104,7 +104,7 @@ const handleButton = (idx) => {
                               return (
                               
                     <div className=' w-full relative flex justify-center mt-20 mb-20 items-center'>
-                    <img src='/images/heading/heading-color/group.png' className='absolute z-[1] w-[450px]    top-[-50pxx]   object-contain'/>
+                    <img loading="lazy" decoding="async" src='/images/heading/heading-color/group.png' className='absolute z-[1] w-[450px]    top-[-50pxx]   object-contain'/>
         
         
                                 <h1 className="w-full relative max-w-[300px] m-auto text-center  text-primary-main text-sm md:text-lg   z-[100] ">
@@ -196,7 +196,7 @@ const handleButton = (idx) => {
             <Fade left>
         <div className="w-full shadow-lg flex flex-col justify-center items-start rounded-tl-3xl  rounded-br-3xl  bg-white space-y-6 p-5 ">
         <div className=" mb-5 md:mb-20  mt-20  relative w-full   flex justify-center items-center ">
-              <img
+              <img loading="lazy" decoding="async"
                 src="/images/heading/heading-color/group.png"
                 className="absolute   w-[530px] top-[-18px] sm:top-[-50px]    object-contain"
               />
@@ -312,7 +312,7 @@ const handleButton = (idx) => {
                       key={idx}
                       className=" cursor-pointer relative w-full h-full flex justify-start p-2 pb-2 space-x-3 items-center text-[5.5px] md:text-sm before:absolute before:w-[120px]  md:before:w-full  before:h-0.5 before:bg-neutral-dark4 before:bottom-0"
                       onClick={() => handleButton(idx)}>
-                      <img src={rightArrow.src} className='w-4' />
+                      <img loading="lazy" decoding="async" src={rightArrow.src} className='w-4' />
                       <Fade right >
                       <p
                         className={`${
