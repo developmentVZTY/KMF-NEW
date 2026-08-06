@@ -7,7 +7,7 @@ const TeamCard = ({ imgUrl, desc, fullName }) => {
     <div className="w-full max-w-64 h-[400px] md:max-w-[320px] md:h-[400px] relative rounded-tl-3xl rounded-br-3xl  shadow-md  overflow-hidden  group  transition-all duration-400 ease-in-out ">
       <Fade top>
       <div className=" w-full h-[60%] overflow-hidden ">
-        <img
+        <img loading="lazy" decoding="async"
           src={imgUrl}
           alt="featured-img"
           className="w-full h-full group-hover:scale-[1.1] object-contain"

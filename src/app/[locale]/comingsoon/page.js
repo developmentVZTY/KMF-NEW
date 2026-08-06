@@ -20,7 +20,7 @@ function ComingSoon() {
       
       <Link  href='/' type="button" name="button" className='flex justify-center items-center space-x-4'><IoHomeOutline size={40} /> <span>Return To Home</span></Link>
     </div>
-    <img src={comingSoonImg.src}/>
+    <img loading="lazy" decoding="async" src={comingSoonImg.src}/>
   </div>
   )
 }

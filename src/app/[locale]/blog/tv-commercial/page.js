@@ -86,7 +86,7 @@ function Tvcommercial() {
             <div className="w-40 h-8 bg-red-600"></div>
             <div className="w-40 h-8 bg-red-600"></div>
           </div>
-      <img src={'/images/gallery.png'} className="w-full max-w-7xl h-full object-fill absolute top-0 z-[-1]" />
+      <img loading="lazy" decoding="async" src={'/images/gallery.png'} className="w-full max-w-7xl h-full object-fill absolute top-0 z-[-1]" />
     </section>
       <section className="w-full h-fit m-auto pt-10   ">
         <div className="w-full space-y-5 p-4 ">
@@ -176,7 +176,7 @@ function Tvcommercial() {
 
                                 <PhotoView src={item?.attributes?.url}>
                                 
-                            <img
+                            <img loading="lazy" decoding="async"
                               key={id}
                               src={item?.attributes?.url}
                               className=" w-32 m-auto md:w-96 md:h-80    transition-all duration-300 hover:scale-[1.1]"
@@ -194,7 +194,7 @@ function Tvcommercial() {
  
                                   
 
-                              <video
+                              <video preload="none"
                               
                               controls
                               loop
@@ -281,34 +281,34 @@ function Tvcommercial() {
                               <video className='w-full h-full object-contain' src="/video/Reel-10.mp4" autoPlay muted controls></video>
                             </div> */}
                            <div className='w-[40%] h-[200px] md:w-[320px] md:h-[550px]' >
-                              <video className='w-full h-full object-contain' src="/video/reel-9.MP4" autoPlay muted controls></video>
+                              <video className='w-full h-full object-contain' src="/video/reel-9.MP4" poster="/video-poster/reel-9.jpg" preload="none" controls></video>
                             </div>
                            <div className='w-[40%] h-[200px] md:w-[320px] md:h-[550px]' >
-                              <video className='w-full h-full object-contain' src="/video/reel-8.MP4" autoPlay muted controls></video>
+                              <video className='w-full h-full object-contain' src="/video/reel-8.MP4" poster="/video-poster/reel-8.jpg" preload="none" controls></video>
                             </div>
                            <div className='w-[40%] h-[200px] md:w-[320px] md:h-[550px]' >
-                              <video className='w-full h-full object-contain' src="/video/reel-7.mp4" autoPlay muted controls></video>
+                              <video className='w-full h-full object-contain' src="/video/reel-7.mp4" poster="/video-poster/reel-7.jpg" preload="none" controls></video>
                             </div>
                             {/* <div className='w-[40%] h-[200px]  md:w-[320px] md:h-[550px]' >
                               <video className='w-full h-full object-contain' src="/video/reel-6.mp4" autoPlay muted controls></video>
                             </div> */}
                              <div className='w-[40%] h-[200px]  md:w-[320px] md:h-[550px]' >
-                              <video className='w-full h-full object-contain' src="/video/reel-5.mp4" autoPlay muted controls></video>
+                              <video className='w-full h-full object-contain' src="/video/reel-5.mp4" poster="/video-poster/reel-5.jpg" preload="none" controls></video>
                             </div>
                              <div className='w-[40%] h-[200px]  md:w-[320px] md:h-[550px]' >
-                              <video className='w-full h-full object-contain' src="/video/new-reel.mp4" autoPlay muted controls></video>
+                              <video className='w-full h-full object-contain' src="/video/new-reel.mp4" poster="/video-poster/new-reel.jpg" preload="none" controls></video>
                             </div>
                              <div className='w-[40%] h-[200px]  md:w-[320px] md:h-[550px]' >
-                              <video className='w-full h-full object-contain' src="/video/reel-2.mp4" autoPlay muted controls></video>
+                              <video className='w-full h-full object-contain' src="/video/reel-2.mp4" poster="/video-poster/reel-2.jpg" preload="none" controls></video>
                             </div>
                              <div className='w-[40%] h-[200px]  md:w-[320px] md:h-[550px]' >
-                              <video className='w-full h-full object-contain' src="/video/reel-1.mp4" autoPlay muted controls></video>
+                              <video className='w-full h-full object-contain' src="/video/reel-1.mp4" poster="/video-poster/reel-1.jpg" preload="none" controls></video>
                             </div>
                               <div className='w-[40%] h-[200px]  md:w-[320px] md:h-[550px]' >
-                              <video className='w-full h-full object-contain' src="/video/video2.mp4" autoPlay muted controls></video>
+                              <video className='w-full h-full object-contain' src="/video/video2.mp4" poster="/video-poster/video2.jpg" preload="none" controls></video>
                             </div>
                              <div className='w-[40%] h-[200px] md:w-[320px] md:h-[550px]' >
-                              <video className='w-full h-full object-contain' src="/video/paneer.mp4" autoPlay muted controls></video>
+                              <video className='w-full h-full object-contain' src="/video/paneer.mp4" poster="/video-poster/paneer.jpg" preload="none" controls></video>
                             </div>
 
 

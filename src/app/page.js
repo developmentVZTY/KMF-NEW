@@ -278,14 +278,14 @@ const Home = () => {
                      modules={[Pagination, Autoplay, FreeMode]}
                      className="h-full">
                       {/* <SwiperSlide>
-                        <img
+                        <img loading="lazy" decoding="async"
                         src={prideImg.src}
                         alt=""
                         className={`w-full object-fill  ${isScroll ? 'h-[240px] md:h-[812px]' : 'h-[240px]  md:h-screen'}`}
                       />
                          </SwiperSlide>
                       <SwiperSlide>
-                        <img
+                        <img loading="lazy" decoding="async"
                         src={gheeImg.src}
                         alt=""
                         className={`w-full object-fill  ${isScroll ? 'h-[240px] md:h-[812px]' : 'h-[240px]  md:h-screen'}`}
@@ -462,7 +462,7 @@ const Home = () => {
 
       <section className="w-full h-fit relative">
         <Fade bottom>
-          <img
+          <img loading="lazy" decoding="async"
             src="/images/Curve.svg"
             className="absolute inset-0 w-full h-full object-contain hidden md:block"
             alt="Decorative Curve"
@@ -473,7 +473,7 @@ const Home = () => {
 
         <div className="w-full relative bg-[#30ABDC] md:bg-transparent mt-5 p-3 md:p-0  ">
 
-        <img
+        <img loading="lazy" decoding="async"
           src="/images/footer-top.jpg"
           className="absolute  top-[87px] w-full  object-cover z-[-1] hidden md:block"
           style={{ transform: `translateY(${scrollY * 0.2}px)` }}
@@ -482,7 +482,7 @@ const Home = () => {
           <div className="pb-10 lg:space-x-10 flex flex-col-reverse justify-center items-center lg:flex-row m-auto max-w-7xl">
             <Fade left>
               <div className="p-4 flex justify-center items-center w-full h-auto md:h-[500px] lg:max-w-xl">
-                <img
+                <img loading="lazy" decoding="async"
                   src={locale === 'kn' ? milkglassKnImg.src : milkglassImg.src}
                   className="w-full h-full"
                   alt="Milk Glass"
@@ -515,7 +515,7 @@ const Home = () => {
                     key={idx}
                     onClick={() => handleKnowMilk(item)}
                     className="flex w-32 flex-col justify-center items-center space-y-4 cursor-pointer">
-                    <img
+                    <img loading="lazy" decoding="async"
                       src={item?.attributes?.image?.data[0].attributes?.url}
                       alt={item?.attributes?.title}
                       className="transition-all duration-200 hover:scale-110"
@@ -528,7 +528,7 @@ const Home = () => {
                  <div
                    
                     className="flex w-32 flex-col justify-center items-center space-y-4 cursor-pointer">
-                    <img
+                    <img loading="lazy" decoding="async"
                       src={know1.src}
                       alt="Know Your Milk"
                       className="transition-all duration-200 hover:scale-110"
@@ -540,7 +540,7 @@ const Home = () => {
                   <div
                    
                     className="flex w-32 flex-col justify-center items-center space-y-4 cursor-pointer">
-                    <img
+                    <img loading="lazy" decoding="async"
                       src={know2.src}
                       alt="Know Your Milk"
                       className="transition-all duration-200 hover:scale-110"
@@ -552,7 +552,7 @@ const Home = () => {
                     <div
                    
                     className="flex w-32 flex-col justify-center items-center space-y-4 cursor-pointer">
-                    <img
+                    <img loading="lazy" decoding="async"
                       src={know4.src}
                       alt="Know Your Milk"
                       className="transition-all duration-200 hover:scale-110"
@@ -564,7 +564,7 @@ const Home = () => {
                   <div
                    
                     className="flex w-32 flex-col justify-center items-center space-y-4 cursor-pointer">
-                    <img
+                    <img loading="lazy" decoding="async"
                       src={know3.src}
                       alt="Know Your Milk"
                       className="transition-all duration-200 hover:scale-110"
@@ -637,25 +637,25 @@ const Home = () => {
                   <div className='w-full flex space-x-5 '>
                   
                    <div className='w-72  h-64   md:w-[360px] md:h-[450px] mr-5'>
-                    <img className='w-full object-fill h-full'  src={noti7.src} alt="" />
+                    <img loading="lazy" decoding="async" className='w-full object-fill h-full'  src={noti7.src} alt="" />
                    </div>
                    <div className='w-72  h-64   md:w-[360px] md:h-[450px] mr-5'>
-                    <img className='w-full object-fill h-full'  src={noti6.src} alt="" />
+                    <img loading="lazy" decoding="async" className='w-full object-fill h-full'  src={noti6.src} alt="" />
                    </div>
                    <div className='w-72  h-64   md:w-[360px] md:h-[450px] mr-5'>
-                    <img className='w-full object-fill h-full'  src={noti1.src} alt="" />
+                    <img loading="lazy" decoding="async" className='w-full object-fill h-full'  src={noti1.src} alt="" />
                    </div>
                     <div className='w-72  h-64   md:w-[360px] md:h-[450px] mr-5'>
-                    <img className='w-full object-fill h-full' src={noti3.src} alt="" />
+                    <img loading="lazy" decoding="async" className='w-full object-fill h-full' src={noti3.src} alt="" />
                    </div>
                    <div className='w-72  h-64   md:w-[520px] md:h-[450px] mr-5'>
-                    <img className='w-full object-fill h-full' src={noti2.src} alt="" />
+                    <img loading="lazy" decoding="async" className='w-full object-fill h-full' src={noti2.src} alt="" />
                    </div>
                    <div className='w-72  h-64   md:w-[520px] md:h-[430px] mr-5'>
-                    <img className='w-full object-fill h-full' src={noti4.src} alt="" />
+                    <img loading="lazy" decoding="async" className='w-full object-fill h-full' src={noti4.src} alt="" />
                    </div>
                    <div className='w-72  h-64   md:w-[520px] md:h-[430px] mr-5'>
-                    <img className='w-full object-fill h-full' src={noti5.src} alt="" />
+                    <img loading="lazy" decoding="async" className='w-full object-fill h-full' src={noti5.src} alt="" />
                    </div>
                   
 
@@ -671,7 +671,7 @@ const Home = () => {
                   })}     */}
 
                   {/* <div className='w-full md:w-[50%] md:h-[450px]' >
-                         <img className='w-full h-full object-contain' src={paneerImg.src} alt="" />
+                         <img loading="lazy" decoding="async" className='w-full h-full object-contain' src={paneerImg.src} alt="" />
                   </div>
                   <div className='w-full md:w-[50%] md:h-[450px]' >
                     <video className='w-full h-full object-contain' src="/video/paneer.mp4" autoPlay muted controls></video>
@@ -789,7 +789,7 @@ const Home = () => {
                 return ( */}
                   <SwiperSlide className="w-72 md:m-auto">
                     <div className="max-w-96 h-40   m-auto   bg-white border-orange-500-500 p-2 border-orange-400 border-8 rounded-lg">
-                      <img
+                      <img loading="lazy" decoding="async"
                         src={cert1.src}
                         alt={`Certificate 1`}
                         className="w-96 h-32 object-contain rounded-md inline-block"
@@ -798,7 +798,7 @@ const Home = () => {
                   </SwiperSlide>
                   <SwiperSlide className="w-72 md:m-auto">
                     <div className="max-w-96 h-40   m-auto   bg-white border-orange-500-500 p-2 border-orange-400 border-8 rounded-lg">
-                      <img
+                      <img loading="lazy" decoding="async"
                         src={cert2.src}
                         alt={`Certificate 2`}
                         className="w-96 h-32 object-contain rounded-md inline-block"
@@ -807,7 +807,7 @@ const Home = () => {
                   </SwiperSlide>
                   <SwiperSlide className="w-72 md:m-auto">
                     <div className="max-w-96 h-40   m-auto   bg-white border-orange-500-500 p-2 border-orange-400 border-8 rounded-lg">
-                      <img
+                      <img loading="lazy" decoding="async"
                         src={cert3.src}
                         alt={`Certificate 3`}
                         className="w-96 h-32 object-contain rounded-md inline-block"
@@ -816,7 +816,7 @@ const Home = () => {
                   </SwiperSlide>
                   <SwiperSlide className="w-72 md:m-auto">
                     <div className="max-w-96 h-40   m-auto   bg-white border-orange-500-500 p-2 border-orange-400 border-8 rounded-lg">
-                      <img
+                      <img loading="lazy" decoding="async"
                         src={cert4.src}
                         alt={`Certificate 4`}
                         className="w-96 h-32 object-contain rounded-md inline-block"

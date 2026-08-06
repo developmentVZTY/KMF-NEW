@@ -95,7 +95,7 @@ return(
           <PhotoProvider className='w-full' >
               
               <PhotoView src={item} height="400px"  >
-              <img className='w-full max-w-2xl h-96 object-fill' src={item} alt="" />
+              <img loading="lazy" decoding="async" className='w-full max-w-2xl h-96 object-fill' src={item} alt="" />
               </PhotoView>
           
         
@@ -191,7 +191,7 @@ return(
 
 
                     <div className=' w-full relative flex justify-center items-center'>
-            <img src='/images/heading/heading-color/group.png' className='absolute z-[1] w-full max-w-[450px] top-[-30px] sm:top-[-56px] object-cover   sm:object-contain'/>
+            <img loading="lazy" decoding="async" src='/images/heading/heading-color/group.png' className='absolute z-[1] w-full max-w-[450px] top-[-30px] sm:top-[-56px] object-cover   sm:object-contain'/>
 
 <Fade bottom>
 

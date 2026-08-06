@@ -33,7 +33,7 @@ function Gallery() {
           <div className="w-40 h-8 bg-red-600"></div>
           <div className="w-40 h-8 bg-red-600"></div>
         </div>
-        <img
+        <img loading="lazy" decoding="async"
           src={'/images/gallery.png'}
           className="w-full max-w-7xl h-full object-contain absolute top-0 z-[-1]"
         />

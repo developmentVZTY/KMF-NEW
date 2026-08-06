@@ -52,7 +52,7 @@ if (!isBannerVisible) return null;
             
               
               <div className='m-auto w-full h-full'>
-                <img src={imgURL} alt="poster-logo" className='w-[90%] h-[90%] m-auto' />
+                <img loading="lazy" decoding="async" src={imgURL} alt="poster-logo" className='w-[90%] h-[90%] m-auto' />
               </div>
             </div>
           </div>

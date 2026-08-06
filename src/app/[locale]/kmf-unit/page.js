@@ -31,8 +31,8 @@ const locale=useLocale().locale
   return (
     <div className={`w-full h-full absolute top-0 z-[-1]  ${isScroll?'top-36':''}`}>
       <section className={`w-full h-72 pt-28 relative  grid place-items-center company-bg`}>
-        <img src={HeroImg.src} className="w-full h-full absolute top-0 z-[-1]" />
-        <img src={Logo.src} alt="milk-union-logo" className="w-[200px] " />
+        <img loading="lazy" decoding="async" src={HeroImg.src} className="w-full h-full absolute top-0 z-[-1]" />
+        <img loading="lazy" decoding="async" src={Logo.src} alt="milk-union-logo" className="w-[200px] " />
       </section>
 
    

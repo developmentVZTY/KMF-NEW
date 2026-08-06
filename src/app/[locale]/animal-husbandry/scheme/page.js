@@ -30,7 +30,7 @@ function Scheme() {
   return (
     <div className={`w-full h-full absolute   z-[-1] ${isScroll ? ' md:top-48' : ''}  `}>
       <section className={`w-full h-full md:h-[700px] pt-28 relative  grid place-items-center `}>
-        {/* <img src={banner?banner[0]:HeroImg.src} className="w-full h-full absolute top-0 z-[-1]" />
+        {/* <img loading="lazy" decoding="async" src={banner?banner[0]:HeroImg.src} className="w-full h-full absolute top-0 z-[-1]" />
          */}
         <video
           src="/video/precrument.mp4"
@@ -107,7 +107,7 @@ function Scheme() {
                 return (
                     <div key={id} className="relative w-full h-56 md:w-80 md:h-96   bg-[#f99457] group ">
                              <div className='absolute w-full h-full top-0 left-0 z-20'>
-                     <img className='w-full h-full opacity-0  object-fill transition duration-0 group-hover:opacity-30 group-hover:duration-1000 ' src={item?.image} alt="" />
+                     <img loading="lazy" decoding="async" className='w-full h-full opacity-0  object-fill transition duration-0 group-hover:opacity-30 group-hover:duration-1000 ' src={item?.image} alt="" />
                 </div>
 
                       <div className="full w-full h-full flex flex-col justify-between p-6 md:p-20 ">
@@ -131,7 +131,7 @@ function Scheme() {
                 return (
                     <div key={id} className="relative      w-full h-56  md:w-80 md:h-96  shadow-lg group  bg-[#06427C] ">
                           <div className='absolute w-full h-full top-0 left-0 z-20'>
-                     <img className='w-full h-full opacity-0 transition duration-0 group-hover:opacity-30 group-hover:duration-1000 ' src={item?.image} alt="" />
+                     <img loading="lazy" decoding="async" className='w-full h-full opacity-0 transition duration-0 group-hover:opacity-30 group-hover:duration-1000 ' src={item?.image} alt="" />
                 </div>
                       <div className="full w-full h-full flex flex-col justify-between p-6 md:p-20 ">
                         <div className="w-full h-full z-50">

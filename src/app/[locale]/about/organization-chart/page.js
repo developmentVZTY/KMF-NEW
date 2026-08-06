@@ -114,7 +114,7 @@ function OrganizationChart() {
           </div>
 
           <Fade bottom>
-        <img
+        <img loading="lazy" decoding="async"
           src={Hero.src}
           className=" w-96 md:w-full  md:max-w-7xl md:h-[500px] object-contain    "
         />
@@ -198,7 +198,7 @@ function OrganizationChart() {
           )}
 
           <div className="w-full   flex justify-center items-center">
-            <img src={milkRight.src} />
+            <img loading="lazy" decoding="async" src={milkRight.src} />
           </div>
         </div>
       </section>

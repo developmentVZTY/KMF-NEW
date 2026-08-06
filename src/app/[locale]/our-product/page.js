@@ -101,7 +101,7 @@ function Products() {
                
                 {item?.attributes?.hasNewProduct  &&
                 <Zoom>
-                 <img src='/images/product-new/new.gif' className='w-10 absolute left-5 -top-8'/>
+                 <img loading="lazy" decoding="async" src='/images/product-new/new.gif' className='w-10 absolute left-5 -top-8'/>
                  </Zoom>
                 }
                

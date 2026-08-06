@@ -108,7 +108,7 @@ function CompanyProfile() {
           </div>
 
           {/* <div className="w-[650px]   h-fit  relative   flex justify-center items-center pt-20">
-            <img
+            <img loading="lazy" decoding="async"
               src="/images/heading/subheading.png"
               className="absolute z-[-1] w-fit    object-contain"
             />

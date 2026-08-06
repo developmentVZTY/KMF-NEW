@@ -118,7 +118,7 @@ const Marketing = () => {
             <h1 className='text-primary-main text-2xl md:text-4xl  ' >  {locale === 'en' ?   'MARKETING' : 'ಕಹಾಮ ಮಾರುಕಟ್ಟೆ'} </h1>
             <div className='bg-primary-main w-[150px] h-[4px] mt-2'></div>
 
-            <img className='absolute md:top-[-55px] top-[-35px] left-[38%] md:left-[47%] w-32 md:w-40 ' src={titleBG.src} alt="" />
+            <img loading="lazy" decoding="async" className='absolute md:top-[-55px] top-[-35px] left-[38%] md:left-[47%] w-32 md:w-40 ' src={titleBG.src} alt="" />
         </div>
       </section>
        <section className={`w-full  relative company-bg mt-20`}>
@@ -166,7 +166,7 @@ const Marketing = () => {
                       style={{ boxShadow: '0px 11px 49px 0px rgba(0, 0, 0, 0.15)' }}>
                       <div className="  w-full h-full">
                         
-                  <video  muted loop controls
+                  <video preload="none"  muted loop controls
                    className='relative w-[800px] m-auto object-fill  h-full hover:scale-[1.1]  z-[10]' 
                    src={item.url}
                    onClick={() => handleVideoClick(item.url)}
@@ -221,7 +221,7 @@ const Marketing = () => {
                       style={{ boxShadow: '0px 11px 49px 0px rgba(0, 0, 0, 0.15)' }}>
                       <div className="  w-full h-full">
                         
-                  <video  muted loop controls
+                  <video preload="none"  muted loop controls
                    className='relative w-[800px] m-auto object-fill  h-full hover:scale-[1.1]  z-[10]' 
                    src={item.url}
                    onClick={() => handleVideoClick(item.url)}
@@ -277,7 +277,7 @@ const Marketing = () => {
                       style={{ boxShadow: '0px 11px 49px 0px rgba(0, 0, 0, 0.15)' }}>
                       <div className="  w-full h-full">
                         
-                  <video  muted loop controls
+                  <video preload="none"  muted loop controls
                    className='relative w-[800px] m-auto object-fill  h-full hover:scale-[1.1]  z-[10]' 
                    src={item.url}
                    onClick={() => handleVideoClick(item.url)}
@@ -309,7 +309,7 @@ const Marketing = () => {
       <div className='w-full h-[400px] md:h-[600px]'>
         
         <div className=' hidden lg:block relative w-full max-h-[500px] h-full '>
-            <img className='w-full h-full' src={flag.src} alt="" />
+            <img loading="lazy" decoding="async" className='w-full h-full' src={flag.src} alt="" />
             <div className='absolute top-[60px] lg:top-0 xl:top-[20px] w-full h-full '>
                 <div className='w-full h-full flex justify-center items-center'>
                 <div className='relative z-[10] max-w-xl lg:max-w-lg xl:max-w-xl w-full m-auto'>

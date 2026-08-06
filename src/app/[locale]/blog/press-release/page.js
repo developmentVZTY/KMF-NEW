@@ -43,7 +43,7 @@ function PressRelease() {
               <div className="w-40 h-8 bg-red-600"></div>
             </div>
           </div>
-        <img src={'/images/press.jpg'} className="w-full max-w-7xl h-full object-contain absolute top-0 z-[-1]" />
+        <img loading="lazy" decoding="async" src={'/images/press.jpg'} className="w-full max-w-7xl h-full object-contain absolute top-0 z-[-1]" />
       </section>
 
 
@@ -107,7 +107,7 @@ function PressRelease() {
                 <PhotoProvider >
 
 <PhotoView src={item?.attributes?.url} height="400px"  >
-<img src={item?.attributes?.url} className='    w-full h-40 md:max-w-72 md:h-72 '/>
+<img loading="lazy" decoding="async" src={item?.attributes?.url} className='    w-full h-40 md:max-w-72 md:h-72 '/>
 </PhotoView>
 
 

@@ -16,6 +16,10 @@ import img5 from "@/images/scret-new/secret-5.png"
 import img6 from "@/images/scret-new/secret-6.png"
 import img7 from "@/images/scret-new/secret-7.png"
 import img8 from "@/images/scret-new/secret-8.png"
+import img9 from "@/images/scret-new/secret-9.png"
+import img10 from "@/images/scret-new/secret-10.png"
+import img11 from "@/images/scret-new/secret-11.png"
+
 
 
 
@@ -504,15 +508,18 @@ function SecretInfo() {
   return (
     <div className="w-full h-full">
       <div className="container flex flex-col justify-center items-center mx-auto my-8 ">
-        <img src={img1.src} alt="" />
-        <img src={img2.src} className='mt-[-2px]' alt="" />
-        <img className='ml-[-2px]' src={img3.src} alt="" />
-        <img  src={img4.src} alt="" />
-        <img className='ml-[7px] mt-[-4px]' src={img5.src} alt="" />
-        <img className='mt-[-24px] ml-[5px] ' src={img6.src} alt="" />
-        <img className='ml-[4px]' src={img7.src} alt="" />
-        <img className='ml-[4px]' src={img8.src} alt="" />
-       
+        <img loading="lazy" decoding="async" src={img1.src} alt="" />
+        <img loading="lazy" decoding="async" src={img2.src} className='mt-[-2px]' alt="" />
+        <img loading="lazy" decoding="async" className='ml-[-2px]' src={img3.src} alt="" />
+        <img loading="lazy" decoding="async"  src={img4.src} alt="" />
+        <img loading="lazy" decoding="async" className='ml-[7px] mt-[-4px]' src={img5.src} alt="" />
+        <img loading="lazy" decoding="async" className='mt-[-24px] ml-[5px] ' src={img6.src} alt="" />
+        <img loading="lazy" decoding="async" className='ml-[4px]' src={img7.src} alt="" />
+        <img loading="lazy" decoding="async" className='ml-[4px]' src={img8.src} alt="" />
+        <img loading="lazy" decoding="async" className='ml-[4px]' src={img9.src} alt="" />
+        <img loading="lazy" decoding="async" className='ml-[4px]' src={img10.src} alt="" />
+        <img loading="lazy" decoding="async" className='ml-[4px]' src={img11.src} alt="" />
+
         {/* <h1 className="text-2xl font-bold text-center mb-4">Milk Union Data</h1> */}
 
     

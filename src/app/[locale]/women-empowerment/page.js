@@ -41,7 +41,7 @@ function WomenEmpowerment() {
   return (
     <div className={`w-full h-full absolute top-0 z-[-1] bg-[#F6F6F6] ${isScroll?'top-36':''}`}>
       <section className={`w-full h-full md:h-[800px] pt-28 relative  grid place-items-center `}>
-        <img
+        <img loading="lazy" decoding="async"
           src={'/images/step-bg.png'}
           className="w-full h-full object-fill absolute top-0 z-[-1]"
         />
@@ -125,7 +125,7 @@ function WomenEmpowerment() {
 
        
         <div className=" mb-5 md:mb-20  mt-20  relative w-full  flex justify-center items-center ">
-              <img
+              <img loading="lazy" decoding="async"
                 src="/images/heading/heading-color/group.png"
                 className="absolute   w-[530px]  md:top-[-70px]    object-contain"
               />
@@ -156,7 +156,7 @@ function WomenEmpowerment() {
                     key={idx}
                     className=" relative w-full h-full flex justify-start p-2 space-x-3 items-center text-[5.5px] md:text-lg before:absolute before:w-full  before:h-0.5 before:bg-neutral-dark4 before:bottom-0"
                     onClick={() => handleButton(idx)}>
-                    <img src={rightArrow.src} className='w-2' />
+                    <img loading="lazy" decoding="async" src={rightArrow.src} className='w-2' />
                     <Fade right>
                     <p
                       className={` cursor-pointer ${

@@ -140,7 +140,7 @@ function Notification() {
   return (
     <div className={`w-full h-full absolute top-0 z-[-1]     ${isScroll ? 'top-36' : ''}`}>
       <section className={`w-full  h-80 pt-28 relative  grid place-items-center company-bg`}>
-        <img src={AboutHeroImg.src} className="w-full h-full object-cover absolute top-0 z-[-1]" />
+        <img loading="lazy" decoding="async" src={AboutHeroImg.src} className="w-full h-full object-cover absolute top-0 z-[-1]" />
       </section>
 
       <section className="w-full relative tender-bg  ">

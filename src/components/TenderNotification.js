@@ -25,7 +25,7 @@ function TenderNotification({date,title,link}) {
     <div className="w-full flex flex-col space-y-4 justify-center items-center bg-white p-5 rounded-lg border-b-2 border-primary-main sm:flex-row sm:justify-between">
     <div className=" w-full flex items-center space-x-3">
       <div className="relative ">
-        <img src={calenderIco.src} className="w-20 h-16" />
+        <img loading="lazy" decoding="async" src={calenderIco.src} className="w-20 h-16" />
         <div className="absolute flex flex-col justify-center items-center left-5  top-5 sm:left-7  ">
           <p className="text-xs">{resultObject.day}</p>
           <p className="text-xs uppercase">{resultObject.month?.substring(0,3)}</p>

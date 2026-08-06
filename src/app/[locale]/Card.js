@@ -14,7 +14,7 @@ function Card({ imgUrl, title, link }) {
         className="w-full max-w-72 h-52 md:max-w-96 relative  md:h-96 bg-light-light4 rounded-md overflow-hidden   m-auto   "
         style={{ boxShadow: '0px 11px 49px 0px rgba(0, 0, 0, 0.15)' }}>
         <div className="  w-full h-full">
-          <img
+          <img loading="lazy" decoding="async"
             src={imgUrl}
             alt="featured-img"
             className="  w-full  object-cover  h-full hover:scale-[1.1] "
@@ -48,7 +48,7 @@ export const LinkCard = ({ imgUrl, title, description }) => {
       <div
         className="p-2 w-20 h-20 md:w-40 md:h-40 flex justify-center items-center border-neutral-dark1   bg-neutral-light4 rounded-full"
         style={{ boxShadow: '0px 8px 24px 0px rgba(0, 0, 0, 0.12)' }}>
-        <img
+        <img loading="lazy" decoding="async"
           src={imgUrl}
           alt="featured-img"
           className=" w-10 h-10 object-contain hover:rotate-45 "

@@ -79,7 +79,7 @@ const RecipeDetail = ({ slug }) => {
               showIndicators={true}
               showArrows={true}>
               <div className="m-auto max-w-3xl h-[500px] flex justify-center items-center p-1">
-                <img
+                <img loading="lazy" decoding="async"
                   className="w-full  "
                   src={recipeDetail && recipeDetail?.attributes?.image?.data?.[0]?.attributes?.url}
                   alt=""
@@ -87,7 +87,7 @@ const RecipeDetail = ({ slug }) => {
               </div>
                  
               <div className="m-auto max-w-3xl h-[500px] flex justify-center items-center p-1">
-                <video
+                <video preload="none"
                   className=" w-full h-full object-fill"
                   muted
                   controls

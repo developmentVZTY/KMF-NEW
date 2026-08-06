@@ -77,7 +77,7 @@ function Blog() {
   return (
     <div className="w-full h-full absolute top-36 z-[-1]  ">
       <section className={`w-full  h-80 pt-28 relative  grid place-items-center company-bg `}>
-        <img src={AboutHeroImg.src} className="w-full h-full object-cover absolute top-0 z-[-1]" />
+        <img loading="lazy" decoding="async" src={AboutHeroImg.src} className="w-full h-full object-cover absolute top-0 z-[-1]" />
       </section>
 
       <section className="w-full h-auto pt-10 relative    ">
@@ -93,7 +93,7 @@ function Blog() {
       <div className='w-full p-2 lg:p-10 bg-[#ededed]' key={id}>
       <div className=' w-full flex flex-col lg:flex-row  p-6 md:p-10 m-auto'>
           <div className=' w-[100%] lg:w-[50%] flex justify-center items-center'>
-              <img className=' h-72 md:h-96 w-96' src={item?.attributes?.image?.data?.attributes?.url} alt="" />
+              <img loading="lazy" decoding="async" className=' h-72 md:h-96 w-96' src={item?.attributes?.image?.data?.attributes?.url} alt="" />
           </div>
           <div className=' w-[100%] lg:w-[50%] '>
               <h1 className='text-primary-main text-2xl md:text-4xl  lg:text-5xl mt-5 lg:mt-0 text-center lg:text-start'>{item?.attributes?.title} </h1>
@@ -121,7 +121,7 @@ function Blog() {
       <div className='relative w-full p-2 lg:p-10 bg-white' key={id}>
       <div className=' w-full flex flex-col lg:flex-row  p-6 md:p-10 m-auto'>
           <div className=' w-[100%] lg:w-[50%] flex justify-center items-center'>
-              <img className=' h-72 md:h-96 w-96' src={item?.attributes?.image?.data?.attributes?.url} alt="" />
+              <img loading="lazy" decoding="async" className=' h-72 md:h-96 w-96' src={item?.attributes?.image?.data?.attributes?.url} alt="" />
           </div>
           <div className=' w-[100%] lg:w-[50%] '>
               <h1 className='text-primary-main text-2xl md:text-4xl  lg:text-5xl mt-5 lg:mt-0 text-center lg:text-start' >{item?.attributes?.title} </h1>

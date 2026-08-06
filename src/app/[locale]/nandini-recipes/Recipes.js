@@ -10,7 +10,7 @@ const Recipes = ({image,title,link}) => {
     <div className='w-full max-w-[30rem] h-[400px] mt-10'>
       <Fade top>
     <div className='w-full h-full'>
-       <img   src={image} className='w-full h-full' alt="" />
+       <img loading="lazy" decoding="async"   src={image} className='w-full h-full' alt="" />
     </div>
 </Fade>
 

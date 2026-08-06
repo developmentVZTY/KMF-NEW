@@ -33,7 +33,7 @@ const KnmModel = ({ closeModal,kymMilk ,close}) => {
 
 
         {/* <div className='w-full h-[60%]  '>
-          <img src={kymMilk?.attributes?.image?.data?.attributes?.url} className='w-full max-w-[90%] h-full object-containf  m-auto'/>
+          <img loading="lazy" decoding="async" src={kymMilk?.attributes?.image?.data?.attributes?.url} className='w-full max-w-[90%] h-full object-containf  m-auto'/>
         </div> */}
 
       <div className='w-full h-[70%]  '>
@@ -114,7 +114,7 @@ const KnmModel = ({ closeModal,kymMilk ,close}) => {
                         },
 
                         image:({image})=>{
-                          return <img src={image.url} className='max-w-[300px] m-auto'/>
+                          return <img loading="lazy" decoding="async" src={image.url} className='max-w-[300px] m-auto'/>
                         },
                         // For links, you may want to use the component from your router or framework
                         link: ({ children, url }) => <Link to={url}>{children}</Link>

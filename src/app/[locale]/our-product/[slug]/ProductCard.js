@@ -10,7 +10,7 @@ function ProductCard({title,image,link}) {
     <div className='w-28 h-40 sm:w-72 sm:h-80  bg-[#F7F7F7] shadow-md flex flex-col justify-between items-center overflow-hidden'>
       <Fade top>
     <div className='w-full h-[80%] flex justify-center items-center '>
-      <img src={image}
+      <img loading="lazy" decoding="async" src={image}
       className='w-full h-full transition-all duration-300 object-contain hover:scale-[1.1]'
       />  
 

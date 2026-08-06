@@ -7,7 +7,7 @@ function NandiniAdds() {
       <div className='w-[500px] h-[500px] bg-red-400'>
 
       </div>
-    <video
+    <video preload="none"
       src="https://kmf-public.s3.ap-south-1.amazonaws.com/NANDINI_MILK_90_SEC_8c8b8acfa5.mp4"
       title="YouTube video player"
       controls

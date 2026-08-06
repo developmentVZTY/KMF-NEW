@@ -10,7 +10,7 @@ function SecretInfo2() {
       <div className='w-full h-[98vh] flex justify-center items-center'>
          
          <div className='w-[95%] md:w-[55%] h-auto'>
-            <img className='w-full h-full' src={secretinfoImg.src} alt="" />
+            <img loading="lazy" decoding="async" className='w-full h-full' src={secretinfoImg.src} alt="" />
          </div>
             
       </div>

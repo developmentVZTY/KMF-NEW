@@ -223,7 +223,7 @@ const productMegaMenu = {
 
         <Link href={`/${locale}/offers/`} className='w-20 h-15 fixed z-[10] right-5 top-2'>
 
-            <img  src='/poster/offer.gif' className='w-full h-full'/>
+            <img loading="lazy" decoding="async"  src='/poster/offer.gif' className='w-full h-full'/>
         </Link>
         {/* UPPER HEADER  */}
 
@@ -232,7 +232,7 @@ const productMegaMenu = {
             className={`w-full h-[120px] md:h-[150px] relative   bg-white p-2 md:p-10 flex justify-between items-center ${headerPathname?'hidden':''}  `}
             onMouseEnter={() => setOpen(null)}>
             <div className=" max-w-xl flex justify-center items-center space-x-1  md:space-x-3">
-            <img
+            <img loading="lazy" decoding="async"
           src={locale === 'kn' ? logokn.src : logo.src} // Use rotated logo when rotateLogo is true
           alt="logo-home"
           className={`w-[70px] sm:w-[150px] ${rotateLogo ? '' : ''}`} // Apply rotation class
@@ -241,7 +241,7 @@ const productMegaMenu = {
                 {headerItem?.attributes?.title}
               </p>
 
-              <img className='w-14 h-14 md:w-28 md:h-28' src={corpoLogo.src} alt="" />
+              <img loading="lazy" decoding="async" className='w-14 h-14 md:w-28 md:h-28' src={corpoLogo.src} alt="" />
             </div>
             
 
@@ -275,18 +275,18 @@ Bengaluru - 560 029
                       <Link
                         href={'https://www.facebook.com/kmfnandini.coop'}
                         className="hover:scale-125 transition-all duration-300">
-                        <img src={facebookIco.src} className="w-7" />
+                        <img loading="lazy" decoding="async" src={facebookIco.src} className="w-7" />
                       </Link>
                       <Link
                         href={'https://twitter.com/kmfnandinimilk'}
                         className="hover:scale-125 transition-all duration-300">
-                        <img src={twitterIco.src} className="w-7" />
+                        <img loading="lazy" decoding="async" src={twitterIco.src} className="w-7" />
                       </Link>
                       <Link
                         href={'https://www.kmfnandini.coop/en/contact-us'}
                         className="hover:scale-125 transition-all duration-300">
                         {' '}
-                        <img src={mailIco.src} className="w-7" />
+                        <img loading="lazy" decoding="async" src={mailIco.src} className="w-7" />
                       </Link>
                       <Link
                         href={
@@ -294,7 +294,7 @@ Bengaluru - 560 029
                         }
                         className="hover:scale-125 transition-all duration-300">
                         {' '}
-                        <img src={insta.src} className="w-7" />
+                        <img loading="lazy" decoding="async" src={insta.src} className="w-7" />
                       </Link>
                       <Link
                         href={
@@ -302,7 +302,7 @@ Bengaluru - 560 029
                         }
                         className="hover:scale-125 transition-all duration-300">
                         {' '}
-                        <img src={ytIco.src} className="w-7" />
+                        <img loading="lazy" decoding="async" src={ytIco.src} className="w-7" />
                       </Link>
                     </div>
                   </div>
@@ -461,7 +461,7 @@ Bengaluru - 560 029
                 
                 className="text-center group cursor-pointer"
               >
-                <img
+                <img loading="lazy" decoding="async"
                   src={p?.attributes?.image?.data?.[0]?.attributes?.url}
                   alt={p?.attributes?.title}
                   className="h-20 mx-auto object-contain group-hover:scale-110 transition"
@@ -541,7 +541,7 @@ Bengaluru - 560 029
             </div>
 
             <div className="flex justify-center items-center">
-            <img
+            <img loading="lazy" decoding="async"
           src={locale === 'kn' ? logokn.src : logo.src} // Use rotated logo when rotateLogo is true
           alt="logo-home"
           className={`w-[70px] sm:w-[150px] ${rotateLogo ? '' : ''}`} // Apply rotation class
@@ -590,18 +590,18 @@ Saturday, Sunday & State Govt. Holidays */}
                       <Link
                         href={'https://www.facebook.com/kmfnandini.coop'}
                         className="hover:scale-125 transition-all duration-300">
-                        <img src={facebookIco.src} className="w-7" />
+                        <img loading="lazy" decoding="async" src={facebookIco.src} className="w-7" />
                       </Link>
                       <Link
                         href={'https://twitter.com/kmfnandinimilk'}
                         className="hover:scale-125 transition-all duration-300">
-                        <img src={twitterIco.src} className="w-7" />
+                        <img loading="lazy" decoding="async" src={twitterIco.src} className="w-7" />
                       </Link>
                       <Link
                         href={'https://www.kmfnandini.coop/en/contact-us'}
                         className="hover:scale-125 transition-all duration-300">
                         {' '}
-                        <img src={mailIco.src} className="w-7" />
+                        <img loading="lazy" decoding="async" src={mailIco.src} className="w-7" />
                       </Link>
                       <Link
                         href={
@@ -609,7 +609,7 @@ Saturday, Sunday & State Govt. Holidays */}
                         }
                         className="hover:scale-125 transition-all duration-300">
                         {' '}
-                        <img src={insta.src} className="w-7" />
+                        <img loading="lazy" decoding="async" src={insta.src} className="w-7" />
                       </Link>
                       <Link
                         href={
@@ -617,7 +617,7 @@ Saturday, Sunday & State Govt. Holidays */}
                         }
                         className="hover:scale-125 transition-all duration-300">
                         {' '}
-                        <img src={ytIco.src} className="w-7" />
+                        <img loading="lazy" decoding="async" src={ytIco.src} className="w-7" />
                       </Link>
                     </div>
 
