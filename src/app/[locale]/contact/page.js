@@ -9,6 +9,7 @@ import Input from '@/components/Input';
 import Follow from '@/components/Follow.js';
 import Footer from '@/components/Footer';
 import Confirmation from './Confirmation';
+import { trackEvent } from '@/lib/analytics';
 import { CountryDropdown, RegionDropdown } from 'react-country-region-selector'; // Import country and region dropdowns
 
 const Contact = () => {
@@ -90,6 +91,7 @@ const Contact = () => {
 
     const data = await res.json();
     if (data?.status === 200) {
+      trackEvent('generate_lead', { form_name: 'contact', lead_reason: formData.reason || 'none' });
       setIsOpen(true);
     }
   };
@@ -292,16 +294,19 @@ const Contact = () => {
               icon={<FcCallback size={40} />}
               title={locale === 'en' ? 'Phone' : 'ದೂರವಾಣಿ'}
               content="080-260 96800"
+              href="tel:+918026096800"
             />
             <ContactInfo
               icon={<ImWhatsapp size={40} color="green" />}
               title={locale === 'en' ? 'Whatsapp' : 'ವಾಟ್ಸ್ ಆ್ಯಪ್'}
               content="7899683696"
+              href="https://wa.me/917899683696"
             />
             <ContactInfo
               icon={<MdEmail size={40} color="red" />}
               title={locale === 'en' ? 'Email' : 'ಮಿಂಚಂಚೆ'}
               content="customercare.nandini@kmf.coop"
+              href="mailto:customercare.nandini@kmf.coop"
             />
           </div>
         </div>
@@ -312,14 +317,24 @@ const Contact = () => {
   );
 };
 
-const ContactInfo = ({ icon, title, content }) => (
+const ContactInfo = ({ icon, title, content, href }) => (
   <div className="p-6 border border-neutral-light1 bg-neutral-light4 rounded-tl-3xl rounded-br-3xl max-w-100 transition-all duration-100 hover:scale-[1.06]">
     <div className="space-y-3 mt-4 mb-4 w-full">
       <p className="text-xl font-semibold text-primary-darker">{title}</p>
       <div className="flex flex-col lg:flex-row items-start w-full">
         <div className="w-1/5 transition-all duration-100 hover:scale-[1.1]">{icon}</div>
         <div className="ml-2 w-full">
-          <p className="text-base font-semibold text-neutral-dark1">{content}</p>
+          {href ? (
+            <a
+              href={href}
+              target={href.startsWith('http') ? '_blank' : undefined}
+              rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
+              className="text-base font-semibold text-neutral-dark1 hover:underline break-all">
+              {content}
+            </a>
+          ) : (
+            <p className="text-base font-semibold text-neutral-dark1">{content}</p>
+          )}
         </div>
       </div>
     </div>
