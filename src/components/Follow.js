@@ -49,7 +49,7 @@ function Follow() {
 
             <Fade top>
             <li className='border-r-2 p-2 transition-all duration-150 hover:scale-[1.1]'>
-              <a href="mailto:customercare.nandini@kmf.coop`">
+              <a href="mailto:customercare.nandini@kmf.coop">
                <SiGmail size={20} className='hover:text-red-500 hover:scale-[1.1] transition-all duration-150'/>
               </a>
             </li>
